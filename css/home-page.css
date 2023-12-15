@@ -1,0 +1,59 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color:black;
+}
+.menu{
+    margin-right: 20px;
+    height: 15px;
+}
+.navbar{
+    display: flex;
+    flex-wrap: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    height:20px;
+    padding: 20px;
+    background-color:#fd343a;
+    opacity: 0.8;
+}
+.logo{
+    height:60px;
+    margin-top: -20px;
+    margin-right: 20px;
+}
+.nav-opt-container{
+    display:flex;
+    flex-wrap: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-bottom: 5px;
+    
+}
+.navbar-options{
+    margin: 8px;
+    padding: 10px;
+    height: 10px;
+    border-radius: 20px;
+    color: #fca82c;
+    cursor: pointer;
+}
+.navbar-options:hover{
+    color: #000;
+    transition: 0.5;
+}
+.search-bar-container{
+    display: flex;
+}
+.search-img{
+    height:17px;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+.search-bar{
+    height: 15px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px  solid #fca82c;
+}
