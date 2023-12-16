@@ -16,7 +16,21 @@ body{
 .welcome{
     position: absolute;
     top:340px;
-    left:440px;
+    left:320px;
+    font-size: 50px;
+
+}
+.welcome2{
+    position: absolute;
+    top:430px;
+    left:400px;
+
+}
+.welcome3{
+    position: absolute;
+    top:500px;
+    left:550px;
+
 
 }
 .poster-logo{
@@ -64,6 +78,8 @@ body{
     border: none;
     padding:10px;
     font-size: 16px;
+    cursor:pointer;
+
 }
 
 .login{
@@ -74,6 +90,7 @@ body{
     width:120px;
     border:2px solid black;
     border-radius: 10px;
+    cursor:pointer;
     
 }
 .login:hover{
@@ -89,3 +106,25 @@ body{
 
 }
 /* navbar css code end*/
+.explore{
+    color:black;
+    font-size: 20px;
+    height:60px;
+    width:220px;
+    border:2px solid black;
+    border-radius:15px;
+    position: absolute;
+    top:600px;
+    left:630px;
+    cursor:pointer;
+    background-image: linear-gradient(to right,#e70952  0%, #b61a87  58%, #85035e  100%);
+    padding: 15px 35px;
+    transition: 0.5s;          
+    font-weight: bold;
+
+}
+.explore:hover{
+    box-shadow: 0 0 10px #eee;
+}
+
+}
