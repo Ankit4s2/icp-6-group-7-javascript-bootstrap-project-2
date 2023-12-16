@@ -5,10 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 <link rel="stylesheet" href="../css/home-page.css"/>
+<style>
+    .movie-poster-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 20px;
+        
+    }
+    .movie-poster{
+        border: 2px solid #880360;
+        border-radius: 10px;
+        height: 450px;
+        width: 900px;
+    }
+    .movie-poster{
+        margin: 20px;
+    }
+    .movie-title{
+        height: 450px;
+        width: 530px;
+    }
+    .movie-poster-menu-container{
+        background-color: #880360;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 40px;
+        width: 400px;
+        padding: 10px;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .movie-poster-menu{
+        height: 30px;
+    }
+</style>
 </head>
 <body>
     <div class="navbar">
-        <img src="./images/index-images/logo1.png" class="logo">
+        <img src="../images/index-images/logo1.png" class="logo">
        <div class="menu-sec">
             <button class="nav-btn">Home</button>
             <button class="nav-btn">Movies</button>
@@ -21,9 +58,38 @@
         <div class="login-btn">
             <button class="login">Login</button>
             <button class="login">Sign Up</button>
-
         </div>
     </div>
-    
+
+        <div class="movie-poster-container">
+            <div>
+                <img src="../images/home-images/avatar.jpeg" class="movie-poster"/>
+            </div>
+            <div class="movie-title">
+                <h1>Avatar</h1>
+                <p>
+                    The 2009 James Cameron film is set in the year 2154 in the superabundant world of Pandora. The world is inhabited by a highly evolved human-like population called the Na'vi. The story follows American earthling Jake Sully (Sam Worthington), a paralyzed Marine.
+                </p>
+            </div>  
+        </div>
+
+        <div class="movie-poster-menu-container">
+            <div>
+                <img src="../images/home-images/avatar.jpeg" class="movie-poster-menu" />
+            </div>
+            <div>
+                <img src="../images/home-images/bahubali.png" class="movie-poster-menu" />
+            </div>
+            <div>
+                <img src="../images/home-images/edge-of-tomorrow.png" class="movie-poster-menu" />
+            </div>
+            <div>
+                <img src="../images/home-images/pathan.jpeg" class="movie-poster-menu" />
+            </div>
+            <div>
+                <img src="../images/home-images/intersteller.png" class="movie-poster-menu" />
+            </div>
+        </div>
+
 </body>
 </html>
