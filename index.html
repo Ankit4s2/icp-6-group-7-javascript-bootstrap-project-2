@@ -4,90 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index page</title>
+    <link rel="stylesheet" href="./css/style.css">
     <style>
-        body{
-            background-color: black;
-            text-decoration: none;
-            color:white;
-            margin:0;
-            padding:0;
-        }
-        .header{
-           border: 2px solid #880360;
-           height:600px;
-           width:1400;
-           margin:10px 20px;
-           border-radius: 10px;
-        }
         .poster{
-            position: relative;
-            height:600px;
-            width:1350;
-            background-image:url('images/index-images/poster2.jpg'),linear-gradient(rgba(1,1,1,1.4),rgba(1,1,1,1.4));
-            opacity:30%;
-            
-        }
-        .welcome{
-            position: absolute;
-            top:190px;
-            left:430px;
-
-
-        }
-        .logo{
-            height:100px;
-            margin-left: -10px;
-            margin-top: -10px;
-        }
-        .search{
-            border: 2px solid white;
-            color:white;
-            border-radius: 5px;
-            height: 30px;
-            width:280px;
-            background-color: black;
-            position: absolute;
-            right:600px;
-            top:20px;
-
-        }
-        .search:hover{
-            border:2px solid #880360;
-        }
-        .navbar{
-            margin:5px 10px;
-            display:flex;
-            justify-content: space-between;
-            position: relative;
-        }
-        .menu-sec{
-            position: absolute;
-            left:150px;
-            top:25px;
-        }
-        .nav-btn{
-            background-color: black;
-            color: white;
-            border: none;
-            padding:10px;
-            font-size: 16px;
-        }
-
-        .login{
-            color:white;
-            background-color:#880360;
-            height: 40px;
-            width:120px;
-            border:2px solid black;
-            border-radius: 10px;
-        }
-        .nav-btn:hover{
-            color:#ea0a51;
-
-        }
-
-            
+    position: relative;
+    height:600px;
+    width:1350;
+    background-image:url('./images/index-images/poster2.jpg'),linear-gradient(rgba(1,1,1,1.4),rgba(1,1,1,1.4));
+    opacity:25%;
+    box-shadow: 10 10 10 white;
+    
+}
     </style>
+    
+    
 </head>
 <body>
     <div class="navbar">
@@ -101,7 +31,7 @@
             
         </div>
         <input type="text" placeholder="Search movies,Tv shows" class="search">
-        <div>
+        <div class="login-btn">
             <button class="login">Login</button>
             <button class="login">Sign Up</button>
 
@@ -110,6 +40,7 @@
 
     <div class="header">
         <div class="poster"></div>
+        <img  src="./images/index-images/logorbg.png" class="poster-logo">
         <h1 class="welcome">Welcome To The World of Entertainment</h1>
         
     </div>
@@ -117,9 +48,3 @@
     
 </body>
 </html>
-width:100%;
-            height:100vh;
-            background-image:url('images/home/front.jpg'),linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
-            background-size: cover;
-            background-position: center;
-            position:relative;
