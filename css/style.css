@@ -1,0 +1,130 @@
+body{
+    background-color: black;
+    text-decoration: none;
+    color:white;
+    margin:0;
+    padding:0;
+}
+.header{
+   border: 2px solid #880360;
+   height:600px;
+   width:1400;
+   margin:10px 20px;
+   border-radius: 10px;
+}
+
+.welcome{
+    position: absolute;
+    top:340px;
+    left:320px;
+    font-size: 50px;
+
+}
+.welcome2{
+    position: absolute;
+    top:430px;
+    left:400px;
+
+}
+.welcome3{
+    position: absolute;
+    top:500px;
+    left:550px;
+
+
+}
+.poster-logo{
+    height:200px;
+    position: absolute;
+    top:150px;
+    left:600px;
+
+}
+/* Navbar css-code begin*/
+.logo{
+    height:100px;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+.search{
+    border: 2px solid white;
+    color:white;
+    border-radius: 5px;
+    height: 30px;
+    width:300px;
+    background-color: black;
+    position: absolute;
+    right:600px;
+    top:20px;
+
+}
+.search:hover{
+    border:2px solid #880360;
+}
+.navbar{
+    margin:5px 10px;
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-sec{
+    position: absolute;
+    left:150px;
+    top:25px;
+}
+.nav-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    padding:10px;
+    font-size: 16px;
+    cursor:pointer;
+
+}
+
+.login{
+    font-weight: bold;
+    color:white;
+    background-color:#e311a4;
+    height: 40px;
+    width:120px;
+    border:2px solid black;
+    border-radius: 10px;
+    cursor:pointer;
+    
+}
+.login:hover{
+    background-color: #880360;
+}
+.login-btn{
+    position: absolute;
+    right:60px;
+    top:20px;
+}
+.nav-btn:hover{
+    color:#ea0a51;
+
+}
+/* navbar css code end*/
+.explore{
+    color:black;
+    font-size: 20px;
+    height:60px;
+    width:220px;
+    border:2px solid black;
+    border-radius:15px;
+    position: absolute;
+    top:600px;
+    left:630px;
+    cursor:pointer;
+    background-image: linear-gradient(to right,#e70952  0%, #b61a87  58%, #85035e  100%);
+    padding: 15px 35px;
+    transition: 0.5s;          
+    font-weight: bold;
+
+}
+.explore:hover{
+    box-shadow: 0 0 10px #eee;
+}
+
+}
