@@ -25,16 +25,33 @@
         width: 900px;
         margin: 10px;
     }
-    .movie-description{
+    .movie-description-container{
         width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .title{
+        width: 300px;
+        margin: 5px;
     }
     .icons-container{
-        
+        display: flex;
+        justify-content:space-around;
+        color: #000;
+        margin:10px;
+        margin-top: 7px;
+        width: 300px;
     }
-    .icons{
-        background-color: #fff;
-        height: 30px;
-        width: 30px;
+    #icons{
+        margin: 10px;
+        padding: 5px;
+        font-size: 30px; 
+        color: white;  
+    }
+    .movie-description{
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
     .movie-poster-container{
         display: flex;
@@ -55,22 +72,22 @@
         border-radius: 10px;
     }
     .view-more-button{
-        background-color: #880360;
+        background-color:#ea0a51;
         color: white;
         font-family: Arial, Helvetica, sans-serif;
         border: 2px solid white;
         border-radius: 20px;
         height: 35px;
-        width: 440px;
+        width: 250px;
         margin: 10px;
         padding: 5px;
-        margin-left: 10px;
+        margin-left: 120px;
         cursor: pointer;
     }
     .view-more-button:hover{
         color: #000;
         background-color: white;
-        border: 3px solid #880360;
+        border: 3px solid #ea0a51;
         transition: 0.5s;
     }
 </style>
@@ -91,25 +108,28 @@
             <button class="login">Login</button>
             <button class="login">Sign Up</button>
         </div>
-    </div>
+    </div><hr/>
 
     <div class="category">
         <h1 class="category-title">Movies</h1>
-    </div>
+    </div><hr/>
 
     <div class="movie-poster-container">
 
         <div class="big-poster">   
                 <img src="../images/home-images/edge-of-tomorrow.jpeg" class="movie-poster"/>
 
-                <div class="movie-description">
-                    <h1>Edge Of Tomorrow</h1>
-                    <div class="icons-container">
-                        <img src="../images/home-images/hd.png" class="icons" />
-                        <img src="../images/home-images/like.png" class="icons"/>
-                        <img src="../images/home-images/dislike.png" class="icons"/>
+                <div class="movie-description-container">
+                    <div class="title">
+                        <h1>Edge Of Tomorrow</h1>
                     </div>
-                    <p>William Cage (Tom Cruise), an officer who has never seen combat, is assigned to a suicide mission. Killed within moments, Cage finds himself thrown into a time loop, in which he relives the same brutal fight -- and his death -- over and over again.</p>
+                    <div class="icons-container">
+                        <i class="fa-regular fa-thumbs-up" id="icons"></i>
+                        <i class="fa-regular fa-thumbs-down" id="icons"></i>
+                        <i class="fa-solid fa-plus" id="icons"></i> 
+                        <h5 style="color:#fff; margin-left:-20px;"> Watchlist </h5>
+                    </div>
+                    <p class="movie-description">William Cage (Tom Cruise), an officer who has never seen combat, is assigned to a suicide mission. Killed within moments, Cage finds himself thrown into a time loop, in which he relives the same brutal fight -- and his death -- over and over again.</p>
                 </div>  
         </div>
 
@@ -129,5 +149,6 @@
 
     </div>
 
+    <script src="https://kit.fontawesome.com/6ead3ba372.js" crossorigin="anonymous"></script>
 </body>
 </html>
