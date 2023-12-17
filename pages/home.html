@@ -70,6 +70,7 @@
         margin: 15px;
         border: 2px solid #880360;
         border-radius: 10px;
+        cursor: pointer;
     }
     .view-more-button{
         background-color:#ea0a51;
@@ -117,12 +118,12 @@
     <div class="movie-poster-container">
 
         <div class="big-poster">   
-                <img src="../images/home-images/edge-of-tomorrow.jpeg" class="movie-poster"/>
+                <img src="../images/home-images/edge-of-tomorrow.jpeg" class="movie-poster" id="movieBigPoster"/>
 
                 <div class="movie-description-container">
                     <div class="title">
                         <h1>Edge Of Tomorrow</h1>
-                        <div>
+                        <div id="movieRatings">
                             98% match &nbsp 2014 &nbsp Action/Sci-fi &nbsp 1h53min
                         </div>
                     </div>
@@ -141,19 +142,35 @@
 
         <div class="small-poster">
             <div>
-                <img src="../images/home-images/edge-of-tomorrow.jpeg" class="small-movie-poster" />
+                <img src="../images/home-images/edge-of-tomorrow.jpeg" class="small-movie-poster" onclick="moviePoster1()"/>
             </div>
             <div>
-                <img src="../images/home-images/bahubali.png" class="small-movie-poster" />
+                <img src="../images/home-images/bahubali.png" class="small-movie-poster" onclick="moviePoster2()" />
             </div>
             <div>
-                <img src="../images/home-images/intersteller.png" class="small-movie-poster" />
+                <img src="../images/home-images/intersteller.png" class="small-movie-poster"  onclick="moviePoster3()"/>
             </div>
 
             <button type="button" class="view-more-button"> View more </button>
         </div>
 
     </div>
+
+    <script>
+        function moviePoster1(){
+            const bigMoviePoster = document.getElementById('movieBigPoster');
+            bigMoviePoster.src = "../images/home-images/edge-of-tomorrow.jpeg";    
+        }
+        function moviePoster2(){
+            const bigMoviePoster = document.getElementById('movieBigPoster');
+            bigMoviePoster.src = "../images/home-images/bahubali.png";    
+        }
+        function moviePoster3(){
+            const bigMoviePoster = document.getElementById('movieBigPoster');
+            bigMoviePoster.src = "../images/home-images/intersteller.png";   
+        } 
+
+    </script>
 
     <script src="https://kit.fontawesome.com/6ead3ba372.js" crossorigin="anonymous"></script>
 </body>
