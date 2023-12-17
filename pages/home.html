@@ -5,10 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 <link rel="stylesheet" href="../css/home-page.css"/>
+<style>
+    .category{
+        margin: 10px;
+    }
+    .category-title{
+        text-align: center;
+    }
+    .movie-poster-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 20px; 
+    }
+    .movie-poster{
+        border: 2px solid #880360;
+        border-radius: 10px;
+        height: 550px;
+        width: 900px;
+        margin: 10px;
+    }
+    .movie-description{
+        width: 900px;
+    }
+    .icons-container{
+        
+    }
+    .icons{
+        background-color: #fff;
+        height: 30px;
+        width: 30px;
+    }
+    .movie-poster-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 10px;
+        margin: 10px;
+    }
+    .small-poster{
+        height: 300px;
+        width: 450px;
+    }
+    .small-movie-poster{
+        height: 200px;
+        width: 430px;
+        margin: 15px;
+        border: 2px solid #880360;
+        border-radius: 10px;
+    }
+    .view-more-button{
+        background-color: #880360;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 2px solid white;
+        border-radius: 20px;
+        height: 35px;
+        width: 440px;
+        margin: 10px;
+        padding: 5px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .view-more-button:hover{
+        color: #000;
+        background-color: white;
+        border: 3px solid #880360;
+        transition: 0.5s;
+    }
+</style>
 </head>
 <body>
     <div class="navbar">
-        <img src="./images/index-images/logo1.png" class="logo">
+        <img src="../images/index-images/logo1.png" class="logo">
        <div class="menu-sec">
             <button class="nav-btn">Home</button>
             <button class="nav-btn">Movies</button>
@@ -21,9 +90,44 @@
         <div class="login-btn">
             <button class="login">Login</button>
             <button class="login">Sign Up</button>
-
         </div>
     </div>
-    
+
+    <div class="category">
+        <h1 class="category-title">Movies</h1>
+    </div>
+
+    <div class="movie-poster-container">
+
+        <div class="big-poster">   
+                <img src="../images/home-images/edge-of-tomorrow.jpeg" class="movie-poster"/>
+
+                <div class="movie-description">
+                    <h1>Edge Of Tomorrow</h1>
+                    <div class="icons-container">
+                        <img src="../images/home-images/hd.png" class="icons" />
+                        <img src="../images/home-images/like.png" class="icons"/>
+                        <img src="../images/home-images/dislike.png" class="icons"/>
+                    </div>
+                    <p>William Cage (Tom Cruise), an officer who has never seen combat, is assigned to a suicide mission. Killed within moments, Cage finds himself thrown into a time loop, in which he relives the same brutal fight -- and his death -- over and over again.</p>
+                </div>  
+        </div>
+
+        <div class="small-poster">
+            <div>
+                <img src="../images/home-images/edge-of-tomorrow.jpeg" class="small-movie-poster" />
+            </div>
+            <div>
+                <img src="../images/home-images/bahubali.png" class="small-movie-poster" />
+            </div>
+            <div>
+                <img src="../images/home-images/intersteller.png" class="small-movie-poster" />
+            </div>
+
+            <button type="button" class="view-more-button"> View more </button>
+        </div>
+
+    </div>
+
 </body>
 </html>
