@@ -6,6 +6,12 @@
     <title>Home</title>
 <link rel="stylesheet" href="../css/home-page.css"/>
 <style>
+    .category{
+        
+    }
+    .category-title{
+        text-align: center;
+    }
     .movie-poster-container{
         display: flex;
         flex-wrap: wrap;
@@ -16,30 +22,39 @@
     .movie-poster{
         border: 2px solid #880360;
         border-radius: 10px;
-        height: 450px;
+        height: 550px;
         width: 900px;
-    }
-    .movie-poster{
         margin: 20px;
     }
-    .movie-title{
-        height: 450px;
-        width: 530px;
-    }
-    .movie-poster-menu-container{
-        background-color: #880360;
+    .movie-poster-container{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        height: 40px;
-        width: 400px;
         padding: 10px;
         margin: 10px;
-        margin-left: auto;
-        margin-right: auto;
+        
     }
-    .movie-poster-menu{
+    .small-poster{
+        height: 300px;
+        width: 450px;
+    }
+    .small-movie-poster{
+        height: 160px;
+        width: 350px;
+        margin: 15px;
+        border: 2px solid #880360;
+        border-radius: 10px;
+    }
+    .view-more-button{
+        background-color: #880360;
+        color: white;
+        border: 2px solid white;
+        border-radius: 10px;
         height: 30px;
+        width: 360px;
+        margin: 10px;
+        padding: 5px;
+        margin-left: 10px;
     }
 </style>
 </head>
@@ -61,35 +76,30 @@
         </div>
     </div>
 
-        <div class="movie-poster-container">
+    <div class="category">
+        <h1 class="category-title">Movies</h1>
+    </div>
+
+    <div class="movie-poster-container">
+
+        <div class="big-poster">   
+                <img src="../images/home-images/edge-of-tomorrow.jpeg" class="movie-poster"/>
+        </div>
+        <div class="small-poster">
             <div>
-                <img src="../images/home-images/avatar.jpeg" class="movie-poster"/>
+                <img src="../images/home-images/edge-of-tomorrow.jpeg" class="small-movie-poster" />
             </div>
-            <div class="movie-title">
-                <h1>Avatar</h1>
-                <p>
-                    The 2009 James Cameron film is set in the year 2154 in the superabundant world of Pandora. The world is inhabited by a highly evolved human-like population called the Na'vi. The story follows American earthling Jake Sully (Sam Worthington), a paralyzed Marine.
-                </p>
-            </div>  
+            <div>
+                <img src="../images/home-images/bahubali.png" class="small-movie-poster" />
+            </div>
+            <div>
+                <img src="../images/home-images/intersteller.png" class="small-movie-poster" />
+            </div>
+
+            <button type="button" class="view-more-button"> View more </button>
         </div>
 
-        <div class="movie-poster-menu-container">
-            <div>
-                <img src="../images/home-images/avatar.jpeg" class="movie-poster-menu" />
-            </div>
-            <div>
-                <img src="../images/home-images/bahubali.png" class="movie-poster-menu" />
-            </div>
-            <div>
-                <img src="../images/home-images/edge-of-tomorrow.png" class="movie-poster-menu" />
-            </div>
-            <div>
-                <img src="../images/home-images/pathan.jpeg" class="movie-poster-menu" />
-            </div>
-            <div>
-                <img src="../images/home-images/intersteller.png" class="movie-poster-menu" />
-            </div>
-        </div>
+    </div>
 
 </body>
 </html>
