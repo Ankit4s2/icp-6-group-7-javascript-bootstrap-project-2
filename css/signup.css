@@ -1,0 +1,78 @@
+body{
+    background-color: #000;
+   }
+    form {
+       border: 1px solid #ccc;
+       border-radius: 5px;
+       padding: 20px;
+       width: 300px;
+       margin: 0 auto;
+     }
+     .heading{
+       text-align: center;
+       font-size: 30px;
+       color: #fff;
+     }
+     label {
+       display: block;
+       font-weight: bold;
+       margin-bottom: 5px;
+       color: #fff;
+     }
+     .user{
+       background-color: transparent;
+     
+     }
+     
+     input[type=text],
+     input[type=password] {
+       padding: 10px 3px ;
+       width: 100%;
+       border-radius: 7px;
+     color: white;
+       border: 1px solid #ccc;
+       margin-bottom: 15px;
+   
+     }
+     
+     button {
+       background-color: rgb(248, 44, 176);
+       color: white;
+       padding: 10px;
+       border: none;
+       border-radius: 15px;
+       cursor: pointer;
+       width: 100%;
+     }
+     
+     button:hover {
+       background-color: #c0047b;
+     }
+     .forget {
+       margin: 35px 0;
+       font-size: 0.85rem;
+       color: #fff;
+       display: flex;
+       justify-content: space-between;
+    
+   }
+   
+   .forget-label {
+       display: flex;
+       align-items: center;
+   }
+   
+   .forget-label-input {
+       margin-right: 3px;
+   }
+   
+   .forget-a {
+       color: goldenrod;
+       text-decoration: none;
+       font-weight: 600;
+   }
+   
+   .forget-a:hover {
+       text-decoration: underline;
+   }
+   
