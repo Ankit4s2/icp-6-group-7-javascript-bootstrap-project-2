@@ -1,108 +1,105 @@
-<script>
-    function fun(){
-     const min=1;
+function fun(){
+    const min=1;
     const max=5;
     var num= Math.floor(Math.random()*(max-min))+min;
     if (num===1) {
         var imageElement = document.getElementById("bkgd");
-        var imageUrl = "../images/children-img/bg.jpg";
+        var imageUrl = "../images/coffee.png";
         imageElement.src = imageUrl;
         document.getElementById("bkgd").style.display="block";
         document.getElementById("p1").style.display="none";
-        document.getElementById("p2").style.display="none";
+       
     }
     if (num ===2) {
         var imageElement = document.getElementById("bkgd");
-        var imageUrl = "../images/children-img/bg2.webp";
+        var imageUrl = "../images/kapil.png";
         imageElement.src = imageUrl;
         document.getElementById("bkgd").style.display="block";
         document.getElementById("p1").style.display="none";
-        document.getElementById("p2").style.display="none";
+       
     }
     if (num ===3) {
         var imageElement = document.getElementById("bkgd");
-        var imageUrl = "../images/children-img/bg3.jpg";
+        var imageUrl = "../images/khatra.png";
         imageElement.src = imageUrl;
         document.getElementById("bkgd").style.display="block";
         document.getElementById("p1").style.display="none";
-        document.getElementById("p2").style.display="none";
+        
     }
     if (num ===4) {
         var imageElement = document.getElementById("bkgd");
-        var imageUrl = "../images/children-img/bg3.jpg";
+        var imageUrl = "../images/Dance.png";
         imageElement.src = imageUrl;
         document.getElementById("bkgd").style.display="none";
         document.getElementById("p1").style.display="block";
-        document.getElementById("p2").style.display="block";
+       
     }
 }
 function show(arg) {
     if (arg ===1) {
         var imageElement = document.getElementById("pic");;
-        var imageUrl = "../images/children-img/img4.jpg";
+        var imageUrl = "../images/Anupama.png";
         imageElement.src = imageUrl;
         document.getElementById("blk").style.display="block";
-        document.getElementById("hd").innerHTML="DINO TIME";
-        document.getElementById("dis").innerHTML="When three children find an egg-shaped time machine, their curiosity gets the better of them. They accidentally turn the contraption on and find themselves millions of years in the past. What's more, they've landed right in the middle of a dinosaur's nest of eggs, and the mother T-Rex is right there staring at them. Fortunately for the children, she thinks they're family, not food. However, they only have until the real eggs hatch to find a way back to their own time.";
+        document.getElementById("hd").innerHTML="ANUPAMA";
+        document.getElementById("dis").innerHTML="Anupamaa Shah, a selfless Gujarati homemaker in Ahmedabad, is aloof to her own identity and obligated to be in service of her family. Anupamaa and the family are incognizant of her husband Vanraj's extra-marital affair with Kavya Gandhi, his colleague.";
 
     }
     if (arg ===2) {
         var imageElement = document.getElementById("pic");;
-        var imageUrl = "../images/children-img/img5.jpg";
+        var imageUrl = "../images/Ghum_Hai_Kisikey_Pyaar_Meiin.png";
         imageElement.src = imageUrl;
         document.getElementById("blk").style.display="block";
-        document.getElementById("hd").innerHTML="KUNG FU PANDA";
-        document.getElementById("dis").innerHTML="This movie follows the story of Po (voice of Jack Black), a Panda who works in his father's noodle shop, but dreams of becoming a Kung Fu champion. When Po learns that the village is hosting a tournament to nominate a Dragon Warrior, he makes his way to the Jade Palace to watch the festivities.";
+        document.getElementById("hd").innerHTML="GHUM HAI KISIKEY PYAAR MEIIN";
+        document.getElementById("dis").innerHTML="Ghum Hai Kisikey Pyaar Meiin is produced by Cockrow Entertainment and Shaika Films and is a loose adaptation of Kusum Dola.";
         
     }
     if (arg ===3) {
         var imageElement = document.getElementById("pic");;
-        var imageUrl = "../images/children-img/img6.webp";
+        var imageUrl = "../images/titli.png";
         imageElement.src = imageUrl;
         document.getElementById("blk").style.display="block";
-        document.getElementById("hd").innerHTML="HARRY POTTER";
-        document.getElementById("dis").innerHTML="The novels follow Harry Potter, an 11-year-old boy who discovers he is the son of famous wizards and will attend Hogwarts School of Witchcraft and Wizardry. Harry learns of an entire society of wizards and witches. He befriends several Hogwarts students and teachers along his journey.";
+        document.getElementById("hd").innerHTML="TITLI";
+        document.getElementById("dis").innerHTML="The Star Plus show, 'Titli,' has been keeping its viewers engaged with its intriguing storyline, led by Avinash Mishra and Neha Solanki. In the ongoing plot, Titli has been unraveling the reasons behind Garv's persistent anger issues, working diligently to help him. It has been revealed that Garv's unresolved trauma and anger stem from his inability to save his brother, Chiku, who tragically passed away.";
     }
     if (arg ===4) {
         var imageElement = document.getElementById("pic");;
-        var imageUrl = "../images/children-img/img7.jpg";
+        var imageUrl = "../images/imli.png";
         imageElement.src = imageUrl;
         document.getElementById("blk").style.display="block";
-        document.getElementById("hd").innerHTML="ALVIN AND THE CHIPMUNKS";
-        document.getElementById("dis").innerHTML="Alvin and the Chipmunks, directed by Tim Hill, is the story of three cheeky chipmunks (voiced by Justin Long, Matthew Gray Gubler and Jesse McCarthy) who find their way to the city and into the home and heart of David Seville (Jason Lee), a struggling song writer.";
+        document.getElementById("hd").innerHTML="IMLI";
+        document.getElementById("dis").innerHTML="Imlie serial is the story of a village girl name Imli (Imlie) who is proud to be a village girl and doesn't shy away from giving answers to village people.";
     }
     if (arg ===5) {
         var imageElement = document.getElementById("pic");;
-        var imageUrl = "../images/children-img/img8.jpeg";
+        var imageUrl = "../images/Chahatein.png";
         imageElement.src = imageUrl;
         document.getElementById("blk").style.display="block";
-        document.getElementById("hd").innerHTML="CINDERELLA";
-        document.getElementById("dis").innerHTML="An abusive stepmother and two stepdaughters are invited to a royal ball, leaving behind their daughter and sister whom they call Cinderella. Her fairy godmother appears and grants Cinderella's wish to go to the ball, magically providing a coach, servants, a dress, and perfectly fitted glass slippers.";
+        document.getElementById("hd").innerHTML="YE HAI CHAHATEIN";
+        document.getElementById("dis").innerHTML="A passionate love story between a famous rockstar, Rudraksh Khurana and a gynaecologist, Dr Preesha Srinivasan who fall in love after raising their respective siblings' son together.";
     }
     if (arg ===6) {
         var imageElement = document.getElementById("pic");;
-        var imageUrl = "../images/children-img/img9.webp";
+        var imageUrl = "../images/Doriyaa.png";
         imageElement.src = imageUrl;
         document.getElementById("blk").style.display="block";
-        document.getElementById("hd").innerHTML="THE WILLOUGHBYS";
-        document.getElementById("dis").innerHTML="After the four children are kicked out of their home by their parents, the children are desperate to find new parents and think of a plan to 'orphan themselves' by sending their parents to a deadly vacation so that they can die.";
+        document.getElementById("hd").innerHTML="TERI MERI DORIYAA";
+        document.getElementById("dis").innerHTML="It's hate at first sight for Sahiba and Angad. But destined to be together, their lives get intertwined by a marriage alliance, and a love-hate story ensues. ";
     }
     if (arg ===7) {
         var imageElement = document.getElementById("pic");;
-        var imageUrl = "../images/children-img/img10.webp";
+        var imageUrl = "../images/Siya ke Ram";
         imageElement.src = imageUrl;
         document.getElementById("blk").style.display="block";
-        document.getElementById("hd").innerHTML="TEEN TITANS GO";
-        document.getElementById("dis").innerHTML="Teen Titans Go! is an animated series that follows the adventures of the young Titans: Beast Boy, Robin, Cyborg, Raven and Starfire. They reside in Jump City when they are not saving the world while living together as teenagers without adults who disrupt the young Titans.";
+        document.getElementById("hd").innerHTML="SIYA KE RAM";
+        document.getElementById("dis").innerHTML="Siya Ke Ram ( transl. Sita's Ram) is an Indian TV series on Star Plus produced by Nikhil Sinha under the banner of Triangle Film Company. This show presents the epic Ramayana, the story of Rama and Devi Sita from Sita's perspective. A classic epic Ramayana, the story of Ram and Sita, retold through the eyes of the righteous, beautiful and brave Sita";
     }
     if (arg ===8) {
         var imageElement = document.getElementById("pic");;
-        var imageUrl = "../images/children-img/img11.webp";
+        var imageUrl = "../images/Show.png";
         imageElement.src = imageUrl;
         document.getElementById("blk").style.display="block";
-        document.getElementById("hd").innerHTML="HOTEL TRANSYLVANIA 3";
-        document.getElementById("dis").innerHTML="In the film, Dracula finds love with a ship captain named Ericka while embarks on a vacation on a luxury cruise liner with his family and friends, but Mavis later discovers that Ericka is actually the great-granddaughter of Abraham Van Helsing, Drac's arch-nemesis who secretly plan to destroy them.";
+        document.getElementById("hd").innerHTML="RAVIVAAR WITH STAR PARIVAAR";
+        document.getElementById("dis").innerHTML="A musical game show with different families from your favourite Plus shows. The teams compete against each other in weekly face-offs to win the cash prize!";
     }
 }
-
-    </script>
