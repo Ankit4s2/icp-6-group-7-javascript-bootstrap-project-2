@@ -5,27 +5,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 <link rel="stylesheet" href="../css/home-page.css"/>
+<style>
+    .category{
+        margin: 10px;
+    }
+    .category-title{
+        text-align: center;
+    }
+    .movie-poster-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 20px; 
+    }
+    .movie-poster{
+        border: 2px solid #880360;
+        border-radius: 10px;
+        height: 550px;
+        width: 900px;
+        margin: 10px;
+    }
+    .movie-description-container{
+        width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .title{
+        width: 300px;
+        margin: 5px;
+    }
+    .icons-container{
+        display: flex;
+        justify-content:space-around;
+        color: #000;
+        margin:10px;
+        margin-top: 15px;
+        width: 300px;
+    }
+    #icons{
+        margin: 10px;
+        padding: 5px;
+        font-size: 30px; 
+        color: white;  
+    }
+    .movie-description{
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .movie-poster-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 10px;
+        margin: 10px;
+    }
+    .small-poster{
+        height: 300px;
+        width: 450px;
+    }
+    .small-movie-poster{
+        height: 200px;
+        width: 430px;
+        margin: 15px;
+        border: 2px solid #880360;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .view-more-button{
+        background-color:#ea0a51;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 2px solid white;
+        border-radius: 20px;
+        height: 35px;
+        width: 250px;
+        margin: 10px;
+        padding: 5px;
+        margin-left: 120px;
+        cursor: pointer;
+    }
+    .view-more-button:hover{
+        color: #000;
+        background-color: white;
+        border: 3px solid #ea0a51;
+        transition: 0.5s;
+    }
+</style>
 </head>
 <body>
     <div class="navbar">
+        <img src="../images/index-images/logo1.png" class="logo">
+       <div class="menu-sec">
+            <button class="nav-btn">Home</button>
+            <button class="nav-btn">Movies</button>
+            <button class="nav-btn">TV shows</button>
+            <button class="nav-btn">Sports</button>
+            <button class="nav-btn">Guide</button>
+            
+        </div>
+        <input type="text" placeholder="Search movies,Tv shows" class="search">
+        <div class="login-btn">
+            <button class="login">Login</button>
+            <button class="login">Sign Up</button>
+        </div>
+    </div><hr/>
 
-        <img src=".\..\images\home-images\menu-button-of-three-horizontal-lines.png" class="menu"/>
+    <div class="category">
+        <h1 class="category-title">Movies</h1>
+    </div><hr/>
 
-        <img src="./../images/home-images/website_logo.png.jpg" class="logo"/>
+    <div class="movie-poster-container">
 
-        <div class="nav-opt-container">
-            <div class="navbar-options"> Home </div>
-            <div class="navbar-options"> Movies </div>
-            <div class="navbar-options"> TV-Series </div>
-            <div class="navbar-options"> Sports </div>
-            <div class="navbar-options"> Children </div>
+        <div class="big-poster">   
+                <img src="../images/home-images/edge-of-tomorrow.jpeg" class="movie-poster" id="movieBigPoster"/>
+
+                <div class="movie-description-container">
+                    <div class="title">
+                        <h1>Edge Of Tomorrow</h1>
+                        <div id="movieRatings">
+                            98% match &nbsp 2014 &nbsp Action/Sci-fi &nbsp 1h53min
+                        </div>
+                    </div>
+                    
+                    <div class="icons-container">
+                        <i class="fa-regular fa-thumbs-up" id="icons"></i>
+                        <i class="fa-regular fa-thumbs-down" id="icons"></i>
+                        <i class="fa-solid fa-plus" id="icons"></i> 
+                        <h5 style="color:#fff; margin-left:-20px;"> Watchlist </h5>
+                    </div>
+                    
+                    <p class="movie-description">William Cage (Tom Cruise), an officer who has never seen combat, is assigned to a suicide mission. Killed within moments, Cage finds himself thrown into a time loop, in which he relives the same brutal fight -- and his death -- over and over again.</p>
+                    
+                </div>  
         </div>
 
-        <div class="search-bar-container">
-            <img src="./../images/home-images/search.png" class="search-img"/>
-            <input type="text" class="search-bar"/>
+        <div class="small-poster">
+            <div>
+                <img src="../images/home-images/edge-of-tomorrow.jpeg" class="small-movie-poster" onclick="moviePoster1()"/>
+            </div>
+            <div>
+                <img src="../images/home-images/bahubali.png" class="small-movie-poster" onclick="moviePoster2()" />
+            </div>
+            <div>
+                <img src="../images/home-images/intersteller.png" class="small-movie-poster"  onclick="moviePoster3()"/>
+            </div>
+
+            <button type="button" class="view-more-button"> View more </button>
         </div>
 
     </div>
+
+    <script>
+        function moviePoster1(){
+            const bigMoviePoster = document.getElementById('movieBigPoster');
+            bigMoviePoster.src = "../images/home-images/edge-of-tomorrow.jpeg";    
+        }
+        function moviePoster2(){
+            const bigMoviePoster = document.getElementById('movieBigPoster');
+            bigMoviePoster.src = "../images/home-images/bahubali.png";    
+        }
+        function moviePoster3(){
+            const bigMoviePoster = document.getElementById('movieBigPoster');
+            bigMoviePoster.src = "../images/home-images/intersteller.png";   
+        } 
+
+    </script>
+
+    <script src="https://kit.fontawesome.com/6ead3ba372.js" crossorigin="anonymous"></script>
 </body>
 </html>
