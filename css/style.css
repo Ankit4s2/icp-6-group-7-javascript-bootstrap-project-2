@@ -41,6 +41,10 @@ body{
 
 }
 /* Navbar css-code begin*/
+.navbar-container{
+    position:fix;
+
+}
 .logo{
     height:100px;
     margin-left: -10px;
@@ -107,7 +111,7 @@ body{
 }
 /* navbar css code end*/
 .explore{
-    color:black;
+    color:white;
     font-size: 20px;
     height:60px;
     width:220px;
@@ -125,4 +129,47 @@ body{
 }
 .explore:hover{
     box-shadow: 0 0 10px #eee;
+}
+.cards-container{
+   border: 2px solid #880360;
+   height:600px;
+   width:1400;
+   margin:40px 20px;
+   border-radius: 10px;
+   display:flex;
+   justify-content:space-around;
+}
+.card{
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:20px 40px;
+
+   }
+.front-card-img{
+    height: 300px;
+    border-radius: 25px;
+    width: 300px;
+    box-shadow:0 0 5px 3px gray;
+}
+.text{
+    text-align: center;
+    font-size: 16px;
+}
+
+.cards{
+    height: 400px;
+    width: 300px;
+    background-image: linear-gradient(to right,#e70952  0%, #b61a87  58%, #85035e  100%);
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    height:
+    
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease;
+    box-shadow: 4px 8px 20px 0px gray ;
 }
