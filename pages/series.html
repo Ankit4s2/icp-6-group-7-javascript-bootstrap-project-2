@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Series</title>
+    <link rel="stylesheet" href="../css/series.css">
 </head>
 <body>
-    <h1>This is series page</h1>
-</body>
-</html>
+    <div class="navbar">
+        <img src="../images/index-images/logo1.png" class="logo">
+       <div class="menu-sec">
+            <button class="nav-btn">Home</button>
+            <button class="nav-btn">Movies</button>
+            <button class="nav-btn">TV shows</button>
+            <button class="nav-btn"> Sports</button>
+            <button class="nav-btn">Guide</button>
+            
+        </div>
+        <input type="text" placeholder="Search movies,Tv shows" class="search">
+        <div class="login-btn">
+            <button class="login">Login</button>
+            <button class="login">Sign Up</button>
+        </div>
+        </div>
+
+        <div class="header">
+            <img id="bkgd" style="display: none;">
+            <img src="../images/boss.png" id="p1">
+            <img src="../images/coffee.png" id="p2">
+        </div><br>
+        <button class="explore" onclick="fun()">Explore Now</button><br><br><br>
+        <div class="banner" id="blk">
+            <div class="prt1">
+                <img id="pic">
+                <div class="prt2">
+                    <div>
+                        <fieldset>
+                            <legend>
+                                <h1 id="hd" style="font-size:40px;"></h1>
+                            </legend>
+                            <h4 style="font-size:30px;text-decoration:underline;">SUMMARY</h4>
+                            <p id="dis" style="font-size:20px;"></p>
+                        </fieldset>
+                    </div>
+                    <img src="../images/khatron.png"/>
+                </div>
+            </div>
+        </div>
+        <div class="cards-container">
+            <div class="card">
+                <img src="../images/Anupama.png" onclick="show(1)">
+                <img src="../images/Ghum_Hai_Kisikey_Pyaar_Meiin.png" onclick="show(2)">
+                <img src="../images/titli.png" onclick="show(3)">
+                <img src="../images/imli.png" onclick="show(4)">
+            </div><br>
+            <div class="card">
+                <img src="../images/Chahatein.png" onclick="show(5)">
+                <img src="../images/Doriyaa.png" onclick="show(6)">
+                <img src="../images/Siya ke Ram.png" onclick="show(7)">
+                <img src="../images/Show.png" onclick="show(8)">
+            </div>
+        </div>
+    </body>
+    </html>
