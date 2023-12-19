@@ -1,8 +1,9 @@
-
 body{
     background-color:black;
     padding:0;
     margin:0;
+    color:white;
+    text-decoration: none;
 }
 .logo{
     height:100px;
@@ -121,7 +122,7 @@ body{
     display: none;
 }
 .prt1 img {
-    height: 600px;
+    height: 560px;
     width: 50%;
     align-items: left;
     box-shadow: 0 0 10px rgba(248, 246, 246, 0.964);
@@ -145,14 +146,14 @@ body{
     display: flex;
     position: absolute;
     left: 76%;
-    top: 105%;
+    top:105%;
+
 }
 fieldset{
     margin-top: 20px;
-    padding: 20px;
+    padding: 15px;
     margin-left: 20px;
     border-radius: 5px;
-    width: 500px;
+    width: 360px;
     height:400px;
 }
-</style>
