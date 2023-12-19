@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index page</title>
+    <title>Movie Sparker</title>
     <link rel="stylesheet" href="./css/style.css">
     <style>
         .poster{
@@ -21,23 +21,27 @@
     
 </head>
 <body>
+    <div class="navbar-container">
     <div class="navbar">
         <img src="./images/index-images/logo1.png" class="logo">
        <div class="menu-sec">
             <button class="nav-btn">Home</button>
             <button class="nav-btn">Movies</button>
             <button class="nav-btn">TV shows</button>
-            <button class="nav-btn"> Sports</button>
+            <a href="./pages/sports.html"><button class="nav-btn"> Sports</button></a>
             <button class="nav-btn">Guide</button>
             
         </div>
         <input type="text" placeholder="Search movies,Tv shows" class="search">
         <div class="login-btn">
-            <button class="login">Login</button>
-            <button class="login">Sign Up</button>
-
+            <a href="./pages/login.html"><button class="login">Login</button></a>
+            <a href="./pages/signup.html"><button class="login">Sign Up</button></a>
+            
         </div>
+    
+
     </div>
+</div>
 
     <div class="header">
         <div class="poster"></div>
@@ -48,8 +52,17 @@
         <a href="./pages/home.html"><button class="explore">Explore Now</button></a>
     </div>
     <div class="cards-container">
-        <div class=" card">
-            <img src="">
+        <div class=" cards">
+            <img src="./images/index-images/movie.jpg" class="front-card-img">
+            <h6 class="text">Your favorite movies, just a click away.</h6>
+        </div>
+        <div class=" cards">
+            <img src="./images/index-images/children.jpg" class="front-card-img">
+            <h6 class="text">Dive into a world of wonder and laughter!</h6>
+        </div>
+        <div class=" cards">
+            <img src="./images/index-images/tv.jpg" class="front-card-img">
+            <h6 class="text">Your favourite tv shows anytime & anywheregit pull</h6>
         </div>
     </div>
     
