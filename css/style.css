@@ -58,7 +58,7 @@ body{
     width:300px;
     background-color: black;
     position: absolute;
-    right:600px;
+    right:500px;
     top:20px;
 
 }
@@ -131,10 +131,10 @@ body{
     box-shadow: 0 0 10px #eee;
 }
 .cards-container{
-   border: 2px solid #880360;
-   height:600px;
+   border: 2px solid black;
+   height:460px;
    width:1400;
-   margin:40px 20px;
+   margin:40px 30px;
    border-radius: 10px;
    display:flex;
    justify-content:space-around;
@@ -159,7 +159,7 @@ body{
 }
 
 .cards{
-    height: 400px;
+    height: 300px;
     width: 300px;
     background-image: linear-gradient(to right,#e70952  0%, #b61a87  58%, #85035e  100%);
     padding: 10px;

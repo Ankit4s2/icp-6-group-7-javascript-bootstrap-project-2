@@ -11,8 +11,10 @@
     height:600px;
     width:1350;
     background-image:url('./images/index-images/poster2.jpg'),linear-gradient(rgba(1,1,1,1.4),rgba(1,1,1,1.4));
-    opacity:25%;
+    opacity:35%;
     box-shadow: 10 10 10 white;
+    background-size: cover;
+    background-repeat: none;
     
 }
 
@@ -25,11 +27,13 @@
     <div class="navbar">
         <img src="./images/index-images/logo1.png" class="logo">
        <div class="menu-sec">
-            <button class="nav-btn">Home</button>
-            <button class="nav-btn">Movies</button>
-            <button class="nav-btn">TV shows</button>
+            <a href="./pages/home.html"><button class="nav-btn">Home</button></a>
+            <a href="./pages/movies.html"><button class="nav-btn">Movies</button></a>
+            <a href="./pages/series.html"><button class="nav-btn">TV shows</button></a>
             <a href="./pages/sports.html"><button class="nav-btn"> Sports</button></a>
-            <button class="nav-btn">Guide</button>
+            <a href="./pages/children.html"><button class="nav-btn">Children</button></a>
+            <a href="./pages/guide.html"> <button class="nav-btn">Guide</button></a>
+           
             
         </div>
         <input type="text" placeholder="Search movies,Tv shows" class="search">
@@ -62,7 +66,21 @@
         </div>
         <div class=" cards">
             <img src="./images/index-images/tv.jpg" class="front-card-img">
-            <h6 class="text">Your favourite tv shows anytime & anywheregit pull</h6>
+            <h6 class="text">Your favourite tv shows anytime & anywhere</h6>
+        </div>
+    </div>
+    <div class="cards-container">
+        <div class=" cards">
+            <img src="./images/index-images/movie.jpg" class="front-card-img">
+            <h6 class="text">Your favorite movies, just a click away.</h6>
+        </div>
+        <div class=" cards">
+            <img src="./images/index-images/children.jpg" class="front-card-img">
+            <h6 class="text">Dive into a world of wonder and laughter!</h6>
+        </div>
+        <div class=" cards">
+            <img src="./images/index-images/tv.jpg" class="front-card-img">
+            <h6 class="text">Your favourite tv shows anytime & anywhere</h6>
         </div>
     </div>
     
