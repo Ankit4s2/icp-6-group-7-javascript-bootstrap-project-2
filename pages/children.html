@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +12,11 @@
         height: 420px;
         display: flex;
     }
+
     .header img {
-        width: 100%;
+        width: 1000px;
     }
+
     .explore {
         color: black;
         font-size: 20px;
@@ -29,10 +32,12 @@
         transition: 0.5s;
         font-weight: bold;
     }
+
     .explore:hover {
         box-shadow: 0 0 10px #eee;
     }
-    .cards-container,
+
+    .container,
     .banner {
         direction: ltr;
         margin-top: 20px;
@@ -44,30 +49,42 @@
         width: 1435px;
         height: 650px;
     }
-    .card img {
+
+    .crd img {
         height: 300px;
         width: 300px;
         border-radius: 5%;
         box-shadow: 0 0 10px rgba(248, 246, 246, 0.833);
         margin: 0 20px 0 35px;
     }
-    .card {
+
+    .crd {
         margin-top: 20px;
         display: flex;
     }
+
+    .crd img:hover {
+        transform: scale(1.1);
+        transition: 0.4s ease;
+        box-shadow: 4px 8px 20px 0px gray;
+    }
+
     .banner {
         height: 600px;
         display: none;
     }
+
     .prt1 img {
         height: 600px;
         width: 50%;
         align-items: left;
         box-shadow: 0 0 10px rgba(248, 246, 246, 0.964);
     }
+
     .prt1 {
         display: flex;
     }
+
     .prt2 {
         margin-top: 20px;
         padding: 20px;
@@ -77,6 +94,7 @@
         width: 1435px;
         height: 500px;
     }
+
     .prt2 img {
         height: 400px;
         width: 300px;
@@ -86,15 +104,17 @@
         left: 76%;
         top: 105%;
     }
-    fieldset{
+
+    fieldset {
         margin-top: 20px;
         padding: 20px;
         margin-left: 20px;
         border-radius: 5px;
         width: 500px;
-        height:400px;
+        height: 400px;
     }
 </style>
+
 <body>
     <div class="navbar">
         <img src="../images/index-images/logo1.png" class="logo">
@@ -103,6 +123,7 @@
             <button class="nav-btn">Movies</button>
             <button class="nav-btn">TV shows</button>
             <button class="nav-btn"> Sports</button>
+            <button class="nav-btn">Children</button>
             <button class="nav-btn">Guide</button>
         </div>
         <input type="text" placeholder="Search movies,Tv shows" class="search">
@@ -134,14 +155,14 @@
             </div>
         </div>
     </div>
-    <div class="cards-container">
-        <div class="card">
+    <div class="container">
+        <div class="crd">
             <img src="../images/children-img/img4.jpg" onclick="show(1)">
             <img src="../images/children-img/img5.jpg" onclick="show(2)">
             <img src="../images/children-img/img6.webp" onclick="show(3)">
             <img src="../images/children-img/img7.jpg" onclick="show(4)">
         </div><br>
-        <div class="card">
+        <div class="crd">
             <img src="../images/children-img/img8.jpeg" onclick="show(5)">
             <img src="../images/children-img/img9.webp" onclick="show(6)">
             <img src="../images/children-img/img10.webp" onclick="show(7)">
@@ -150,4 +171,5 @@
     </div>
     <script src="../javascript/children.js"></script>
 </body>
+
 </html>
