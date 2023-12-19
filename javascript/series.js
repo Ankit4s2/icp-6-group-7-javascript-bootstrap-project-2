@@ -42,7 +42,7 @@ function show(arg) {
         imageElement.src = imageUrl;
         document.getElementById("blk").style.display="block";
         document.getElementById("hd").innerHTML="ANUPAMA";
-        document.getElementById("dis").innerHTML="Anupamaa Shah, a selfless Gujarati homemaker in Ahmedabad, is aloof to her own identity and obligated to be in service of her family. Anupamaa and the family are incognizant of her husband Vanraj's extra-marital affair with Kavya Gandhi, his colleague.";
+        document.getElementById("dis").innerHTML="Anupamaa Shah, a selfless Gujarati homemaker in Ahmedabad, is aloof to her own identity and obligated to be in service of her family.";
 
     }
     if (arg ===2) {
@@ -60,7 +60,7 @@ function show(arg) {
         imageElement.src = imageUrl;
         document.getElementById("blk").style.display="block";
         document.getElementById("hd").innerHTML="TITLI";
-        document.getElementById("dis").innerHTML="The Star Plus show, 'Titli,' has been keeping its viewers engaged with its intriguing storyline, led by Avinash Mishra and Neha Solanki. In the ongoing plot, Titli has been unraveling the reasons behind Garv's persistent anger issues, working diligently to help him. It has been revealed that Garv's unresolved trauma and anger stem from his inability to save his brother, Chiku, who tragically passed away.";
+        document.getElementById("dis").innerHTML="The Star Plus show, 'Titli,' has been keeping its viewers engaged with its intriguing storyline, led by Avinash Mishra and Neha Solanki. In the ongoing plot, Titli has been unraveling the reasons behind Garv's persistent anger issues, working diligently to help him.";
     }
     if (arg ===4) {
         var imageElement = document.getElementById("pic");;
