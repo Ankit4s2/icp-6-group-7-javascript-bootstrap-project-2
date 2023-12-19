@@ -47,7 +47,8 @@
         margin: 10px;
         padding: 5px;
         font-size: 30px; 
-        color: white;  
+        color: white; 
+        cursor: pointer; 
     }
     .movie-description{
         font-size: 20px;
@@ -63,6 +64,7 @@
     .small-poster{
         height: 300px;
         width: 450px;
+        display: fixed;
     }
     .small-movie-poster{
         height: 200px;
@@ -71,6 +73,12 @@
         border: 2px solid #880360;
         border-radius: 10px;
         cursor: pointer;
+    }
+    .small-movie-poster:hover{
+        height: 220px;
+        width: 450px;
+        margin: 10px;
+        transition: 0.4s;
     }
     .view-more-button{
         background-color:#ea0a51;
@@ -82,7 +90,7 @@
         width: 250px;
         margin: 10px;
         padding: 5px;
-        margin-left: 120px;
+        margin-left: 110px;
         cursor: pointer;
     }
     .view-more-button:hover{
@@ -97,11 +105,11 @@
     <div class="navbar">
         <img src="../images/index-images/logo1.png" class="logo">
        <div class="menu-sec">
-            <button class="nav-btn">Home</button>
-            <button class="nav-btn">Movies</button>
-            <button class="nav-btn">TV shows</button>
-            <button class="nav-btn">Sports</button>
-            <button class="nav-btn">Guide</button>
+        <button class="nav-btn" href="Home.html">Home</button>
+        <button class="nav-btn" href="movies.html">Movies</button>
+        <button class="nav-btn" href="series.html" >TV shows</button>
+        <button class="nav-btn" href="sports.html">Sports</button>
+        <button class="nav-btn" href="guide.html">Guide</button>
             
         </div>
         <input type="text" placeholder="Search movies,Tv shows" class="search">
@@ -122,54 +130,67 @@
 
                 <div class="movie-description-container">
                     <div class="title">
-                        <h1>Edge Of Tomorrow</h1>
+                        <h1 id="movieTitle">Edge Of Tomorrow</h1>
                         <div id="movieRatings">
-                            98% match &nbsp 2014 &nbsp Action/Sci-fi &nbsp 1h53min
+                            •98% match •2014 •Action/Sci-fi •1h53min
                         </div>
                     </div>
                     
                     <div class="icons-container">
-                        <i class="fa-regular fa-thumbs-up" id="icons"></i>
-                        <i class="fa-regular fa-thumbs-down" id="icons"></i>
-                        <i class="fa-solid fa-plus" id="icons"></i> 
+                        <i class="fa-regular fa-thumbs-up" id="icons" id="font-icon" onclick="likeButton()"></i>
+                        <i class="fa-regular fa-thumbs-down" id="icons" onclick="dislikeButton()"></i>
+                        <i class="fa-solid fa-plus" id="icons" onclick="addToWatchlista()"></i> 
                         <h5 style="color:#fff; margin-left:-20px;"> Watchlist </h5>
                     </div>
                     
-                    <p class="movie-description">William Cage (Tom Cruise), an officer who has never seen combat, is assigned to a suicide mission. Killed within moments, Cage finds himself thrown into a time loop, in which he relives the same brutal fight -- and his death -- over and over again.</p>
+                    <p class="movie-description" id="movieDescription"> •William Cage (Tom Cruise), an officer who has never seen combat, is assigned to a suicide mission. Killed within moments, Cage finds himself thrown into a time loop, in which he relives the same brutal fight -- and his death -- over and over again.</p>
                     
                 </div>  
         </div>
 
         <div class="small-poster">
             <div>
-                <img src="../images/home-images/edge-of-tomorrow.jpeg" class="small-movie-poster" onclick="moviePoster1()"/>
+                <img src="../images/home-images/edge-of-tomorrow.jpeg" class="small-movie-poster" onclick="moviePoster('edge-of-tomorrow')"/>
             </div>
             <div>
-                <img src="../images/home-images/bahubali.png" class="small-movie-poster" onclick="moviePoster2()" />
+                <img src="../images/home-images/bahubali.png" class="small-movie-poster" onclick="moviePoster('bahubali')" />
             </div>
             <div>
-                <img src="../images/home-images/intersteller.png" class="small-movie-poster"  onclick="moviePoster3()"/>
+                <img src="../images/home-images/intersteller.png" class="small-movie-poster"  onclick="moviePoster('intersteller')"/>
             </div>
 
-            <button type="button" class="view-more-button"> View more </button>
+           <a href="movies.html"><button type="button" class="view-more-button"> View more </button></a>
         </div>
 
-    </div>
+    </div><hr/>
 
     <script>
-        function moviePoster1(){
+        function moviePoster(movie){
             const bigMoviePoster = document.getElementById('movieBigPoster');
-            bigMoviePoster.src = "../images/home-images/edge-of-tomorrow.jpeg";    
-        }
-        function moviePoster2(){
-            const bigMoviePoster = document.getElementById('movieBigPoster');
-            bigMoviePoster.src = "../images/home-images/bahubali.png";    
-        }
-        function moviePoster3(){
-            const bigMoviePoster = document.getElementById('movieBigPoster');
-            bigMoviePoster.src = "../images/home-images/intersteller.png";   
-        } 
+            const titleOfMovie = document.getElementById('movieTitle');
+            const ratingsOfMovie = document.getElementById('movieRatings');
+            const descriptionOfMovie = document.getElementById('movieDescription');
 
+            if(movie == 'edge-of-tomorrow' ){
+                bigMoviePoster.src = "../images/home-images/edge-of-tomorrow.jpeg"; 
+                titleOfMovie.innerText = 'Edge Of Tomorrow';
+                ratingsOfMovie.innerText = '•98% match •2014 •Action/Sci-fi •1h53min';
+                descriptionOfMovie.innerText ='•William Cage (Tom Cruise), an officer who has never seen combat, is assigned to a suicide mission. Killed within moments, Cage finds himself thrown into a time loop, in which he relives the same brutal fight -- and his death -- over and over again.';
+
+            }else if(movie == 'bahubali'){
+                bigMoviePoster.src = "../images/home-images/bahubali.png";
+                titleOfMovie.innerText = 'Bahubali';
+                ratingsOfMovie.innerText = '•95% match •2015 •Action/Fantacy •2h38min';
+                descriptionOfMovie.innerText ='•In the kingdom of Mahishmati, Shivudu falls in love with a young warrior woman. While trying to woo her, he learns about the conflict-ridden past of his family and his true legacy.';
+            }else if(movie == 'intersteller'){
+                bigMoviePoster.src = "../images/home-images/intersteller.png";
+                titleOfMovie.innerText = 'Intersteller';
+                ratingsOfMovie.innerText = '•97% match •2014 •Sci-fi/Adventure •2h49min';
+                descriptionOfMovie.innerText ='•When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.';
+            }else{
+                console.log("not applicable");
+            }
+        }
     </script>
 
     <script src="https://kit.fontawesome.com/6ead3ba372.js" crossorigin="anonymous"></script>
