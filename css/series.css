@@ -1,0 +1,158 @@
+
+body{
+    background-color:black;
+    padding:0;
+    margin:0;
+}
+.logo{
+    height:100px;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+.search{
+    border: 2px solid white;
+    color:white;
+    border-radius: 5px;
+    height: 30px;
+    width:300px;
+    background-color: black;
+    position: absolute;
+    right:600px;
+    top:20px;
+
+}
+.search:hover{
+    border:2px solid #880360;
+}
+.navbar{
+    margin:5px 10px;
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-sec{
+    position: absolute;
+    left:150px;
+    top:25px;
+}
+.nav-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    padding:10px;
+    font-size: 16px;
+    cursor:pointer;
+
+}
+
+.login{
+    font-weight: bold;
+    color:white;
+    background-color:#e311a4;
+    height: 40px;
+    width:120px;
+    border:2px solid black;
+    border-radius: 10px;
+    cursor:pointer;
+    
+}
+.login:hover{
+    background-color: #880360;
+}
+.login-btn{
+    position: absolute;
+    right:60px;
+    top:20px;
+}
+.nav-btn:hover{
+    color:#ea0a51;
+
+}
+.header {
+    height: 420px;
+    display: flex;
+}
+.header img {
+    width: 100%;
+}
+.explore {
+    color: black;
+    font-size: 20px;
+    height: 60px;
+    width: 220px;
+    border-radius: 15px;
+    position: absolute;
+    top: 550px;
+    left: 630px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #e70952 0%, #b61a87 58%, #85035e 100%);
+    padding: 15px 35px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.explore:hover {
+    box-shadow: 0 0 10px #eee;
+}
+.cards-container,
+.banner {
+    direction: ltr;
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 1px solid #880360;
+    box-shadow: 0 0 10px rgba(248, 246, 246, 0.1);
+    width: 1435px;
+    height: 650px;
+}
+.card img {
+    height: 300px;
+    width: 300px;
+    border-radius: 5%;
+    box-shadow: 0 0 10px rgba(248, 246, 246, 0.833);
+    margin: 0 20px 0 35px;
+}
+.card {
+    margin-top: 20px;
+    display: flex;
+}
+.banner {
+    height: 600px;
+    display: none;
+}
+.prt1 img {
+    height: 600px;
+    width: 50%;
+    align-items: left;
+    box-shadow: 0 0 10px rgba(248, 246, 246, 0.964);
+}
+.prt1 {
+    display: flex;
+}
+.prt2 {
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 3px solid #880360;
+    width: 1435px;
+    height: 500px;
+}
+.prt2 img {
+    height: 400px;
+    width: 300px;
+    box-shadow: 0 0 0 0;
+    display: flex;
+    position: absolute;
+    left: 76%;
+    top: 105%;
+}
+fieldset{
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    width: 500px;
+    height:400px;
+}
+</style>
