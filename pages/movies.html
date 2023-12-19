@@ -3,120 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Movies</title>
+    <title>movies-page</title>
+    <link rel="stylesheet" href="../css/sports.css">
 </head>
-<style>
-    .header {
-        height: 420px;
-        display: flex;
-    }
-    .header img {
-        width: 100%;
-    }
-    .explore {
-        color: black;
-        font-size: 20px;
-        height: 60px;
-        width: 220px;
-        border-radius: 15px;
-        position: absolute;
-        top: 550px;
-        left: 630px;
-        cursor: pointer;
-        background-image: linear-gradient(to right, #e70952 0%, #b61a87 58%, #85035e 100%);
-        padding: 15px 35px;
-        transition: 0.5s;
-        font-weight: bold;
-    }
-    .explore:hover {
-        box-shadow: 0 0 10px #eee;
-    }
-    .cards-container,
-    .banner {
-        direction: ltr;
-        margin-top: 20px;
-        padding: 20px;
-        margin-left: 20px;
-        border-radius: 5px;
-        border: 1px solid #880360;
-        box-shadow: 0 0 10px rgba(248, 246, 246, 0.1);
-        width: 1435px;
-        height: 650px;
-    }
-    .card img {
-        height: 300px;
-        width: 300px;
-        border-radius: 5%;
-        box-shadow: 0 0 10px rgba(248, 246, 246, 0.833);
-        margin: 0 20px 0 35px;
-    }
-    .card {
-        margin-top: 20px;
-        display: flex;
-    }
-    .banner {
-        height: 600px;
-        display: none;
-    }
-    .prt1 img {
-        height: 600px;
-        width: 50%;
-        align-items: left;
-        box-shadow: 0 0 10px rgba(248, 246, 246, 0.964);
-    }
-    .prt1 {
-        display: flex;
-    }
-    .prt2 {
-        margin-top: 20px;
-        padding: 20px;
-        margin-left: 20px;
-        border-radius: 5px;
-        border: 3px solid #880360;
-        width: 1435px;
-        height: 500px;
-    }
-    .prt2 img {
-        height: 400px;
-        width: 300px;
-        box-shadow: 0 0 0 0;
-        display: flex;
-        position: absolute;
-        left: 76%;
-        top: 105%;
-    }
-    fieldset{
-        margin-top: 20px;
-        padding: 20px;
-        margin-left: 20px;
-        border-radius: 5px;
-        width: 500px;
-        height:400px;
-    }
-</style>
 <body>
+   
+<div class="navbar-container">
     <div class="navbar">
         <img src="../images/index-images/logo1.png" class="logo">
-        <div class="menu-sec">
+       <div class="menu-sec">
             <button class="nav-btn">Home</button>
             <button class="nav-btn">Movies</button>
             <button class="nav-btn">TV shows</button>
             <button class="nav-btn"> Sports</button>
             <button class="nav-btn">Guide</button>
+            
         </div>
         <input type="text" placeholder="Search movies,Tv shows" class="search">
         <div class="login-btn">
             <button class="login">Login</button>
             <button class="login">Sign Up</button>
         </div>
+    
+
     </div>
-    <div class="header">
-        <img id="bkgd" style="display: none;">
-        <img src="../images/movies-images/animalposter.jpg" id="p1">
-        <img src="../images/movies-images/sam-bahadur-img.jpg" id="p2">
-    </div><br>
-    <button class="explore" onclick="fun()">Explore Now</button><br><br><br>
+</div>
+<h2 class="heading">Recent Released Movies </h2>
+<div class="poster-container">
+        <img src="../images/movies-images/animalposter.jpg" class="sports-poster" id="switch">
+       
+    </div>
+    <button type="botton" class="switch-img" onclick="switchimg()">View more<img src="../images/sports-images/arrow.png" class="arrow"></button>
+
     <div class="banner" id="blk">
         <div class="prt1">
             <img id="pic">
@@ -126,28 +44,46 @@
                         <legend>
                             <h1 id="hd" style="font-size:40px;"></h1>
                         </legend>
-                        <h4 style="font-size:30px;text-decoration:underline;">SUMMARY</h4>
+                        <h4 style="font-size:30px;text-decoration:underline;">Details</h4>
                         <p id="dis" style="font-size:20px;"></p>
                     </fieldset>
                 </div>
-                <img src="../images/movies-images/animalposter.jpg">
+                <img src="../images/sports-images/cartoon.png" style="margin-top: 95px;">
             </div>
         </div>
     </div>
-    <div class="cards-container">
-        <div class="card">
-            <img src="../images/movies-images/img-1.jpg" onclick="show(1)">
-            <img src="../images/movies-images/img-2.jpg" onclick="show(2)">
-            <img src="../images/movies-images/img-3.jpg" onclick="show(3)">
-            <img src="../images/movies-images/img-4.jpg" onclick="show(4)">
-        </div><br>
-        <div class="card">
-            <img src="../images/movies-images/img-5.jpg" onclick="show(5)">
-            <img src="../images/movies-images/img-6.jpg" onclick="show(6)">
-            <img src="../images/movies-images/img-7.jpg" onclick="show(7)">
-            <img src="../images/movies-images/img-8.jpg" onclick="show(8)">
+    <div class="posters-container">
+        <div class="cards">
+             <img src="../images/movies-images/img-1.jpg" class="card-img"  onclick="show(1)">
         </div>
+        <div class="cards">
+            <img src="../images/movies-images/img-2.jpg" class="card-img"  onclick="show(2)">
+       </div>
+       <div class="cards">
+        <img src="../images/movies-images/img-3.jpg" class="card-img"  onclick="show(3)">
+   </div>
+   <div class="cards">
+    <img src="../images/movies-images/img-4.jpg" class="card-img"  onclick="show(4)">
+</div>
     </div>
-    <script src="../javascript/children.js"></script>
+    <div class="posters-container">
+        <div class="cards">
+             <img src="../images/movies-images/img-5.jpg" class="card-img" onclick="show(5)">
+        </div>
+        <div class="cards">
+            <img src="../images/movies-images/img-6.jpg" class="card-img" onclick="show(6)">
+       </div>
+       <div class="cards">
+        <img src="../images/movies-images/img-7.jpg" class="card-img" onclick="show(7)">
+   </div>
+   <div class="cards">
+    <img src="../images/movies-images/img-8.jpg" class="card-img" onclick="show(8)">
+</div>
+    </div>
+    
+<script src="../javascript/movies.js">
+    
+</script>
+
 </body>
 </html>
