@@ -6,8 +6,45 @@
     <title>Home</title>
 <link rel="stylesheet" href="../css/home-page.css"/>
 <style>
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        height: 160px;
+    }
+    .links-container{
+        background-color: aliceblue;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        height: 130px;
+        width: 100px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .links{
+        padding: 2px;
+    }
+    .footer-logo-container{
+        background-color: aliceblue;
+        margin: auto;
+    }
     .footer-logo{
         height: 100px;
+        padding: 10px;
+    }
+    .media-img-container{
+        position: relative;
+        background-color: aliceblue;
+        margin-top: auto;
+        margin-bottom: auto;
+        right: 50px;
+        
+    }
+    .social-media-img{
+        height: 20px;
+        padding: 5px;
+        margin: 5px;
+       
     }
 </style>
 </head>
@@ -211,7 +248,26 @@
     </div><hr/>
 
     <div class="footer">
-        <img src="../images/index-images/logo1.png " class="footer-logo"/>
+        <div class="links-container">
+            <a href="home.html"><span class="links">Home</span></a>
+            <a href="movies.html" ><span class="links">Movies</span></a>
+            <a href="series.html"><span class="links">TV Series</span></a>
+            <a href="sports.html"><span class="links">Sports</span></a>
+            <a href="children.html"><span class="links">Children</span></a>
+            <a href="guide.html"><span class="links">Guide</span></a>
+        </div>
+
+        <div class="footer-logo-container">
+            <img src="../images/index-images/logo1.png " class="footer-logo"/>
+        </div>
+
+        <div class="media-img-container">
+            <img src="../images/home-images/facebook.png" class="social-media-img"/>
+            <img src="../images/home-images/instagram.png" class="social-media-img"/>
+            <img src="../images/home-images/twitter.png" class="social-media-img"/>
+        </div>
+
+      
     </div>
     
     <script src="../javascript/home.js"></script>
