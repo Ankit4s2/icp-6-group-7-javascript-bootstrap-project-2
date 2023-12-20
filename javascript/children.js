@@ -95,7 +95,7 @@ function show(arg) {
         document.getElementById("dis").innerHTML="Teen Titans Go! is an animated series that follows the adventures of the young Titans: Beast Boy, Robin, Cyborg, Raven and Starfire. They reside in Jump City when they are not saving the world while living together as teenagers without adults who disrupt the young Titans.";
     }
     if (arg ===8) {
-        var imageElement = document.getElementById("pic");;
+        var imageElement = document.getElementById("pic");
         var imageUrl = "../images/children-img/img11.webp";
         imageElement.src = imageUrl;
         document.getElementById("blk").style.display="block";

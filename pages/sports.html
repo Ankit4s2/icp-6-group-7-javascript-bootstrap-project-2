@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sports-page</title>
+    <link rel="stylesheet" href="../css/sports.css">
+</head>
+<body>
+   
+<div class="navbar-container">
+    <div class="navbar">
+        <img src="../images/index-images/logo1.png" class="logo">
+       <div class="menu-sec">
+        <a href="Home.html"><button class="nav-btn" >Home</button></a>
+        <a href="movies.html"><button class="nav-btn" >Movies</button></a>
+        <a href="series.html"><button class="nav-btn" >TV shows</button></a>
+        <a href="sports.html"><button class="nav-btn">Sports</button></a>
+        <a href="guide.html"><button class="nav-btn">Guide</button></a>
+            
+        </div>
+        <input type="text" placeholder="Search movies,Tv shows" class="search">
+        <div class="login-btn">
+            <button class="login">Login</button>
+            <button class="login">Sign Up</button>
+        </div>
+    
+
+    </div>
+</div>
+<h2 class="heading">Recent Updates in Sports</h2>
+<div class="poster-container">
+        <img src="../images/sports-images/one.jpeg" class="sports-poster" id="switch">
+        <img src="../images/sports-images/two.jpeg" class="sports-poster" id="switch">
+    </div>
+    <button type="botton" class="switch-img" onclick="switchimg()">View more<img src="../images/sports-images/arrow.png" class="arrow"></button>
+
+    <div class="banner" id="blk">
+        <div class="prt1">
+            <img id="pic">
+            <div class="prt2">
+                <div>
+                    <fieldset>
+                        <legend>
+                            <h1 id="hd" style="font-size:40px;"></h1>
+                        </legend>
+                        <h4 style="font-size:30px;text-decoration:underline;" class="details">Details</h4>
+                        <p id="dis" style="font-size:20px;" class="dis"></p>
+                    </fieldset>
+                </div>
+                <img src="../images/sports-images/cartoon.png" style="margin-top: 95px;">
+            </div>
+        </div>
+    </div>
+    <div class="posters-container">
+        <div class="cards">
+             <img src="../images/sports-images/csk.jpg" class="card-img"  onclick="show(1)">
+        </div>
+        <div class="cards">
+            <img src="../images/sports-images/ipl.jpeg" class="card-img"  onclick="show(2)">
+       </div>
+       <div class="cards">
+        <img src="../images/sports-images/Li3.jpg" class="card-img"  onclick="show(3)">
+   </div>
+   <div class="cards">
+    <img src="../images/sports-images/L4.jpg" class="card-img"  onclick="show(4)">
+</div>
+    </div>
+    <div class="posters-container">
+        <div class="cards">
+             <img src="../images/sports-images/L5.jpg" class="card-img">
+        </div>
+        <div class="cards">
+            <img src="../images/sports-images/L6.jpg" class="card-img">
+       </div>
+       <div class="cards">
+        <img src="../images/sports-images/L7.jpg" class="card-img">
+   </div>
+   <div class="cards">
+    <img src="../images/sports-images/L8.jpg" class="card-img">
+</div>
+    </div>
+    
+<script src="../javascript/sports.js">
+    
+</script>
+
+</body>
+</html>

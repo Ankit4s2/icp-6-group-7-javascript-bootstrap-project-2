@@ -42,7 +42,7 @@ function show(arg) {
         imageElement.src = imageUrl;
         document.getElementById("blk").style.display="block";
         document.getElementById("hd").innerHTML="ANUPAMA";
-        document.getElementById("dis").innerHTML="Anupamaa Shah, a selfless Gujarati homemaker in Ahmedabad, is aloof to her own identity and obligated to be in service of her family. Anupamaa and the family are incognizant of her husband Vanraj's extra-marital affair with Kavya Gandhi, his colleague.";
+        document.getElementById("dis").innerHTML="Anupamaa Shah, a selfless Gujarati homemaker in Ahmedabad, is aloof to her own identity and obligated to be in service of her family.";
 
     }
     if (arg ===2) {
@@ -60,7 +60,7 @@ function show(arg) {
         imageElement.src = imageUrl;
         document.getElementById("blk").style.display="block";
         document.getElementById("hd").innerHTML="TITLI";
-        document.getElementById("dis").innerHTML="The Star Plus show, 'Titli,' has been keeping its viewers engaged with its intriguing storyline, led by Avinash Mishra and Neha Solanki. In the ongoing plot, Titli has been unraveling the reasons behind Garv's persistent anger issues, working diligently to help him. It has been revealed that Garv's unresolved trauma and anger stem from his inability to save his brother, Chiku, who tragically passed away.";
+        document.getElementById("dis").innerHTML="The Star Plus show, 'Titli,' has been keeping its viewers engaged with its intriguing storyline, led by Avinash Mishra and Neha Solanki. In the ongoing plot, Titli has been unraveling the reasons behind Garv's persistent anger issues, working diligently to help him.";
     }
     if (arg ===4) {
         var imageElement = document.getElementById("pic");;
@@ -88,11 +88,11 @@ function show(arg) {
     }
     if (arg ===7) {
         var imageElement = document.getElementById("pic");;
-        var imageUrl = "../images/Siya ke Ram";
+        var imageUrl = "../images/Siya ke Ram.png";
         imageElement.src = imageUrl;
         document.getElementById("blk").style.display="block";
         document.getElementById("hd").innerHTML="SIYA KE RAM";
-        document.getElementById("dis").innerHTML="Siya Ke Ram ( transl. Sita's Ram) is an Indian TV series on Star Plus produced by Nikhil Sinha under the banner of Triangle Film Company. This show presents the epic Ramayana, the story of Rama and Devi Sita from Sita's perspective. A classic epic Ramayana, the story of Ram and Sita, retold through the eyes of the righteous, beautiful and brave Sita";
+        document.getElementById("dis").innerHTML="Siya Ke Ram ( transl. Sita's Ram) is an Indian TV series on Star Plus produced by Nikhil Sinha under the banner of Triangle Film Company. This show presents the epic Ramayana, the story of Rama and Devi Sita from Sita's perspective. A classic epic Ramayana, the story of Ram and Sita, retold through the eyes of the righteous, beautiful and brave Sita.";
     }
     if (arg ===8) {
         var imageElement = document.getElementById("pic");;
@@ -100,6 +100,6 @@ function show(arg) {
         imageElement.src = imageUrl;
         document.getElementById("blk").style.display="block";
         document.getElementById("hd").innerHTML="RAVIVAAR WITH STAR PARIVAAR";
-        document.getElementById("dis").innerHTML="A musical game show with different families from your favourite Plus shows. The teams compete against each other in weekly face-offs to win the cash prize!";
+        document.getElementById("dis").innerHTML="A musical game show with different families from your favourite Plus shows. The teams compete against each other in weekly face-offs to win the cash prize!.";
     }
 }
