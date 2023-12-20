@@ -13,6 +13,10 @@ else if(cng==3){
     element.src="../images/rishta.png";
 
 }
+else if(cng==4){
+    element.src="../images/boss.png";
+
+}
 }
 function show(arg) {
     if (arg ===1) {
