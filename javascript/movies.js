@@ -11,12 +11,7 @@ else if(cng==2){
 }
 else if(cng==3){
     element.src="../images/movies-images/sam-bahadur-img.jpg";
-}
-else if(cng==4){
-    element.src="../images/movies-images/L3.jpg";
-}
-else{
-    element.src="../images/movies-images/L4.jpg";
+
 }
 }
 function show(arg) {
