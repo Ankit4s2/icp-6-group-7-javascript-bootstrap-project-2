@@ -20,7 +20,7 @@
 
     .search {
         position: absolute;
-        left:650px;
+        left: 650px;
     }
 
     .header img {
@@ -123,6 +123,7 @@
         width: 500px;
         height: 400px;
     }
+
     @media only screen and (min-width:300px) and (max-width:430px) {
         .logo {
             height: 50px;
@@ -130,6 +131,7 @@
             margin-top: 1px;
             width: 90px;
         }
+
         .search {
             border: 1px solid white;
             color: white;
@@ -141,6 +143,7 @@
             left: 80px;
             top: 13px;
         }
+
         .navbar {
             margin: 5px 5px;
             display: flex;
@@ -149,12 +152,15 @@
             position: relative;
             flex-wrap: wrap;
         }
+
         .menu-sec {
             position: absolute;
             left: 27px;
             top: 60px;
         }
+
         .nav-btn {
+            background: none;
             color: white;
             background-color: none;
             font-size: 20px;
@@ -162,6 +168,7 @@
             position: relative;
             left: 40px;
         }
+
         .login {
             font-weight: bold;
             height: 24px;
@@ -169,11 +176,13 @@
             font-size: 15px;
             cursor: pointer;
         }
+
         .login-btn {
             position: absolute;
             top: 12px;
             right: -110px;
         }
+
         .header {
             border: 1px solid #85035e;
             height: 200px;
@@ -181,14 +190,17 @@
             margin-top: 80px;
             margin-right: 100px;
         }
+
         .p2 {
             display: none;
         }
+
         .header img {
             height: 190px;
             width: 380px;
             box-shadow: 2px 4px 12px 0px gray;
         }
+
         .explore {
             font-size: 12px;
             border-radius: 7px;
@@ -199,6 +211,7 @@
             left: 168px;
             top: 355px;
         }
+
         .banner {
             border: 2px solid #85035e;
             height: 400px;
@@ -208,6 +221,7 @@
             padding: 10px;
 
         }
+
         .container {
             border: 2px solid #85035e;
             height: 640px;
@@ -216,6 +230,7 @@
             display: flex;
             margin-right: 5px;
         }
+
         .crd {
             border-radius: 20px;
             height: 140px;
@@ -225,21 +240,25 @@
             display: flex;
             flex-direction: column;
         }
+
         .crd img {
             height: 140px;
             width: 140px;
             border-radius: 20px;
             margin: 10px 10px 10px 10px;
         }
+
         .screen {
             width: 390;
             display: flex;
             justify-content: space-evenly;
         }
+
         .banner {
             height: 200px;
             display: none;
         }
+
         .prt1 img {
             height: 170px;
             width: 20%;
@@ -247,43 +266,135 @@
             margin-left: 9px;
             box-shadow: 0 0 10px rgba(248, 246, 246, 0.964);
         }
+
         .prt2 {
             margin-top: 20px;
             padding: 10px;
             margin-left: 10px;
-            width:50%;
+            width: 50%;
             height: 200px;
             border: 0;
         }
+
         .prt2 img {
             display: none;
         }
+
         fieldset {
-        padding:1px;
-        margin-left:2px;
-        border-radius:1px;
-        width:270px;
-        height:20px;
-    }
-        legend{
-            font-size:xx-small;
+            padding: 1px;
+            margin-left: 2px;
+            border-radius: 1px;
+            width: 270px;
+            height: 20px;
         }
+
+        legend {
+            font-size: xx-small;
+        }
+
         fieldset h4 {
             display: none;
         }
+
         fieldset p {
             display: none;
         }
+    }
+
+    @media screen and (min-width:440px) and (max-width:690px) {
+        .logo {
+            height: 190px;
         }
+
+        .search {
+            border: 2px solid white;
+            height:70px;
+            width: 500px;
+            position: absolute;
+            left: 270px;
+            top:35px;
+        }
+
+        .navbar {
+            margin: 5px 10px;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+        }
+
+        .menu-sec {
+            position: absolute;
+            left:50px;
+            top: 130px;
+            display:flex;
+            direction: row;
+        }
+
+        .nav-btn {
+            border: none;
+            padding:20px 50px;
+            font-size:40px;
+        }
+        .login {
+            position:relative;
+            left:1100px;
+            top: 12px;
+            font-size:40px;
+            font-weight: bold;
+            height:80px;
+            width:200px;
+            cursor: pointer;
+            margin-right: 12px;
+
+        }
+        .login-btn{
+            display: flex;
+            flex-direction: row;
+        }
+        .header {
+            border: 1px solid #85035e;
+            height: 600px;
+            width: 730px;
+            margin-top:120px;
+            margin-right: 100px;
+        }
+        .explore {
+            font-size:30px;
+            border-radius: 7px;
+            height:80px;
+            width: 200px;
+            padding: 3px;
+            position: absolute;
+            left:640px;
+            top:920px;
+        }
+        .container{
+            margin-top:40px;
+            height:750px;
+        }
+        .banner{
+            margin-top:40px;
+        }
+        .prt2 img{
+            position:absolute;
+            left:1150px;
+            top:1100px;
+        }
+        fieldset p{
+            font-size:40px;
+        }
+
+        
+    }
 </style>
 
 <body>
     <div class="navbar">
         <img src="../images/index-images/logo1.png" class="logo">
         <div class="menu-sec">
-            <a href="Home.html"><button class="nav-btn" >Home</button></a>
-            <a href="movies.html"><button class="nav-btn" >Movies</button></a>
-            <a href="series.html"><button class="nav-btn" >TV shows</button></a>
+            <a href="Home.html"><button class="nav-btn">Home</button></a>
+            <a href="movies.html"><button class="nav-btn">Movies</button></a>
+            <a href="series.html"><button class="nav-btn">TVshows</button></a>
             <a href="sports.html"><button class="nav-btn">Sports</button></a>
             <a href="children.html"><button class="nav-btn">Childrens</button></a>
             <a href="guide.html"><button class="nav-btn">Guide</button></a>
