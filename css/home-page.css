@@ -73,6 +73,7 @@ body{
 /* navbar css code end*/
 .category{
     margin: 10px;
+    color:#880360;
 }
 .category-title{
     text-align: center;
@@ -127,14 +128,21 @@ body{
     margin: 10px;
 }
 .small-poster{
-    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+    height: 800px;
     width: 450px;
-    display: fixed;
+    
 }
 .small-movie-poster{
     height: 200px;
     width: 430px;
     margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
     border: 2px solid #880360;
     border-radius: 10px;
     cursor: pointer;
@@ -144,6 +152,12 @@ body{
     width: 450px;
     margin: 10px;
     transition: 0.4s;
+}
+.view-more-button-container{
+    width: 450px;
+    cursor: pointer; 
+    position: relative;
+    bottom: 5px;
 }
 .view-more-button{
     background-color:#ea0a51;
@@ -155,12 +169,10 @@ body{
     width: 250px;
     margin: 10px;
     padding: 5px;
-    margin-left: 110px;
-    cursor: pointer;
+    margin-left: 100px;
 }
 .view-more-button:hover{
     color: #000;
-    background-color: white;
     border: 3px solid #ea0a51;
     transition: 0.5s;
 }
