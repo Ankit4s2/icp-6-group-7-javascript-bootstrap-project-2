@@ -15,6 +15,7 @@
             <button class="nav-btn">TV shows</button>
             <button class="nav-btn"> Sports</button>
             <button class="nav-btn">Guide</button>
+            <button class="nav-btn">Children</button>
             
         </div>
         <input type="text" placeholder="Search movies,Tv shows" class="search">
@@ -24,43 +25,62 @@
         </div>
         </div>
 
-        <div class="header">
-            <img id="bkgd" style="display: none;">
-            <img src="../images/boss.png" id="p1">
-           </div><br>
-        <button class="explore" onclick="fun()">VIEW MORE</button><br><br><br>
-        <div class="banner" id="blk">
-            <div class="prt1">
-                <img id="pic">
-                <div class="prt2">
-                    <div>
-                        <fieldset>
-                            <legend>
-                                <h1 id="hd" style="font-size:40px;"></h1>
-                            </legend>
-                            <h4 style="font-size:30px;text-decoration:underline;">SUMMARY</h4>
-                            <p id="dis" style="font-size:20px;"></p>
-                        </fieldset>
-                    </div>
-                <img src="../images/children-img/img12.jpg">
-                </div>
-            </div>
-        </div>
-        <div class="cards-container">
-            <div class="card">
-                <img src="../images/Anupama.png" onclick="show(1)">
-                <img src="../images/Ghum_Hai_Kisikey_Pyaar_Meiin.png" onclick="show(2)">
-                <img src="../images/titli.png" onclick="show(3)">
-                <img src="../images/imli.png" onclick="show(4)">
-            </div><br>
-            <div class="card">
-                <img src="../images/Chahatein.png" onclick="show(5)">
-                <img src="../images/Doriyaa.png" onclick="show(6)">
-                <img src="../images/Siya ke Ram.png" onclick="show(7)">
-                <img src="../images/Show.png" onclick="show(8)">
-            </div>
-        </div>
+        <h2 class="heading">Recent Released Show's </h2>
+<div class="poster-container">
+        <img src="../images/boss.png" class="sports-poster" id="switch">
+       
+    </div>
+    <button type="botton" class="switch-img" onclick="switchimg()">View more<img src="../images/sports-images/arrow.png" class="arrow"></button>
 
-       <script src="../javascript/series.js"></script>
-    </body>
-    </html>
+    <div class="banner" id="blk">
+        <div class="prt1">
+            <img id="pic">
+            <div class="prt2">
+                <div>
+                    <fieldset>
+                        <legend>
+                            <h1 id="hd" style="font-size:40px;"></h1>
+                        </legend>
+                        <h4 style="font-size:30px;text-decoration:underline;">Details</h4>
+                        <p id="dis" style="font-size:20px;"></p>
+                    </fieldset>
+                </div>
+                <img src="../images/sports-images/cartoon.png" style="margin-top: 95px;">
+            </div>
+        </div>
+    </div>
+    <div class="posters-container">
+        <div class="cards">
+             <img src="../images/Anupama.png" class="card-img"  onclick="show(1)">
+        </div>
+        <div class="cards">
+            <img src="../images/Ghum_Hai_Kisikey_Pyaar_Meiin.png" class="card-img"  onclick="show(2)">
+       </div>
+       <div class="cards">
+        <img src="../images/titli.png" class="card-img"  onclick="show(3)">
+   </div>
+   <div class="cards">
+    <img src="../images/imli.png" class="card-img"  onclick="show(4)">
+</div>
+    </div>
+    <div class="posters-container">
+        <div class="cards">
+             <img src="../images/Chahatein.png" class="card-img" onclick="show(5)">
+        </div>
+        <div class="cards">
+            <img src="../images/Doriyaa.png" class="card-img" onclick="show(6)">
+       </div>
+       <div class="cards">
+        <img src="../images/Siya ke Ram.png" class="card-img" onclick="show(7)">
+   </div>
+   <div class="cards">
+    <img src="../images/Show.png" class="card-img" onclick="show(8)">
+</div>
+    </div>
+    
+<script src="../javascript/series.js">
+    
+</script>
+
+</body>
+</html>

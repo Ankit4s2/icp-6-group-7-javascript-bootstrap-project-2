@@ -1,39 +1,18 @@
-function fun(){
-    const min=1;
-    const max=5;
-    var num= Math.floor(Math.random()*(max-min))+min;
-    if (num===1) {
-        var imageElement = document.getElementById("bkgd");
-        var imageUrl = "../images/coffee.png";
-        imageElement.src = imageUrl;
-        document.getElementById("bkgd").style.display="block";
-        document.getElementById("p1").style.display="none";
-       
-    }
-    if (num ===2) {
-        var imageElement = document.getElementById("bkgd");
-        var imageUrl = "../images/kapil.png";
-        imageElement.src = imageUrl;
-        document.getElementById("bkgd").style.display="block";
-        document.getElementById("p1").style.display="none";
-       
-    }
-    if (num ===3) {
-        var imageElement = document.getElementById("bkgd");
-        var imageUrl = "../images/khatra.png";
-        imageElement.src = imageUrl;
-        document.getElementById("bkgd").style.display="block";
-        document.getElementById("p1").style.display="none";
-        
-    }
-    if (num ===4) {
-        var imageElement = document.getElementById("bkgd");
-        var imageUrl = "../images/Dance.png";
-        imageElement.src = imageUrl;
-        document.getElementById("bkgd").style.display="none";
-        document.getElementById("p1").style.display="block";
-       
-    }
+const min=1;
+const max=6;
+function switchimg(){
+const cng= Math.floor(Math.random()*(max-min))+min;
+const element=document.getElementById("switch");
+if(cng==1){
+    element.src="../images/coffee.png";
+}
+else if(cng==2){
+    element.src="../images/kapil.png";
+}
+else if(cng==3){
+    element.src="../images/khatra.png";
+
+}
 }
 function show(arg) {
     if (arg ===1) {

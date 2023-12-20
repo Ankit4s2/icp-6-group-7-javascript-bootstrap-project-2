@@ -1,9 +1,12 @@
 body{
-    background-color:black;
-    padding:0;
-    margin:0;
-    color:white;
+    background-color: black;
     text-decoration: none;
+    color:white;
+    margin:0;
+    padding:0;
+}
+.heading{
+    text-align: center;
 }
 .logo{
     height:100px;
@@ -25,6 +28,7 @@ body{
 .search:hover{
     border:2px solid #880360;
 }
+
 .navbar{
     margin:5px 10px;
     display:flex;
@@ -69,59 +73,103 @@ body{
     color:#ea0a51;
 
 }
-.header {
-    height: 420px;
-    display: flex;
+.poster-container{
+    border:2px solid  #85035e;
+    height:550px;
+    width:1400px;
+    display:flex;
+    margin:5px ;
+    position:relative;
+
 }
-.header img {
-    width: 100%;
+
+.sports-poster{
+    height:540px;
+    width:1400px;
+    display:block;
+    margin:5px ;
+    box-shadow: 4px 8px 20px 0px gray ;
+    border-radius: 20px;
 }
-.explore {
-    color: black;
+
+.sports-poster:hover{
+    transform: scale(1.01);
+    transition: 0.2s ease;
+    box-shadow: 4px 4px 4px 4px gray ;}
+.switch-img{
+    color:white;
     font-size: 20px;
-    height: 60px;
-    width: 220px;
-    border-radius: 15px;
-    position: absolute;
-    top: 550px;
-    left: 630px;
-    cursor: pointer;
-    background-image: linear-gradient(to right, #e70952 0%, #b61a87 58%, #85035e 100%);
-    padding: 15px 35px;
-    transition: 0.5s;
     font-weight: bold;
+    border:2px solid black;
+    border-radius:10px;
+    height:50px;
+    width:200px;
+    display:bolck;
+    margin-left:650px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding:10px;
+    background-image: linear-gradient(to right,#e70952  0%, #b61a87  58%, #85035e  100%);
+    position: relative;
+    cursor:pointer;
+    
+
 }
-.explore:hover {
+.switch-img:hover{
     box-shadow: 0 0 10px #eee;
 }
-.cards-container,
+.arrow{
+    position: absolute;
+    top:12px;
+    left:160px
+}
+.display-block{
+    border:2px solid  #85035e;
+    height:400px;
+    width:1100px;
+    display:block;
+    margin:5px auto;
+    padding:20px;
 
-.banner {
-    direction: ltr;
-    margin-top: 20px;
-    padding: 20px;
-    margin-left: 20px;
-    border-radius: 5px;
-    border: 1px solid #880360;
-    box-shadow: 0 0 10px rgba(248, 246, 246, 0.1);
-    width: 1435px;
-    height: 650px;
 }
-.card img {
-    height: 300px;
-    width: 300px;
-    border-radius: 5%;
-    box-shadow: 0 0 10px rgba(248, 246, 246, 0.833);
-    margin: 0 20px 0 35px;
+.posters-container{
+    border:2px solid  #85035e;
+    height:320px;
+    width:1360px;
+    display:block;
+    margin:5px auto;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    
+
 }
-.card {
-    margin-top: 20px;
-    display: flex;
+
+.cards{
+    border:2px solid black;
+    border-radius:20px;
+    height:310px;
+    width:320px;
+    box-shadow: 3px 4px 10px 0px gray ;
 }
-.card:hover{
+.cards:hover{
     transform: scale(1.02);
     transition: 0.3s ease;
     box-shadow: 4px 8px 20px 0px gray ;
+}
+    
+
+.card-img{
+    height:310px;
+    width:320px;
+    border-radius:20px;
+
+
+}
+.screen{
+    width:1360;
+    display: flex;
+    justify-content: space-evenly;
 }
 .banner {
     height: 600px;
@@ -131,6 +179,7 @@ body{
     height: 560px;
     width: 50%;
     align-items: left;
+    margin-left: 10px;
     box-shadow: 0 0 10px rgba(248, 246, 246, 0.964);
 }
 .prt1 {
@@ -152,8 +201,7 @@ body{
     display: flex;
     position: absolute;
     left: 76%;
-    top:105%;
-
+    top: 105%;
 }
 fieldset{
     margin-top: 20px;
@@ -163,3 +211,4 @@ fieldset{
     width: 360px;
     height:400px;
 }
+
