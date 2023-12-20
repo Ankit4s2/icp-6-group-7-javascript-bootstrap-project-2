@@ -6,98 +6,8 @@
     <title>Home</title>
 <link rel="stylesheet" href="../css/home-page.css"/>
 <style>
-    .category{
-        margin: 10px;
-    }
-    .category-title{
-        text-align: center;
-    }
-    .movie-poster-container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin: 20px; 
-    }
-    .movie-poster{
-        border: 2px solid #880360;
-        border-radius: 10px;
-        height: 550px;
-        width: 900px;
-        margin: 10px;
-    }
-    .movie-description-container{
-        width: 900px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: left;
-    }
-    .title{
-        width: 300px;
-        margin: 5px;
-    }
-    .icons-container{
-        display: flex;
-        justify-content:space-around;
-        color: #000;
-        margin:10px;
-        margin-top: 15px;
-        width: 300px;
-    }
-    #icons{
-        margin: 10px;
-        padding: 5px;
-        font-size: 30px; 
-        color: white; 
-        cursor: pointer; 
-    }
-    .movie-description{
-        font-size: 20px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    .movie-poster-container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        padding: 10px;
-        margin: 10px;
-    }
-    .small-poster{
-        height: 300px;
-        width: 450px;
-        display: fixed;
-    }
-    .small-movie-poster{
-        height: 200px;
-        width: 430px;
-        margin: 15px;
-        border: 2px solid #880360;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-    .small-movie-poster:hover{
-        height: 220px;
-        width: 450px;
-        margin: 10px;
-        transition: 0.4s;
-    }
-    .view-more-button{
-        background-color:#ea0a51;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        border: 2px solid white;
-        border-radius: 20px;
-        height: 35px;
-        width: 250px;
-        margin: 10px;
-        padding: 5px;
-        margin-left: 110px;
-        cursor: pointer;
-    }
-    .view-more-button:hover{
-        color: #000;
-        background-color: white;
-        border: 3px solid #ea0a51;
-        transition: 0.5s;
+    .footer-logo{
+        height: 100px;
     }
 </style>
 </head>
@@ -114,8 +24,8 @@
         </div>
         <input type="text" placeholder="Search movies,Tv shows" class="search">
         <div class="login-btn">
-            <button class="login">Login</button>
-            <button class="login">Sign Up</button>
+            <a href="login.html"><button class="login">Login</button></a>
+            <a href="signup.html"><button class="login">Sign Up</button></a>
         </div>
     </div><hr/>
 
@@ -178,7 +88,7 @@
                     <div class="title">
                         <h1 id="showTitle">Edge Of Tomorrow</h1>
                         <div id="showRatings">
-                            •98% match •2014 •Action/Sci-fi •1h53min
+                            •66% liked •2012 •Crime •7 seasons
                         </div>
                     </div>
                     
@@ -189,7 +99,7 @@
                         <h5 style="color:#fff; margin-left:-20px;"> Watchlist </h5>
                     </div>
                     
-                    <p class="movie-description" id="movieDescription"> •William Cage (Tom Cruise), an officer who has never seen combat, is assigned to a suicide mission. Killed within moments, Cage finds himself thrown into a time loop, in which he relives the same brutal fight -- and his death -- over and over again.</p>
+                    <p class="movie-description" id="showDescription"> •William Cage (Tom Cruise), an officer who has never seen combat, is assigned to a suicide mission. Killed within moments, Cage finds himself thrown into a time loop, in which he relives the same brutal fight -- and his death -- over and over again.</p>
                     
                 </div>  
         </div>
@@ -205,7 +115,7 @@
                 <img src="../images/home-images/ye-rishta-kya.jpeg" class="small-movie-poster"  onclick="showPoster('ye-rishta-kya')"/>
             </div>
 
-           <a href="movies.html"><button type="button" class="view-more-button"> View more </button></a>
+           <a href="series.html"><button type="button" class="view-more-button"> View more </button></a>
         </div>
 
     </div><hr/>
@@ -217,12 +127,12 @@
     <div class="movie-poster-container">
 
         <div class="big-poster">   
-                <img src="../images/home-images/edge-of-tomorrow.jpeg" class="movie-poster" id="movieBigPoster"/>
+                <img src="../images/home-images/ipl.jpeg" class="movie-poster" id="sportsBigPoster"/>
 
                 <div class="movie-description-container">
                     <div class="title">
-                        <h1 id="movieTitle">Edge Of Tomorrow</h1>
-                        <div id="movieRatings">
+                        <h1 id="sportsTitle">Edge Of Tomorrow</h1>
+                        <div id="sportsRatings">
                             •98% match •2014 •Action/Sci-fi •1h53min
                         </div>
                     </div>
@@ -234,23 +144,23 @@
                         <h5 style="color:#fff; margin-left:-20px;"> Watchlist </h5>
                     </div>
                     
-                    <p class="movie-description" id="movieDescription"> •William Cage (Tom Cruise), an officer who has never seen combat, is assigned to a suicide mission. Killed within moments, Cage finds himself thrown into a time loop, in which he relives the same brutal fight -- and his death -- over and over again.</p>
+                    <p class="movie-description" id="sportsDescription"> •William Cage (Tom Cruise), an officer who has never seen combat, is assigned to a suicide mission. Killed within moments, Cage finds himself thrown into a time loop, in which he relives the same brutal fight -- and his death -- over and over again.</p>
                     
                 </div>  
         </div>
 
         <div class="small-poster">
             <div>
-                <img src="../images/home-images/edge-of-tomorrow.jpeg" class="small-movie-poster" onclick="moviePoster('edge-of-tomorrow')"/>
+                <img src="../images/home-images/ipl.jpeg" class="small-movie-poster" onclick="sportsPoster('ipl')"/>
             </div>
             <div>
-                <img src="../images/home-images/bahubali.png" class="small-movie-poster" onclick="moviePoster('bahubali')" />
+                <img src="../images/home-images/javelin.jpeg" class="small-movie-poster" onclick="sportsPoster('javelin')" />
             </div>
             <div>
-                <img src="../images/home-images/intersteller.png" class="small-movie-poster"  onclick="moviePoster('intersteller')"/>
+                <img src="../images/home-images/fifa.jpeg" class="small-movie-poster"  onclick="sportsPoster('fifa')"/>
             </div>
 
-           <a href="movies.html"><button type="button" class="view-more-button"> View more </button></a>
+           <a href="sports.html"><button type="button" class="view-more-button"> View more </button></a>
         </div>
 
     </div><hr/>
@@ -262,12 +172,12 @@
     <div class="movie-poster-container">
 
         <div class="big-poster">   
-                <img src="../images/home-images/edge-of-tomorrow.jpeg" class="movie-poster" id="movieBigPoster"/>
+                <img src="../images/home-images/croods.jpeg" class="movie-poster" id="cartoonBigPoster"/>
 
                 <div class="movie-description-container">
                     <div class="title">
-                        <h1 id="movieTitle">Edge Of Tomorrow</h1>
-                        <div id="movieRatings">
+                        <h1 id="cartoonTitle">Edge Of Tomorrow</h1>
+                        <div id="cartoonRatings">
                             •98% match •2014 •Action/Sci-fi •1h53min
                         </div>
                     </div>
@@ -279,27 +189,31 @@
                         <h5 style="color:#fff; margin-left:-20px;"> Watchlist </h5>
                     </div>
                     
-                    <p class="movie-description" id="movieDescription"> •William Cage (Tom Cruise), an officer who has never seen combat, is assigned to a suicide mission. Killed within moments, Cage finds himself thrown into a time loop, in which he relives the same brutal fight -- and his death -- over and over again.</p>
+                    <p class="movie-description" id="cartoonDescription"> •William Cage (Tom Cruise), an officer who has never seen combat, is assigned to a suicide mission. Killed within moments, Cage finds himself thrown into a time loop, in which he relives the same brutal fight -- and his death -- over and over again.</p>
                     
                 </div>  
         </div>
 
         <div class="small-poster">
             <div>
-                <img src="../images/home-images/edge-of-tomorrow.jpeg" class="small-movie-poster" onclick="moviePoster('edge-of-tomorrow')"/>
+                <img src="../images/home-images/croods.jpeg" class="small-movie-poster" onclick="cartoonPoster('croods')"/>
             </div>
             <div>
-                <img src="../images/home-images/bahubali.png" class="small-movie-poster" onclick="moviePoster('bahubali')" />
+                <img src="../images/home-images/despicable-me-2.jpg" class="small-movie-poster" onclick="cartoonPoster('despicable-me')" />
             </div>
             <div>
-                <img src="../images/home-images/intersteller.png" class="small-movie-poster"  onclick="moviePoster('intersteller')"/>
+                <img src="../images/home-images/inside-out.jpeg" class="small-movie-poster"  onclick="cartoonPoster('inside-out')"/>
             </div>
 
-           <a href="movies.html"><button type="button" class="view-more-button"> View more </button></a>
+           <a href="children.html"><button type="button" class="view-more-button"> View more </button></a>
         </div>
 
     </div><hr/>
 
+    <div class="footer">
+        <img src="../images/index-images/logo1.png " class="footer-logo"/>
+    </div>
+    
     <script>
         function moviePoster(movie){
             const bigMoviePoster = document.getElementById('movieBigPoster');
@@ -336,90 +250,75 @@
             if(tvShows == 'savdhan-india' ){
                 bigShowPoster.src = "../images/home-images/savdhan-india.jpeg"; 
                 titleOfShow.innerText = 'Savdhan India';
-                ratingsOfShow.innerText = '•98% match •2014 •Action/Sci-fi •1h53min';
-                descriptionOfShow.innerText ='•William Cage (Tom Cruise), an officer who has never seen combat, is assigned to a suicide mission. Killed within moments, Cage finds himself thrown into a time loop, in which he relives the same brutal fight -- and his death -- over and over again.';
+                ratingsOfShow.innerText = '•66% liked •2012 •Crime •7 seasons';
+                descriptionOfShow.innerText ='•The show deals with real-life crimes stories of murder, kidnapping, domestic violence, fraud, robbery, forgery, rape, sexual assault and other crimes.';
             }else if(tvShows == 'Aghori'){
                 bigShowPoster.src = "../images/home-images/Aghori.jpg";
                 titleOfShow.innerText = 'Aghori';
-                ratingsOfShow.innerText = '•95% match •2015 •Action/Fantacy •2h38min';
-                descriptionOfShow.innerText ='•In the kingdom of Mahishmati, Shivudu falls in love with a young warrior woman. While trying to woo her, he learns about the conflict-ridden past of his family and his true legacy.';
+                ratingsOfShow.innerText = '•92% liked •2019 •Thriller •1 season';
+                descriptionOfShow.innerText ='•When Advik falls in love with Kamakshi, Rudranath, the guru of Advik, asks him to get his lover to sacrifice her life for him, which will make Advik immortal.';
             }else if(tvShows == 'ye-rishta-kya'){
                 bigShowPoster.src = "../images/home-images/ye-rishta-kya.jpeg";
                 titleOfShow.innerText = 'Yeh Rishta Kya Kehlata Hai';
-                ratingsOfShow.innerText = '•97% match •2014 •Sci-fi/Adventure •2h49min';
-                descriptionOfShow.innerText ='•When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.';
+                ratingsOfShow.innerText = '•76% liked •2009 •Drama •68 seasons';
+                descriptionOfShow.innerText ="•Dr Abhimanyu, a misogamist, finds himself getting attracted to Akshara, Kartik and Naira's daughter. Things take a tricky turn when Akshara's half-sister, Arohi, falls in love with him.";
             }else{
                 console.log("not applicable");
             }
         }    
 
-        function moviePoster(movie){
-            const bigMoviePoster = document.getElementById('movieBigPoster');
-            const titleOfMovie = document.getElementById('movieTitle');
-            const ratingsOfMovie = document.getElementById('movieRatings');
-            const descriptionOfMovie = document.getElementById('movieDescription');
+        function sportsPoster(sports){
+            const bigSportsPoster = document.getElementById('sportsBigPoster');
+            const titleOfSports = document.getElementById('sportsTitle');
+            const ratingsOfSports = document.getElementById('sportsRatings');
+            const descriptionOfSports = document.getElementById('sportsDescription');
 
-            if(movie == 'edge-of-tomorrow' ){
-                bigMoviePoster.src = "../images/home-images/edge-of-tomorrow.jpeg"; 
-                titleOfMovie.innerText = 'Edge Of Tomorrow';
-                ratingsOfMovie.innerText = '•98% match •2014 •Action/Sci-fi •1h53min';
-                descriptionOfMovie.innerText ='•William Cage (Tom Cruise), an officer who has never seen combat, is assigned to a suicide mission. Killed within moments, Cage finds himself thrown into a time loop, in which he relives the same brutal fight -- and his death -- over and over again.';
-            }else if(movie == 'bahubali'){
-                bigMoviePoster.src = "../images/home-images/bahubali.png";
-                titleOfMovie.innerText = 'Bahubali';
-                ratingsOfMovie.innerText = '•95% match •2015 •Action/Fantacy •2h38min';
-                descriptionOfMovie.innerText ='•In the kingdom of Mahishmati, Shivudu falls in love with a young warrior woman. While trying to woo her, he learns about the conflict-ridden past of his family and his true legacy.';
-            }else if(movie == 'intersteller'){
-                bigMoviePoster.src = "../images/home-images/intersteller.png";
-                titleOfMovie.innerText = 'Intersteller';
-                ratingsOfMovie.innerText = '•97% match •2014 •Sci-fi/Adventure •2h49min';
-                descriptionOfMovie.innerText ='•When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.';
+            if(sports == 'ipl' ){
+                bigSportsPoster.src = "../images/home-images/ipl.jpeg"; 
+                titleOfSports.innerText = 'IPL';
+                ratingsOfSports.innerText = '•2008 ';
+                descriptionOfSports.innerText ="•The Indian Premier League is a men's Twenty20 cricket league that is annually held in India and contested by ten city-based franchise teams. The BCCI founded the league in 2007. The competition is usually held in summer between March and May every year.";
+            }else if(sports == 'javelin'){
+                bigSportsPoster.src = "../images/home-images/javelin.jpeg";
+                titleOfSports.innerText = 'Javelin';
+                ratingsOfSports.innerText = '•javelin throw';
+                descriptionOfSports.innerText ='•A javelin is a light spear designed primarily to be thrown, historically as a ranged weapon. Today, the javelin is predominantly used for sporting purposes such as the Javelin throw. The javelin is nearly always thrown by hand, unlike the sling, bow, and crossbow, which launch projectiles with the aid of a hand-held mechanism. However, devices do exist to assist the javelin thrower in achieving greater distances, such as spear-throwers or the amentum.';
+            }else if(sports == 'fifa'){
+                bigSportsPoster.src = "../images/home-images/fifa.jpeg";
+                titleOfSports.innerText = 'Fifa';
+                ratingsOfSports.innerText = '•FIFA •EAsports ';
+                descriptionOfSports.innerText ="•The Fédération internationale de football association (French for 'International Association Football Federation', abbreviated as FIFA and pronounced in English as /ˈfiːfə/) is the international governing body of association football, beach soccer, and futsal. ";
             }else{
                 console.log("not applicable");
             }
         }
 
-        function moviePoster(movie){
-            const bigMoviePoster = document.getElementById('movieBigPoster');
-            const titleOfMovie = document.getElementById('movieTitle');
-            const ratingsOfMovie = document.getElementById('movieRatings');
-            const descriptionOfMovie = document.getElementById('movieDescription');
+        function cartoonPoster(cartoon){
+            const bigCartoonPoster = document.getElementById('cartoonBigPoster');
+            const titleOfCartoon = document.getElementById('cartoonTitle');
+            const ratingsOfCartoon = document.getElementById('cartoonRatings');
+            const descriptionOfCartoon = document.getElementById('cartoonDescription');
 
-            if(movie == 'edge-of-tomorrow' ){
-                bigMoviePoster.src = "../images/home-images/edge-of-tomorrow.jpeg"; 
-                titleOfMovie.innerText = 'Edge Of Tomorrow';
-                ratingsOfMovie.innerText = '•98% match •2014 •Action/Sci-fi •1h53min';
-                descriptionOfMovie.innerText ='•William Cage (Tom Cruise), an officer who has never seen combat, is assigned to a suicide mission. Killed within moments, Cage finds himself thrown into a time loop, in which he relives the same brutal fight -- and his death -- over and over again.';
-            }else if(movie == 'bahubali'){
-                bigMoviePoster.src = "../images/home-images/bahubali.png";
-                titleOfMovie.innerText = 'Bahubali';
-                ratingsOfMovie.innerText = '•95% match •2015 •Action/Fantacy •2h38min';
-                descriptionOfMovie.innerText ='•In the kingdom of Mahishmati, Shivudu falls in love with a young warrior woman. While trying to woo her, he learns about the conflict-ridden past of his family and his true legacy.';
-            }else if(movie == 'intersteller'){
-                bigMoviePoster.src = "../images/home-images/intersteller.png";
-                titleOfMovie.innerText = 'Intersteller';
-                ratingsOfMovie.innerText = '•97% match •2014 •Sci-fi/Adventure •2h49min';
-                descriptionOfMovie.innerText ='•When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.';
+            if(cartoon == 'croods' ){
+                bigCartoonPoster.src = "../images/home-images/croods.jpeg"; 
+                titleOfCartoon.innerText = 'The Croods 2: A New Age';
+                ratingsOfCartoon.innerText = '•69% match •2020 •Adventure/Comedy •1h35min';
+                descriptionOfCartoon.innerText ='•The Croods is a 2013 American animated adventure comedy film produced by DreamWorks Animation and distributed by 20th Century Fox. The film was written and directed by Kirk DeMicco and Chris Sanders, and stars the voices of Nicolas Cage, Emma Stone, Ryan Reynolds, Catherine Keener, Clark Duke, and Cloris Leachman.';
+            }else if(cartoon == 'despicable-me'){
+                bigCartoonPoster.src = "../images/home-images/despicable-me-2.jpg";
+                titleOfCartoon.innerText = 'Despicable Me 2';
+                ratingsOfCartoon.innerText = '•73% match •2013 •Comedy/Family •1h38min';
+                descriptionOfCartoon.innerText ='•When a new criminal comes to town, the Anti-Villain League decides to hire Gru in order to fight him off. While Gru initially refuses, he eventually agrees after his aide goes back to his evil ways.';
+            }else if(cartoon == 'inside-out'){
+                bigCartoonPoster.src = "../images/home-images/inside-out.jpeg";
+                titleOfCartoon.innerText = 'Inside Out';
+                ratingsOfCartoon.innerText = '•97% match •2015 •Comedy/Fantacy •1h35min';
+                descriptionOfCartoon.innerText ='•Eleven-year-old Riley has moved to San Francisco, leaving behind her life in Minnesota. She and her five core emotions, Fear, Anger, Joy, Disgust and Sadness, struggle to cope with her new life.';
             }else{
                 console.log("not applicable");
             }
         }
 
-        function getTheOpinion(opinion){
-            const likedTheMovie = document.getElementById('liked');
-            const diskedTheMovie = document.getElementById('disliked');
-            const addedToWatchlist = document.getElementById('added-to-list');
-
-            if(opinion == liked){
-                likedTheMovie.innerHTML = '<i class="fa-solid fa-thumbs-up"></i>';
-            }else if(opinion == disliked){
-                dislikedTheMovie.innerHTML = '<i class="fa-solid fa-thumbs-down"></i>';
-            }else if(opinion == added){
-                addedToWatchlist.innerHTML ='<i class="fa-solid fa-check"></i>';
-            }else{
-                console.log("Not applicable");
-            }
-        }
     </script>
 
     <script src="https://kit.fontawesome.com/6ead3ba372.js" crossorigin="anonymous"></script>
