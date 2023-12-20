@@ -95,7 +95,8 @@ body{
 .sports-poster:hover{
     transform: scale(1.01);
     transition: 0.2s ease;
-    box-shadow: 4px 4px 4px 4px gray ;}
+    box-shadow: 4px 4px 4px 4px gray ;
+}
 .switch-img{
     color:white;
     font-size: 20px;
@@ -121,7 +122,7 @@ body{
 .arrow{
     position: absolute;
     top:12px;
-    left:160px
+    left:160px;
 }
 .display-block{
     border:2px solid  #85035e;
@@ -210,5 +211,286 @@ fieldset{
     border-radius: 5px;
     width: 360px;
     height:400px;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    height: 160px;
+}
+.links-container{
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+}
+.links{
+    padding: 2px;
+}
+.footer-logo-container{
+    background-color: aliceblue;
+    margin: auto;
+}
+.footer-logo{
+    height: 100px;
+    padding: 10px;
+}
+.media-img-container{
+    position: relative;
+    background-color: aliceblue;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: 50px;
+    
+}
+.social-media-img{
+    height: 20px;
+    padding: 5px;
+    margin: 5px;
+   
+}
+@media only screen and (min-width:300px) and (max-width:430px){
+    .logo{
+        height:50px;
+        margin-left: -10px;
+        margin-top: 1px;
+    }
+    .search{
+        border: 1px solid white;
+        color:white;
+        border-radius: 5px;
+        height: 15px;
+        width:160px;
+        background-color: black;
+        position: absolute;
+        right:125px;
+        top:13px;
+    
+    }
+    .navbar-container{
+    
+    }
+    .navbar{
+        margin:5px 10px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        flex-wrap: wrap;
+    }
+    .menu-sec{
+        position: absolute;
+        left:20px;
+        top:40px;
+    }
+    .nav-btn{
+        background-color: black;
+        color: white;
+        border: none;
+        padding:10px;
+        font-size: 13px;
+        cursor:pointer;
+    
+    }
+    
+    .login{
+        font-weight: bold;
+        height: 20px;
+        width:55px;
+        font-size: 10px;
+        cursor:pointer;    
+    }
+    .login-btn{
+        position: absolute;
+        right:4px;
+        top:12px;
+    }
+    .heading{
+        text-align: center;
+        font-size: 15px;
+        margin-top: 50px;
+
+}
+   .poster-container{
+    border:1px solid  #85035e;
+    height:200px;
+    width:390px;
+
+}
+
+   .sports-poster{
+    height:190px;
+    width:390px;
+    box-shadow: 2px 4px 12px 0px gray ;
+}
+   .switch-img{
+    font-size: 12px;
+    border-radius:7px;
+    height:25px;
+    width:80px;
+    margin-left:160px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    padding:3px;
+    position: relative;
+   }
+   .arrow{
+    position: absolute;
+    top:12px;
+    left:1300px;
+   }
+
+   .display-block{
+        border:2px solid  #85035e;
+        height:400px;
+        width:1100px;
+        display:block;
+        margin:5px auto;
+        padding:20px;
+    
+    }
+    .posters-container{
+        border:2px solid  #85035e;
+        height:auto;
+        width:370px;
+        margin:5px auto;
+        padding:20px;
+        display:flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        
+    
+    }
+    
+    .cards{
+        border:2px solid black;
+        border-radius:20px;
+        height:150px;
+        width:160px;
+        box-shadow: 3px 4px 10px 0px gray ;
+        margin: 10px;
+    }
+        
+    
+    .card-img{
+        height:150px;
+        width:160px;
+        border-radius:20px;
+    
+    
+    }
+    .screen{
+        width:390;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .banner {
+        height: 300px;
+        display: none;
+    }
+    .prt1 img {
+        height: 200px;
+        width: 50%;
+        align-items: left;
+        margin-left: 9px;
+        box-shadow: 0 0 10px rgba(248, 246, 246, 0.964);
+    }
+    .prt1 {
+        display: flex;
+    }
+    .prt2 {
+        margin-top: 20px;
+        padding: 20px;
+        margin-left: 20px;
+        border-radius: 5px;
+        border: 3px solid #880360;
+        width: 390px;
+        height: 200px;
+    }
+    .prt2 img {
+        height: 190px;
+        width: 110px;
+        box-shadow: 0 0 0 0;
+        display: flex;
+        position: absolute;
+        left: 40%;
+        top: 105%;
+    }
+    fieldset{
+        margin-top: 20px;
+        padding: 15px;
+        margin-left: 20px;
+        border-radius: 5px;
+        width:180px;
+        height:190px;
+    }
+    .details{
+        font-size:10px;
+        text-decoration:underline;
+    }
+    .dis{
+        font-size:4px;
+    }
+}
+@media screen and (min-width:440px) and (max-width:690px){
+
+
+    .logo{
+        height:70px;
+    }
+    .search{
+        border: 1px solid white;
+        height: 28px;
+        width:260px;
+        position: absolute;
+        right:270px;
+        top:13px;
+    
+    }
+    .navbar-container{
+    
+    }
+    .navbar{
+        margin:5px 10px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        flex-wrap: wrap;
+    }
+    .menu-sec{
+        position: absolute;
+        left:100px;
+        top:50px;
+    }
+    .nav-btn{
+        border: none;
+        padding:20px;
+        font-size: 16px;
+
+    
+    }
+    
+    .login{
+        font-weight: bold;
+        height: 30px;
+        width:80px;
+        font-size: 13px;
+        cursor:pointer;    
+    }
+    .login-btn{
+        position: absolute;
+        right:4px;
+        top:12px;
+    }
+    .heading{
+        text-align: center;
+        font-size: 15px;
+        margin-top: 50px;
+
+}
 }
 
