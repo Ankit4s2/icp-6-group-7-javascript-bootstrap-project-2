@@ -270,9 +270,7 @@ fieldset{
         top:13px;
     
     }
-    .navbar-container{
     
-    }
     .navbar{
         margin:5px 10px;
         display:flex;
@@ -436,9 +434,7 @@ fieldset{
     }
 }
 @media screen and (min-width:440px) and (max-width:690px){
-
-
-    .logo{
+  .logo{
         height:70px;
     }
     .search{
@@ -450,9 +446,7 @@ fieldset{
         top:13px;
     
     }
-    .navbar-container{
-    
-    }
+   
     .navbar{
         margin:5px 10px;
         display:flex;
