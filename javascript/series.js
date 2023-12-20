@@ -10,7 +10,7 @@ else if(cng==2){
     element.src="../images/kapil.png";
 }
 else if(cng==3){
-    element.src="../images/khatra.png";
+    element.src="../images/rishta.png";
 
 }
 }
