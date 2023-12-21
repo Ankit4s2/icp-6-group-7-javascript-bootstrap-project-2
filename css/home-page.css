@@ -32,6 +32,9 @@ body{
     justify-content: space-between;
     position: relative;
 }
+#navbar-btn{
+    color:#ea0a51;
+}
 .menu-sec{
     position: absolute;
     left:150px;
@@ -109,7 +112,21 @@ body{
     margin-top: 15px;
     width: 300px;
 }
-#icons{
+#icon1{
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px; 
+    color: white; 
+    cursor: pointer; 
+}
+#icon2{
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px; 
+    color: white; 
+    cursor: pointer; 
+}
+#icon3{
     margin: 10px;
     padding: 5px;
     font-size: 30px; 
@@ -138,9 +155,9 @@ body{
     
 }
 .small-movie-poster{
-    height: 200px;
-    width: 430px;
-    margin: 15px;
+    height: 220px;
+    width: 450px;
+    margin: 20px;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid #880360;
@@ -148,9 +165,9 @@ body{
     cursor: pointer;
 }
 .small-movie-poster:hover{
-    height: 220px;
-    width: 450px;
-    margin: 10px;
+    height: 230px;
+    width: 460px;
+    margin: 15px;
     transition: 0.4s;
 }
 .view-more-button-container{
@@ -162,6 +179,7 @@ body{
 .view-more-button{
     background-color:#ea0a51;
     color: white;
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     border: 2px solid white;
     border-radius: 20px;
@@ -174,5 +192,6 @@ body{
 .view-more-button:hover{
     color: #000;
     border: 3px solid #ea0a51;
+    background-color: #fff;
     transition: 0.5s;
 }
