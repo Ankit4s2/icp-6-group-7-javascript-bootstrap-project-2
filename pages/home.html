@@ -6,6 +6,7 @@
     <title>Home</title>
 <link rel="stylesheet" href="../css/home-page.css"/>
 <style>
+    /*footer css*/
     .footer{
         display: flex;
         flex-wrap: wrap;
@@ -38,8 +39,10 @@
         margin: 2px;
     }
     .footer-logo-container{
-        margin: auto;
-      
+        margin-left: 20px;
+        margin-right: 170px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
     .footer-logo{
         height: 100px;
@@ -51,7 +54,7 @@
         flex-direction: column;
         justify-content: start;
         padding-top: 50px;
-        margin-left: -40px;
+        margin-left: 70px;
     }
     .email{
         height: 20px;
@@ -82,12 +85,10 @@
         transition: 0.5s;
     }
     .media-img-container{
-        position: relative;
         display: block;
         justify-content: flex-end;
         margin-top: auto;
         margin-bottom: auto;
-        right: 50px; 
     }
     .social-media-img{
         height: 20px;
@@ -104,7 +105,7 @@
         right: 30px;
         border: 2px solid grey;
         border-radius: 30px;
-        opacity: 0.4;
+        opacity: 0.6;
     }
     .inpage-nav-btn-container:hover{
         opacity: 1;
@@ -113,7 +114,7 @@
     .inpage-nav-btn{
         height: 30px;
         padding: 10px;
-        opacity: 0.4;
+        opacity: 0.7;
     }
     .inpage-nav-btn:hover{
         opacity: 1;
@@ -122,7 +123,7 @@
 </style>
 </head>
 <body>
-   <div class="navbar">
+   <div class="navbar" id="top-nav">
         <img src="../images/index-images/logo1.png" class="logo">
        <div class="menu-sec">
             <a href="Home.html"><button class="nav-btn" id="navbar-btnz" >Home</button></a>
@@ -157,9 +158,9 @@
                     </div>
                     
                     <div class="icons-container">
-                        <i class="fa-regular fa-thumbs-up" id="icon1"  onclick="getTheOpinion('like')"></i>
-                        <i class="fa-regular fa-thumbs-down" id="icon2"  onclick="getTheOpinion('dislike')"></i>
-                        <i class="fa-solid fa-plus" id="icon3"  onclick="getTheOpinion('added')"></i> 
+                        <i class="fa-regular fa-thumbs-up" id="icons"></i>
+                        <i class="fa-regular fa-thumbs-down" id="icons"></i>
+                        <i class="fa-solid fa-plus" id="icons"></i> 
                         <h5 style="color:#fff; margin-left:-20px;"> Watchlist </h5>
                     </div>
                     
@@ -204,9 +205,9 @@
                     </div>
                     
                     <div class="icons-container">
-                        <i class="fa-regular fa-thumbs-up" id="icons" id="liked" onclick="getTheOpinion('like')"></i>
-                        <i class="fa-regular fa-thumbs-down" id="icons" id="disliked" onclick="getTheOpinion('dislike')" ></i>
-                        <i class="fa-solid fa-plus" id="icons" id="added-to-list" onclick="getTheOpinion('added')"></i> 
+                        <i class="fa-regular fa-thumbs-up" id="icons"></i>
+                        <i class="fa-regular fa-thumbs-down" id="icons"></i>
+                        <i class="fa-solid fa-plus" id="icons"></i> 
                         <h5 style="color:#fff; margin-left:-20px;"> Watchlist </h5>
                     </div>
                     
@@ -250,9 +251,9 @@
                     </div>
                     
                     <div class="icons-container">
-                        <i class="fa-regular fa-thumbs-up" id="icons" id="liked" onclick="getTheOpinion('like')"></i>
-                        <i class="fa-regular fa-thumbs-down" id="icons" id="disliked" onclick="getTheOpinion('dislike')" ></i>
-                        <i class="fa-solid fa-plus" id="icons" id="added-to-list" onclick="getTheOpinion('added')"></i> 
+                        <i class="fa-regular fa-thumbs-up" id="icons" ></i>
+                        <i class="fa-regular fa-thumbs-down" id="icons" ></i>
+                        <i class="fa-solid fa-plus" id="icons"></i> 
                         <h5 style="color:#fff; margin-left:-20px;"> Watchlist </h5>
                     </div>
                     
@@ -295,9 +296,9 @@
                     </div>
                     
                     <div class="icons-container">
-                        <i class="fa-regular fa-thumbs-up" id="icons" id="liked" onclick="getTheOpinion('like')"></i>
-                        <i class="fa-regular fa-thumbs-down" id="icons" id="disliked" onclick="getTheOpinion('dislike')" ></i>
-                        <i class="fa-solid fa-plus" id="icons" id="added-to-list" onclick="getTheOpinion('added')"></i> 
+                        <i class="fa-regular fa-thumbs-up" id="icons"></i>
+                        <i class="fa-regular fa-thumbs-down" id="icons"></i>
+                        <i class="fa-solid fa-plus" id="icons"></i> 
                         <h5 style="color:#fff; margin-left:-20px;"> Watchlist </h5>
                     </div>
                     
@@ -324,6 +325,11 @@
     </div><hr/>
 
     <div class="footer">
+
+        <div class="footer-logo-container">
+            <img src="../images/index-images/logo1.png " class="footer-logo"/>
+        </div>
+
         <div class="links-container">
             <h3> Links </h3>
             <a href="home.html"><h5 class="links">Home</h5></a>
@@ -349,10 +355,6 @@
             <h5 class="links">Help desk</h5>
         </div>
 
-        <div class="footer-logo-container">
-            <img src="../images/index-images/logo1.png " class="footer-logo"/>
-        </div>
-
         <div class="email-container">
             <span>Enter email to get notifications for latest release</span>
             <input type="email" placeholder="Enter E-mail" class="email"/>
@@ -376,7 +378,7 @@
     </div>
 
     <div class="inpage-nav-btn-container">
-        <img src="../images/home-images/up-chevron.png" class="inpage-nav-btn"/>
+        <a href="#top-nav"><img src="../images/home-images/up-chevron.png" class="inpage-nav-btn"/></a>
     </div>
 
     <script src="../javascript/home.js"></script>
