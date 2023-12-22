@@ -397,15 +397,21 @@ fieldset{
 }
    .poster-container{
     border:1px solid  #85035e;
-    height:200px;
-    width:390px;
+    height:550px;
+    width:1400px;
+    display:flex;
+    margin: 5px;
+    position: relative;
 
 }
 
    .sports-poster{
-    height:190px;
-    width:390px;
+    height:540;
+    width:1400px;
     box-shadow: 2px 4px 12px 0px gray ;
+    display: block;
+    margin: 5px;
+    border-radius: 20px;
 }
    .switch-img{
     font-size: 12px;
