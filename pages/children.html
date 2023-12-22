@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,25 @@
     <title>Children</title>
 </head>
 <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
     .header {
         height: 420px;
         display: flex;
     }
+
+    .search {
+        position: absolute;
+        left: 650px;
+    }
+
     .header img {
         width: 100%;
     }
+
     .explore {
         color: black;
         font-size: 20px;
@@ -29,10 +42,12 @@
         transition: 0.5s;
         font-weight: bold;
     }
+
     .explore:hover {
         box-shadow: 0 0 10px #eee;
     }
-    .cards-container,
+
+    .container,
     .banner {
         direction: ltr;
         margin-top: 20px;
@@ -44,30 +59,42 @@
         width: 1435px;
         height: 650px;
     }
-    .card img {
+
+    .crd img {
         height: 300px;
         width: 300px;
         border-radius: 5%;
         box-shadow: 0 0 10px rgba(248, 246, 246, 0.833);
         margin: 0 20px 0 35px;
     }
-    .card {
+
+    .crd {
         margin-top: 20px;
         display: flex;
     }
+
+    .crd img:hover {
+        transform: scale(1.1);
+        transition: 0.4s ease;
+        box-shadow: 4px 8px 20px 0px gray;
+    }
+
     .banner {
         height: 600px;
         display: none;
     }
+
     .prt1 img {
         height: 600px;
         width: 50%;
         align-items: left;
         box-shadow: 0 0 10px rgba(248, 246, 246, 0.964);
     }
+
     .prt1 {
         display: flex;
     }
+
     .prt2 {
         margin-top: 20px;
         padding: 20px;
@@ -77,6 +104,7 @@
         width: 1435px;
         height: 500px;
     }
+
     .prt2 img {
         height: 400px;
         width: 300px;
@@ -84,17 +112,291 @@
         display: flex;
         position: absolute;
         left: 76%;
-   
+        top: 105%;
+    }
+
+    fieldset {
+        margin-top: 20px;
+        padding: 20px;
+        margin-left: 20px;
+        border-radius: 5px;
+        width: 500px;
+        height: 400px;
+    }
+
+    @media only screen and (min-width:300px) and (max-width:430px) {
+        .logo {
+            height: 50px;
+            margin-left: -10px;
+            margin-top: 1px;
+            width: 90px;
+        }
+
+        .search {
+            border: 1px solid white;
+            color: white;
+            border-radius: 5px;
+            height: 20px;
+            width: 180px;
+            background-color: black;
+            position: absolute;
+            left: 80px;
+            top: 13px;
+        }
+
+        .navbar {
+            margin: 5px 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;
+            flex-wrap: wrap;
+        }
+
+        .menu-sec {
+            position: absolute;
+            left: 27px;
+            top: 60px;
+        }
+
+        .nav-btn {
+            background: none;
+            color: white;
+            background-color: none;
+            font-size: 20px;
+            padding: 2px 5px;
+            position: relative;
+            left: 40px;
+        }
+
+        .login {
+            font-weight: bold;
+            height: 24px;
+            width: 65px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .login-btn {
+            position: absolute;
+            top: 12px;
+            right: -110px;
+        }
+
+        .header {
+            border: 1px solid #85035e;
+            height: 200px;
+            width: 380px;
+            margin-top: 80px;
+            margin-right: 100px;
+        }
+
+        .p2 {
+            display: none;
+        }
+
+        .header img {
+            height: 190px;
+            width: 380px;
+            box-shadow: 2px 4px 12px 0px gray;
+        }
+
+        .explore {
+            font-size: 12px;
+            border-radius: 7px;
+            height: 40px;
+            width: 100px;
+            padding: 3px;
+            position: absolute;
+            left: 168px;
+            top: 355px;
+        }
+
+        .banner {
+            border: 2px solid #85035e;
+            height: 400px;
+            width: 380px;
+            display: block;
+            margin: 5px;
+            padding: 10px;
+
+        }
+
+        .container {
+            border: 2px solid #85035e;
+            height: 640px;
+            width: 350px;
+            padding: 10px;
+            display: flex;
+            margin-right: 5px;
+        }
+
+        .crd {
+            border-radius: 20px;
+            height: 140px;
+            width: 140px;
+            box-shadow: 0px 0px px 10px gray;
+            margin: 5px 10px 5px 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .crd img {
+            height: 140px;
+            width: 140px;
+            border-radius: 20px;
+            margin: 10px 10px 10px 10px;
+        }
+
+        .screen {
+            width: 390;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .banner {
+            height: 200px;
+            display: none;
+        }
+
+        .prt1 img {
+            height: 170px;
+            width: 20%;
+            align-items: left;
+            margin-left: 9px;
+            box-shadow: 0 0 10px rgba(248, 246, 246, 0.964);
+        }
+
+        .prt2 {
+            margin-top: 20px;
+            padding: 10px;
+            margin-left: 10px;
+            width: 50%;
+            height: 200px;
+            border: 0;
+        }
+
+        .prt2 img {
+            display: none;
+        }
+
+        fieldset {
+            padding: 1px;
+            margin-left: 2px;
+            border-radius: 1px;
+            width: 270px;
+            height: 20px;
+        }
+
+        legend {
+            font-size: xx-small;
+        }
+
+        fieldset h4 {
+            display: none;
+        }
+
+        fieldset p {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width:440px) and (max-width:690px) {
+        .logo {
+            height: 190px;
+        }
+
+        .search {
+            border: 2px solid white;
+            height:70px;
+            width: 500px;
+            position: absolute;
+            left: 270px;
+            top:35px;
+        }
+
+        .navbar {
+            margin: 5px 10px;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+        }
+
+        .menu-sec {
+            position: absolute;
+            left:50px;
+            top: 130px;
+            display:flex;
+            direction: row;
+        }
+
+        .nav-btn {
+            border: none;
+            padding:20px 50px;
+            font-size:40px;
+        }
+        .login {
+            position:relative;
+            left:1100px;
+            top: 12px;
+            font-size:40px;
+            font-weight: bold;
+            height:80px;
+            width:200px;
+            cursor: pointer;
+            margin-right: 12px;
+
+        }
+        .login-btn{
+            display: flex;
+            flex-direction: row;
+        }
+        .header {
+            border: 1px solid #85035e;
+            height: 600px;
+            width: 730px;
+            margin-top:120px;
+            margin-right: 100px;
+        }
+        .explore {
+            font-size:30px;
+            border-radius: 7px;
+            height:80px;
+            width: 200px;
+            padding: 3px;
+            position: absolute;
+            left:640px;
+            top:920px;
+        }
+        .container{
+            margin-top:40px;
+            height:750px;
+        }
+        .banner{
+            margin-top:40px;
+        }
+        .prt2 img{
+            position:absolute;
+            left:1150px;
+            top:1100px;
+        }
+        fieldset p{
+            font-size:40px;
+        }
+
+        
     }
 </style>
+
 <body>
     <div class="navbar">
         <img src="../images/index-images/logo1.png" class="logo">
         <div class="menu-sec">
-            <a href="Home.html"><button class="nav-btn" >Home</button></a>
-            <a href="movies.html"><button class="nav-btn" >Movies</button></a>
-            <a href="series.html"><button class="nav-btn" >TV shows</button></a>
+            <a href="Home.html"><button class="nav-btn">Home</button></a>
+            <a href="movies.html"><button class="nav-btn">Movies</button></a>
+            <a href="series.html"><button class="nav-btn">TVshows</button></a>
             <a href="sports.html"><button class="nav-btn">Sports</button></a>
+            <a href="children.html"><button class="nav-btn">Childrens</button></a>
             <a href="guide.html"><button class="nav-btn">Guide</button></a>
         </div>
         <input type="text" placeholder="Search movies,Tv shows" class="search">
@@ -106,9 +408,9 @@
     <div class="header">
         <img id="bkgd" style="display: none;">
         <img src="../images/children-img/img.jpg" id="p1">
-        <img src="../images/children-img/img2.jpg" id="p2">
+        <img src="../images/children-img/img2.jpg" id="p2" class="p2">
     </div><br>
-    <button class="explore" onclick="fun()">Explore Now</button><br><br><br>
+    <button class="explore" onclick="fun()">Explore Now</button><br><br>
     <div class="banner" id="blk">
         <div class="prt1">
             <img id="pic">
@@ -126,14 +428,14 @@
             </div>
         </div>
     </div>
-    <div class="cards-container">
-        <div class="card">
+    <div class="container">
+        <div class="crd">
             <img src="../images/children-img/img4.jpg" onclick="show(1)">
             <img src="../images/children-img/img5.jpg" onclick="show(2)">
             <img src="../images/children-img/img6.webp" onclick="show(3)">
             <img src="../images/children-img/img7.jpg" onclick="show(4)">
-        </div><br>
-        <div class="card">
+        </div><br><br>
+        <div class="crd">
             <img src="../images/children-img/img8.jpeg" onclick="show(5)">
             <img src="../images/children-img/img9.webp" onclick="show(6)">
             <img src="../images/children-img/img10.webp" onclick="show(7)">
@@ -142,4 +444,5 @@
     </div>
     <script src="../javascript/children.js"></script>
 </body>
+
 </html>

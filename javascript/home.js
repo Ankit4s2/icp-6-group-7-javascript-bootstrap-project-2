@@ -59,7 +59,7 @@ function sportsPoster(sports){
     if(sports == 'ipl' ){
         bigSportsPoster.src = "../images/home-images/ipl.jpeg"; 
         titleOfSports.innerText = 'IPL';
-        ratingsOfSports.innerText = '•2008 ';
+        ratingsOfSports.innerText = '•2008';
         descriptionOfSports.innerText ="•The Indian Premier League is a men's Twenty20 cricket league that is annually held in India and contested by ten city-based franchise teams. The BCCI founded the league in 2007. The competition is usually held in summer between March and May every year.";
     }else if(sports == 'javelin'){
         bigSportsPoster.src = "../images/home-images/javelin.jpeg";
@@ -99,5 +99,24 @@ function cartoonPoster(cartoon){
         descriptionOfCartoon.innerText ='•Eleven-year-old Riley has moved to San Francisco, leaving behind her life in Minnesota. She and her five core emotions, Fear, Anger, Joy, Disgust and Sadness, struggle to cope with her new life.';
     }else{
         console.log("not applicable");
+    }
+}
+
+function getTheOpinion(opinion){
+    let likedTheMovie = document.getElementById('icon1');
+    let diskedTheMovie = document.getElementById('icon2');
+    let addedToWatchlist = document.getElementById('icon3');
+
+    if(opinion == liked){
+        likedTheMovie.classList = remove("fa-regular");
+        likedTheMovie.classList = add("fa-solid");
+    }else if(opinion == disliked){
+        dislikedTheMovie.classList = remove("fa-regular");
+        dislikedTheMovie.classList = add("fa-solid");
+    }else if(opinion == added){
+        addedToWatchlist.classList = remove("fa-plus");
+        addedToWatchlist.classList = add("fa-check");
+    }else{
+        console.log("Not applicable");
     }
 }
