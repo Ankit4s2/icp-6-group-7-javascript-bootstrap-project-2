@@ -91,6 +91,7 @@ body{
     box-shadow: 4px 8px 20px 0px gray ;
     border-radius: 20px;
 }
+
 .sports-poster:hover{
     transform: scale(1.01);
     transition: 0.2s ease;
@@ -134,7 +135,7 @@ body{
 .posters-container{
     border:2px solid  #85035e;
     height:320px;
-    width:1360px;
+    width:1370px;
     display:block;
     margin:5px auto;
     padding:20px;
@@ -171,6 +172,7 @@ body{
     justify-content: space-evenly;
 }
 .banner {
+    margin-top: 15px;
     height: 600px;
     display: none;
 }
@@ -185,13 +187,13 @@ body{
     display: flex;
 }
 .prt2 {
-    margin-top: 20px;
+    margin-top: -5px;
     padding: 20px;
     margin-left: 20px;
     border-radius: 5px;
     border: 3px solid #880360;
-    width: 1435px;
-    height: 500px;
+    width: 1400px;
+    height: 520px;
 }
 .prt2 img {
     height: 400px;
@@ -209,6 +211,19 @@ fieldset{
     border-radius: 5px;
     width: 360px;
     height:400px;
+}
+.h1{
+    font-size:40px;  
+}
+.details{
+    font-size:30px;
+    text-decoration:underline;
+}
+.dis{
+    font-size:20px;
+}
+.cartoon{
+    margin-top: 95px;
 }
 @media only screen and (min-width:300px) and (max-width:430px){
     .logo{
@@ -239,13 +254,13 @@ fieldset{
     .menu-sec{
         position: absolute;
         left:20px;
-        top:40px;
+        top:50px;
     }
     .nav-btn{
         background-color: black;
         color: white;
         border: none;
-        padding:10px;
+        padding:5px;
         font-size: 13px;
         cursor:pointer;
     
@@ -342,21 +357,22 @@ fieldset{
         justify-content: space-evenly;
     }
     .banner {
+        margin-top: 30px;
         height: 300px;
         display: none;
+        margin-right: 10px;
     }
     .prt1 img {
-        height: 200px;
+        height: 240px;
         width: 50%;
         align-items: left;
-        margin-left: 9px;
-        box-shadow: 0 0 10px rgba(248, 246, 246, 0.964);
+        margin-left: 7px;
     }
     .prt1 {
         display: flex;
     }
     .prt2 {
-        margin-top: 20px;
+        margin-top: 0px;
         padding: 20px;
         margin-left: 20px;
         border-radius: 5px;
@@ -365,28 +381,37 @@ fieldset{
         height: 200px;
     }
     .prt2 img {
-        height: 190px;
+        height: 240px;
         width: 110px;
-        box-shadow: 0 0 0 0;
         display: flex;
         position: absolute;
         left: 40%;
         top: 105%;
     }
     fieldset{
-        margin-top: 20px;
-        padding: 15px;
-        margin-left: 20px;
+        margin-top: 2px;
+        padding: 20px;
+        margin-left: 3px;
+        margin-right: 2px;
         border-radius: 5px;
-        width:180px;
-        height:190px;
+        width:100px;
+        height:160px;
     }
+    .h1{
+        font-size:11px;  
+    }
+    
     .details{
-        font-size:10px;
+        margin-top: -10px;
+        font-size:9px;
         text-decoration:underline;
     }
     .dis{
-        font-size:4px;
+        font-size:8px;
+    }
+    .cartoon{
+       margin-left: 1000px;
+       height: 10px;
     }
 }
 @media screen and (min-width:440px) and (max-width:690px){
@@ -400,6 +425,9 @@ fieldset{
         position: absolute;
         right:270px;
         top:13px;
+        right:260px;
+        top:11px;
+    
     }
     .navbar{
         margin:5px 10px;
@@ -411,23 +439,21 @@ fieldset{
     }
     .menu-sec{
         position: absolute;
-        left:100px;
+        left:50px;
         top:50px;
     }
     .nav-btn{
         border: none;
         padding:20px;
-        font-size: 16px;
+        font-size: 15px;
 
     
     }
     
     .login{
-        font-weight: bold;
         height: 30px;
         width:80px;
         font-size: 13px;
-        cursor:pointer;    
     }
     .login-btn{
         position: absolute;
@@ -436,9 +462,145 @@ fieldset{
     }
     .heading{
         text-align: center;
-        font-size: 15px;
-        margin-top: 50px;
+        font-size: 19px;
+        margin-top: 60px;
 
 }
+.poster-container{
+    height:350px;
+    width:650px;
+    display:flex;
+    margin:5px auto;
+    position:relative;
+}
+
+.sports-poster{
+    height:345px;
+    width:630px;
+    margin:2px auto;
+    box-shadow: 2px 4px 10px 0px gray ;
+    border-radius: 10px;
+}
+.switch-img{
+    font-size: 15px;
+    height:40px;
+    width:160px;
+    margin-left:240px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding:11px;
+    position: relative;
+    
+
+}
+.switch-img:hover{
+    box-shadow: 0 0 7px #eee;
+}
+.arrow{
+    position: absolute;
+    top:13px;
+    left:120px;
+    height: 15px;
+}
+.display-block{
+    border:2px solid  #85035e;
+    height:400px;
+    width:1100px;
+    display:block;
+    margin:5px auto;
+    padding:20px;
+
+}
+.posters-container{
+    border:2px solid  #85035e;
+    height:590px;
+    width:630px;
+    display:block;
+    margin:4px auto;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    
+
+}
+
+.cards{
+    height:280px;
+    width:290px;
+    box-shadow: 3px 4px 10px 0px gray ;
+}
+.cards:hover{
+    box-shadow: 2px 4px 10px 0px gray ;
+}
+    
+
+.card-img{
+    height:280px;
+    width:290px;
+    border-radius:20px;
+
+
+}
+.screen{
+    width:650;
+    display: flex;
+    justify-content: space-evenly;
+}
+.banner {
+    margin-top: 18px;
+    height: 400px;
+    width: 600;
+    display: none;
+}
+.prt1 img {
+    height: 350px;
+    width: 50%;
+    align-items: left;
+    margin-left: 10px;
+    box-shadow: 0 0 10px rgba(248, 246, 246, 0.964);
+}
+.prt2 {
+    margin-top: -1px;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 3px solid #880360;
+    width: 250px;
+    height: 310px;
+}
+.prt2 img {
+    height: 350px;
+    width: 300px;
+    box-shadow: 0 0 0 0;
+    display: flex;
+    position: absolute;
+    left: 66%;
+    top: 105%;
+}
+fieldset{
+    margin-top: 10px;
+    padding: 13px;
+    margin-left: -1px;
+    border-radius: 5px;
+    width: 130px;
+    height:250px;
+}
+.h1{
+    font-size:15px;  
+}
+.details{
+    font-size:12px;
+    text-decoration:underline;
+}
+.dis{
+    font-size:10px;
+}
+.cartoon{
+    margin-top: -140px;
+    height: 60px;
+
+}
+
 
 }

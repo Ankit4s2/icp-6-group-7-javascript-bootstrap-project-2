@@ -58,7 +58,7 @@ body{
     width:300px;
     background-color: black;
     position: absolute;
-    right:600px;
+    right:500px;
     top:20px;
 
 }
@@ -131,10 +131,10 @@ body{
     box-shadow: 0 0 10px #eee;
 }
 .cards-container{
-   border: 2px solid #880360;
-   height:600px;
+   border: 2px solid black;
+   height:460px;
    width:1400;
-   margin:40px 20px;
+   margin:40px 30px;
    border-radius: 10px;
    display:flex;
    justify-content:space-around;
@@ -159,18 +159,415 @@ body{
 }
 
 .cards{
-    height: 400px;
+    height: 300px;
     width: 300px;
     background-image: linear-gradient(to right,#e70952  0%, #b61a87  58%, #85035e  100%);
     padding: 10px;
     border-radius: 25px;
     cursor: pointer;
-    height:auto;
 
-    
 }
 .card:hover{
     transform: scale(1.1);
     transition: 0.4s ease;
     box-shadow: 4px 8px 20px 0px gray ;
 }
+@media only screen and (min-width:300px) and (max-width:430px){
+    .logo{
+        height:50px;
+        margin-left: -10px;
+        margin-top: 1px;
+    }
+    .search{
+        border: 1px solid white;
+        color:white;
+        border-radius: 5px;
+        height: 15px;
+        width:160px;
+        background-color: black;
+        position: absolute;
+        right:125px;
+        top:13px;
+    
+    }
+    .navbar{
+        margin:5px 10px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        flex-wrap: wrap;
+    }
+    .menu-sec{
+        position: absolute;
+        left:20px;
+        top:50px;
+    }
+    .nav-btn{
+        background-color: black;
+        color: white;
+        border: none;
+        padding:5px;
+        font-size: 13px;
+        cursor:pointer;
+    
+    }
+    
+    .login{
+        font-weight: bold;
+        height: 20px;
+        width:55px;
+        font-size: 10px;
+        cursor:pointer;    
+    }
+    .login-btn{
+        position: absolute;
+        right:4px;
+        top:12px;
+    }
+    .header{
+        position: relative;
+        top:25px;
+        border: 2px solid #880360;
+        height:400px;
+        width:450;
+        margin:5px 10px;
+        border-radius: 8px;
+     }
+     
+     .welcome{
+         position: absolute;
+         top:70px;
+         left:8px;
+         font-size: 23px;
+         text-align: center;
+    
+     }
+     .welcome2{
+         position: absolute;
+         top:170px;
+         left:15px;
+         font-size: 12px;
+         text-align:center;
+     
+     }
+     .welcome3{
+         position: absolute;
+         top:230px;
+         left:72px;
+         font-size: 12px;
+         text-align:center;
+     
+     
+     }
+     .poster-logo{
+         height:79px;
+         position: absolute;
+         top:11px;
+         left:130px;
+     
+     }
+     .explore{
+        color:white;
+        font-size: 20px;
+        height:35px;
+        width:100px;
+        border-radius:8px;
+        position: absolute;
+        top:300px;
+        left:130px;
+        font-size: 12px;
+        padding: 8px 10px;
+    
+    }
+    .explore:hover{
+        box-shadow: 0 0 6px #eee;
+    }
+    .cards-container{
+       border: 2px solid black;
+       height:1000px;
+       width:1400;
+       margin:40px 30px;
+       border-radius: 10px;
+       display:flex;
+       flex-wrap: wrap;
+       justify-content:space-around;
+    }
+    .card{
+        padding-top: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin:10px 20px;
+    
+       }
+    .front-card-img{
+        height: 200px;
+        border-radius: 25px;
+        width: 200px;
+        box-shadow:0 0 5px 3px gray;
+    }
+    .text{
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .cards{
+        height: 200px;
+        width: 200px;
+        background-image: linear-gradient(to right,#e70952  0%, #b61a87  58%, #85035e  100%);
+        padding: 10px;
+        border-radius: 25px;
+        cursor: pointer;
+        
+    }
+    .card:hover{
+        transform: scale(1.1);
+        transition: 0.4s ease;
+        box-shadow: 4px 8px 20px 0px gray ;
+    }
+}
+
+@media screen and (min-width:440px) and (max-width:690px){
+        .logo{
+            height:70px;
+        }
+        .search{
+            border: 1px solid white;
+            height: 28px;
+            width:260px;
+            position: absolute;
+            right:260px;
+            top:11px;
+        
+        }
+        .navbar{
+            margin:5px 10px;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;
+            flex-wrap: wrap;
+        }
+        .menu-sec{
+            position: absolute;
+            left:50px;
+            top:50px;
+        }
+        .nav-btn{
+            border: none;
+            padding:20px;
+            font-size: 15px;
+    
+        
+        }
+        
+        .login{
+            height: 30px;
+            width:80px;
+            font-size: 13px;
+        }
+        .login-btn{
+            position: absolute;
+            right:4px;
+            top:12px;
+        }
+        .header{
+            position: relative;
+            top:35px;
+            height:625px;
+            width:680;
+            margin:7px 7px;
+            border-radius: 10px;
+         }
+         
+         .welcome{
+             position: absolute;
+             top:150px;
+             left:80px;
+             font-size: 27px;
+         
+         }
+         .welcome2{
+             position: absolute;
+             top:230px;
+             left:30px;
+             font-size: 17px;
+             text-align: center;
+         
+         }
+         .welcome3{
+             position: absolute;
+             top:290px;
+             left:170px;
+             font-size: 17px;
+         
+         
+         }
+         .poster-logo{
+             height:160px;
+             position: absolute;
+             top:13px;
+             left:210px;
+         
+         }
+         .explore{
+            font-size: 20px;
+            height:50px;
+            width:180px;
+            border:2px solid black;
+            border-radius:13px;
+            position: absolute;
+            top:420px;
+            left:230px;
+            padding: 12px 32px;
+            font-size: 18px;
+        
+        }
+        .explore:hover{
+            box-shadow: 0 0 10px #eee;
+        }
+        .cards-container{
+
+           border: 2px solid black;
+           height:1400px;
+           width:1400;
+           margin:40px 30px;
+           border-radius: 10px;
+           display:flex;
+           flex-wrap: wrap;
+           justify-content:space-around;
+           position: relative;
+           top:20px;
+        }
+        .card{
+            padding-top: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin:20px 40px;
+        
+           }
+        .front-card-img{
+            height: 280px;
+            border-radius: 25px;
+            width: 280px;
+            box-shadow:0 0 5px 3px gray;
+        }
+        .text{
+            text-align: center;
+            font-size: 16px;
+        }
+        
+        .cards{
+            height: 280px;
+            width: 280px;
+            background-image: linear-gradient(to right,#e70952  0%, #b61a87  58%, #85035e  100%);
+            padding: 10px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+    }
+    @media screen and (min-width:700px) and (max-width:1240px){
+        .navbar-container{
+            position:fix;
+        
+        }
+        .logo{
+            height:100px;
+            margin-left: -10px;
+            margin-top: -10px;
+        }
+        .search{
+            border: 2px solid white;
+            color:white;
+            border-radius: 5px;
+            height: 30px;
+            width:270px;
+            background-color: black;
+            position: absolute;
+            right:380px;
+            top:20px;
+        
+        }
+        
+        .navbar{
+            margin:5px 10px;
+            display:flex;
+            justify-content: space-between;
+            position: relative;
+        }
+        .menu-sec{
+            position: absolute;
+            left:130px;
+            top:28px;
+        }
+        .nav-btn{
+            background-color: black;
+            color: white;
+            border: none;
+            padding:10px;
+            font-size: 13px;
+            cursor:pointer;
+        
+        }
+        
+        .login{
+            font-weight: bold;
+            color:white;
+            background-color:#e311a4;
+            height: 40px;
+            width:120px;
+            border:2px solid black;
+            border-radius: 10px;
+            cursor:pointer;
+            
+        }
+        .login:hover{
+            background-color: #880360;
+        }
+        .login-btn{
+            position: absolute;
+            right:40px;
+            top:20px;
+        }
+        .header{
+            border: 2px solid #880360;
+            height:630px;
+            width:1400;
+            margin:10px 20px;
+            border-radius: 10px;
+         }
+         
+         .welcome{
+             position: absolute;
+             top:320px;
+             left:200px;
+             font-size: 50px;
+         
+         }
+         .welcome2{
+             position: absolute;
+             top:430px;
+             left:280px;
+         
+         }
+         .welcome3{
+             position: absolute;
+             top:500px;
+             left:460px;
+         
+         
+         }
+         .poster-logo{
+             height:200px;
+             position: absolute;
+             top:130px;
+             left:500px;
+         
+         }
+         .explore{
+            left:550px;
+        
+        }
+    }
