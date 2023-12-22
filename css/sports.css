@@ -28,9 +28,7 @@ body{
 .search:hover{
     border:2px solid #880360;
 }
-.navbar-container{;
 
-}
 .navbar{
     margin:5px 10px;
     display:flex;
