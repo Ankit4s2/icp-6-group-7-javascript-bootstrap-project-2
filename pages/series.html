@@ -10,11 +10,13 @@
     <div class="navbar">
         <img src="../images/index-images/logo1.png" class="logo">
        <div class="menu-sec">
-            <button class="nav-btn">Home</button>
-            <button class="nav-btn">Movies</button>
-            <button class="nav-btn">TV shows</button>
-            <button class="nav-btn"> Sports</button>
-            <button class="nav-btn">Guide</button>
+            <a href="Home.html"><button class="nav-btn" >Home</button></a>
+            <a href="movies.html"><button class="nav-btn" >Movies</button></a>
+            <a href="series.html"><button class="nav-btn" >TV shows</button></a>
+            <a href="sports.html"><button class="nav-btn">Sports</button></a>
+            <a href="guide.html"><button class="nav-btn">Guide</button></a>
+                
+
             
         </div>
         <input type="text" placeholder="Search movies,Tv shows" class="search">
@@ -24,43 +26,85 @@
         </div>
         </div>
 
-        <div class="header">
-            <img id="bkgd" style="display: none;">
-            <img src="../images/boss.png" id="p1">
-           </div><br>
-        <button class="explore" onclick="fun()">VIEW MORE</button><br><br><br>
-        <div class="banner" id="blk">
-            <div class="prt1">
-                <img id="pic">
-                <div class="prt2">
-                    <div>
-                        <fieldset>
-                            <legend>
-                                <h1 id="hd" style="font-size:40px;"></h1>
-                            </legend>
-                            <h4 style="font-size:30px;text-decoration:underline;">SUMMARY</h4>
-                            <p id="dis" style="font-size:20px;"></p>
-                        </fieldset>
-                    </div>
-                <img src="../images/children-img/img12.jpg">
+        <h2 class="heading">Recent Released Show </h2>
+        <div class="poster-container">
+        <img src="../images/khatron.png" class="sports-poster" id="switch">
+       
+    </div>
+    <button type="botton" class="switch-img" onclick="switchimg()">View more<img src="../images/sports-images/arrow.png" class="arrow"></button>
+
+    <div class="banner" id="blk">
+        <div class="prt1">
+            <img id="pic">
+            <div class="prt2">
+                <div>
+                    <fieldset>
+                        <legend>
+                            <h1 id="hd" style="font-size:40px;"></h1>
+                        </legend>
+                        <h4 style="font-size:30px;text-decoration:underline;">Details</h4>
+                        <p id="dis" style="font-size:20px;"></p>
+                    </fieldset>
                 </div>
+                <img src="../images/sports-images/cartoon.png" style="margin-top: 95px;">
             </div>
         </div>
-        <div class="cards-container">
-            <div class="card">
-                <img src="../images/Anupama.png" onclick="show(1)">
-                <img src="../images/Ghum_Hai_Kisikey_Pyaar_Meiin.png" onclick="show(2)">
-                <img src="../images/titli.png" onclick="show(3)">
-                <img src="../images/imli.png" onclick="show(4)">
-            </div><br>
-            <div class="card">
-                <img src="../images/Chahatein.png" onclick="show(5)">
-                <img src="../images/Doriyaa.png" onclick="show(6)">
-                <img src="../images/Siya ke Ram.png" onclick="show(7)">
-                <img src="../images/Show.png" onclick="show(8)">
-            </div>
+    </div>
+    <div class="posters-container">
+        <div class="cards">
+             <img src="../images/Anupama.png" class="card-img"  onclick="show(1)">
+        </div>
+        <div class="cards">
+            <img src="../images/Ghum_Hai_Kisikey_Pyaar_Meiin.png" class="card-img"  onclick="show(2)">
+       </div>
+       <div class="cards">
+        <img src="../images/titli.png" class="card-img"  onclick="show(3)">
+   </div>
+   <div class="cards">
+    <img src="../images/imli.png" class="card-img"  onclick="show(4)">
+</div>
+    </div>
+    <div class="posters-container">
+        <div class="cards">
+             <img src="../images/Chahatein.png" class="card-img" onclick="show(5)">
+        </div>
+        <div class="cards">
+            <img src="../images/Doriyaa.png" class="card-img" onclick="show(6)">
+       </div>
+       <div class="cards">
+        <img src="../images/Siya ke Ram.png" class="card-img" onclick="show(7)">
+   </div>
+   <div class="cards">
+    <img src="../images/Show.png" class="card-img" onclick="show(8)">
+</div>
+    </div>
+
+    <div class="footer">
+        <div class="links-container">
+            <a href="home.html"><span class="links">Home</span></a>
+            <a href="movies.html" ><span class="links">Movies</span></a>
+            <a href="series.html"><span class="links">TV Series</span></a>
+            <a href="sports.html"><span class="links">Sports</span></a>
+            <a href="children.html"><span class="links">Children</span></a>
+            <a href="guide.html"><span class="links">Guide</span></a>
         </div>
 
-       <script src="../javascript/series.js"></script>
-    </body>
-    </html>
+        <div class="footer-logo-container">
+            <img src="../images/index-images/logo1.png " class="footer-logo"/>
+        </div>
+
+        <div class="media-img-container">
+            <img src="../images/home-images/facebook.png" class="social-media-img"/>
+            <img src="../images/home-images/instagram.png" class="social-media-img"/>
+            <img src="../images/home-images/twitter.png" class="social-media-img"/>
+        </div>
+
+      
+    </div>
+    
+<script src="../javascript/series.js">
+    
+</script>
+
+</body>
+</html>
