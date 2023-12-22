@@ -5,10 +5,13 @@ body{
     margin:0;
     padding:0;
 }
+a{
+    text-decoration: none;
+}
 .header{
    border: 2px solid #880360;
-   height:600px;
-   width:1400;
+   height:700px;
+   width:1450;
    margin:10px 20px;
    border-radius: 10px;
 }
@@ -16,20 +19,20 @@ body{
 .welcome{
     position: absolute;
     top:340px;
-    left:320px;
+    left:360px;
     font-size: 50px;
 
 }
 .welcome2{
     position: absolute;
     top:430px;
-    left:400px;
+    left:440px;
 
 }
 .welcome3{
     position: absolute;
     top:500px;
-    left:550px;
+    left:590px;
 
 
 }
@@ -37,7 +40,7 @@ body{
     height:200px;
     position: absolute;
     top:150px;
-    left:600px;
+    left:620px;
 
 }
 /* Navbar css-code begin*/
@@ -119,7 +122,7 @@ body{
     border-radius:15px;
     position: absolute;
     top:600px;
-    left:630px;
+    left:660px;
     cursor:pointer;
     background-image: linear-gradient(to right,#e70952  0%, #b61a87  58%, #85035e  100%);
     padding: 15px 35px;
@@ -170,6 +173,113 @@ body{
     transform: scale(1.1);
     transition: 0.4s ease;
     box-shadow: 4px 8px 20px 0px gray ;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right,#e60a52,#780061);
+    height: 300px;
+    padding: 10px;
+}
+.links-container{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    width: 100px;
+    padding: 5px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.links2-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    width: 150px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.links{
+    padding: 2px;
+    margin: 2px;
+    color:#000
+}
+.links:hover{
+    color: #eee;
+}
+.footer-logo-container{
+    margin-left: 20px;
+    margin-right: 170px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.footer-logo{
+    height: 100px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.enter-email{
+    font-weight: bold;
+}
+.email-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 50px;
+    margin-left: 55px;
+}
+.email{
+    height: 20px;
+    width: 250px;
+    margin: 10px;
+    margin-left: 0;
+    padding:5px;
+    border: 2px solid white;
+    color:white;
+    border-radius: 5px;
+    background-color: black;
+}
+.email:hover{
+    border:2px solid #880360;
+}
+.submit-email-btn{
+    height: 25px;
+    width: 150px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color:#ea0a51;
+    color: white;
+}
+.submit-email-btn:hover{
+    color: #000;
+    border: 3px solid #ea0a51;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.contact{
+   color:#ffffff; 
+}
+.media-img-container{
+    display: block;
+    justify-content: flex-end;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.social-media-img{
+    height: 25px;
+    padding: 5px;
+    margin: 5px;
+}
+.rights-section{
+    margin-top: 70px;
+    height: 50px;
+}
+
+.para{
+    position: relative;
+    right: -45px;
 }
 @media only screen and (min-width:300px) and (max-width:430px){
     .logo{
@@ -325,6 +435,95 @@ body{
         transition: 0.4s ease;
         box-shadow: 4px 8px 20px 0px gray ;
     }
+    .footer{
+        background-image: linear-gradient(to bottom,#e60a52,#780061);
+        height: 1000px;
+        padding: 10px;
+    }
+    .links-container{
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        height: 190px;
+        width: 100px;
+        padding: 5px;
+        margin-left: 8px;
+        margin-top: 15px;
+    }
+    .links2-container{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        height: 190px;
+        width: 100px;
+        padding: 10px;
+        margin-left: 8px;
+        margin-top: 15px;
+    }
+    .links{
+        padding: 2px;
+        margin: 2px;
+        color: #000;
+       
+    }
+    .links:hover{
+        color:#eee;
+    }
+    .footer-logo-container{
+        margin-left:110px;
+        
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .email-container{
+        justify-content: start;
+        padding-top: 20px;
+        margin-left: 30px;
+    }
+    .email{
+        margin-left: 0;
+        padding:5px;
+        border: 2px solid white;
+    }
+    .email:hover{
+        border:2px solid #880360;
+    }
+    .submit-email-btn{
+        height: 25px;
+        width: 150px;
+        border-radius: 5px;
+        border: 2px solid white;
+        background-color:#ea0a51;
+        color: white;
+    }
+    .submit-email-btn:hover{
+        color: #000;
+        border: 3px solid #ea0a51;
+        background-color: #fff;
+        transition: 0.5s;
+    }
+    .media-img-container{
+        display: block;
+        justify-content: flex-end;
+        margin-top:-20px;
+        margin-left:-30px;
+        margin-bottom: auto;
+    }
+    .social-media-img{
+        height: 25px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .rights-section{
+        margin-top: 70px;
+        height: 50px;
+        margin-left: 10px;
+    }
+   
+    .para{
+        position: relative;
+        left:55px;
+    }
 }
 
 @media screen and (min-width:440px) and (max-width:690px){
@@ -466,7 +665,101 @@ body{
             border-radius: 25px;
             cursor: pointer;
         }
+        .footer{
+            background-image: linear-gradient(to bottom,#e60a52,#780061);
+            height: 1000px;
+            padding: 10px;
+        }
+        .links-container{
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            height: 190px;
+            width: 130px;
+            padding: 5px;
+            margin-left: 100px;
+            margin-top: -60px;
+        }
+        .links2-container{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 190px;
+            width: 150px;
+            padding: 10px;
+            margin-left: 8px;
+            margin-top: -60px;
+        }
+        .links{
+            padding: 2px;
+            margin: 2px;
+            color: #000;
+           
+        }
+        .links:hover{
+            color:#eee;
+        }
+        .footer-logo-container{
+            margin-left:245px;
+            
+            margin-top:20px;
+            margin-bottom: auto;
+        }
+        .email-container{
+            justify-content: start;
+            padding-top: 20px;
+            margin-left: 160px;
+        }
+        .email{
+            margin-left: 0;
+            padding:5px;
+            border: 2px solid white;
+        }
+        .email:hover{
+            border:2px solid #880360;
+        }
+        .submit-email-btn{
+            height: 25px;
+            width: 150px;
+            border-radius: 5px;
+            border: 2px solid white;
+            background-color:#ea0a51;
+            color: white;
+        }
+        .submit-email-btn:hover{
+            color: #000;
+            border: 3px solid #ea0a51;
+            background-color: #fff;
+            transition: 0.5s;
+        }
+        .contact{
+            margin-left: 60px;
+        }
+        .media-img-container{
+            display: block;
+            justify-content: flex-end;
+            margin-top:-20px;
+            margin-left:60px;
+            margin-bottom: auto;
+        }
+        .social-media-img{
+            height: 25px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .rights-section{
+            margin-top: 70px;
+            height: 50px;
+            margin-left: 60px;
+        }
+       
+        .para{
+            position: relative;
+            left:55px;
+        }
     }
+    
+    
     @media screen and (min-width:700px) and (max-width:1240px){
         .navbar-container{
             position:fix;
@@ -568,5 +861,113 @@ body{
          .explore{
             left:550px;
         
+        }
+        .footer{
+            height: 470px;
+            padding: 10px;
+        }
+        .links-container{
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            height: 190px;
+            width: 100px;
+            padding: 5px;
+            margin-left: -40px;
+            margin-top: 15px;
+        }
+        .links2-container{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 190px;
+            width: 150px;
+            padding: 5px;
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        .links{
+            padding: 2px;
+            margin: 2px;
+            color:#000
+        }
+        .links:hover{
+            color: #eee;
+        }
+        .footer-logo-container{
+            margin-left: 20px;
+            margin-right: 170px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .footer-logo{
+            height: 100px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .enter-email{
+            font-weight: bold;
+        }
+        .email-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            padding-top: 50px;
+            margin-left: 45px;
+        }
+        .email{
+            height: 20px;
+            width: 250px;
+            margin: 10px;
+            margin-left: 0;
+            padding:5px;
+            border: 2px solid white;
+            color:white;
+            border-radius: 5px;
+            background-color: black;
+        }
+        .email:hover{
+            border:2px solid #880360;
+        }
+        .submit-email-btn{
+            height: 25px;
+            width: 150px;
+            border-radius: 5px;
+            border: 2px solid white;
+            background-color:#ea0a51;
+            color: white;
+        }
+        .submit-email-btn:hover{
+            color: #000;
+            border: 3px solid #ea0a51;
+            background-color: #fff;
+            transition: 0.5s;
+        }
+        .contact{
+            margin-left:390px ;
+            margin-top: 40px;
+           
+        }
+        .media-img-container{
+            display: block;
+            justify-content: flex-end;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 10px;
+        }
+        .social-media-img{
+            height: 25px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .rights-section{
+            margin-top: 70px;
+            height: 50px;
+        }
+        
+        .para{
+            position: relative;
+            left:470px;
+            top:-40px;
         }
     }
