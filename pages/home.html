@@ -6,11 +6,12 @@
     <title>Home</title>
 <link rel="stylesheet" href="../css/home-page.css"/>
 <style>
+    /*footer css*/
     .footer{
         display: flex;
         flex-wrap: wrap;
-        background-color: #760061;
-        height: 180px;
+        background-image: linear-gradient(to right,#e60a52,#780061);
+        height: 200px;
         padding: 10px;
     }
     .links-container{
@@ -38,32 +39,94 @@
         margin: 2px;
     }
     .footer-logo-container{
-        margin: auto;
+        margin-left: 20px;
+        margin-right: 170px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
     .footer-logo{
         height: 100px;
         padding: 10px;
+        border-radius: 20px;
+    }
+    .email-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding-top: 50px;
+        margin-left: 70px;
+    }
+    .email{
+        height: 20px;
+        width: 250px;
+        margin: 10px;
+        margin-left: 0;
+        padding:5px;
+        border: 2px solid white;
+        color:white;
+        border-radius: 5px;
+        background-color: black;
+    }
+    .email:hover{
+        border:2px solid #880360;
+    }
+    .submit-email-btn{
+        height: 25px;
+        width: 150px;
+        border-radius: 5px;
+        border: 2px solid white;
+        background-color:#ea0a51;
+        color: white;
+    }
+    .submit-email-btn:hover{
+        color: #000;
+        border: 3px solid #ea0a51;
+        background-color: #fff;
+        transition: 0.5s;
     }
     .media-img-container{
-        position: relative;
         display: block;
         justify-content: flex-end;
         margin-top: auto;
         margin-bottom: auto;
-        right: 50px; 
     }
     .social-media-img{
         height: 20px;
         padding: 5px;
         margin: 5px;
     }
+    .rights-section{
+        margin-top: 70px;
+        height: 50px;
+    }
+    .inpage-nav-btn-container{
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        border: 2px solid grey;
+        border-radius: 30px;
+        opacity: 0.6;
+    }
+    .inpage-nav-btn-container:hover{
+        opacity: 1;
+        transition: 0.5s;
+    }
+    .inpage-nav-btn{
+        height: 30px;
+        padding: 10px;
+        opacity: 0.7;
+    }
+    .inpage-nav-btn:hover{
+        opacity: 1;
+        transition: 0.5s;
+    }
 </style>
 </head>
 <body>
-   <div class="navbar">
+   <div class="navbar" id="top-nav">
         <img src="../images/index-images/logo1.png" class="logo">
        <div class="menu-sec">
-            <a href="Home.html"><button class="nav-btn" >Home</button></a>
+            <a href="Home.html"><button class="nav-btn" id="navbar-btnz" >Home</button></a>
             <a href="movies.html"><button class="nav-btn" >Movies</button></a>
             <a href="series.html"><button class="nav-btn" >TV shows</button></a>
             <a href="sports.html"><button class="nav-btn">Sports</button></a>
@@ -95,9 +158,9 @@
                     </div>
                     
                     <div class="icons-container">
-                        <i class="fa-regular fa-thumbs-up" id="icons" id="liked" onclick="getTheOpinion('like')"></i>
-                        <i class="fa-regular fa-thumbs-down" id="icons" id="disliked" onclick="getTheOpinion('dislike')" ></i>
-                        <i class="fa-solid fa-plus" id="icons" id="added-to-list" onclick="getTheOpinion('added')"></i> 
+                        <i class="fa-regular fa-thumbs-up" id="icons"></i>
+                        <i class="fa-regular fa-thumbs-down" id="icons"></i>
+                        <i class="fa-solid fa-plus" id="icons"></i> 
                         <h5 style="color:#fff; margin-left:-20px;"> Watchlist </h5>
                     </div>
                     
@@ -135,20 +198,20 @@
 
                 <div class="movie-description-container">
                     <div class="title">
-                        <h1 id="showTitle">Edge Of Tomorrow</h1>
+                        <h1 id="showTitle">Savdhan India</h1>
                         <div id="showRatings">
                             •66% liked •2012 •Crime •7 seasons
                         </div>
                     </div>
                     
                     <div class="icons-container">
-                        <i class="fa-regular fa-thumbs-up" id="icons" id="liked" onclick="getTheOpinion('like')"></i>
-                        <i class="fa-regular fa-thumbs-down" id="icons" id="disliked" onclick="getTheOpinion('dislike')" ></i>
-                        <i class="fa-solid fa-plus" id="icons" id="added-to-list" onclick="getTheOpinion('added')"></i> 
+                        <i class="fa-regular fa-thumbs-up" id="icons"></i>
+                        <i class="fa-regular fa-thumbs-down" id="icons"></i>
+                        <i class="fa-solid fa-plus" id="icons"></i> 
                         <h5 style="color:#fff; margin-left:-20px;"> Watchlist </h5>
                     </div>
                     
-                    <p class="movie-description" id="showDescription"> •William Cage (Tom Cruise), an officer who has never seen combat, is assigned to a suicide mission. Killed within moments, Cage finds himself thrown into a time loop, in which he relives the same brutal fight -- and his death -- over and over again.</p>
+                    <p class="movie-description" id="showDescription"> •The show deals with real-life crimes stories of murder, kidnapping, domestic violence, fraud, robbery, forgery, rape, sexual assault and other crimes.</p>
                     
                 </div>  
         </div>
@@ -181,20 +244,20 @@
 
                 <div class="movie-description-container">
                     <div class="title">
-                        <h1 id="sportsTitle">Edge Of Tomorrow</h1>
+                        <h1 id="sportsTitle">IPL</h1>
                         <div id="sportsRatings">
-                            •98% match •2014 •Action/Sci-fi •1h53min
+                            •2008
                         </div>
                     </div>
                     
                     <div class="icons-container">
-                        <i class="fa-regular fa-thumbs-up" id="icons" id="liked" onclick="getTheOpinion('like')"></i>
-                        <i class="fa-regular fa-thumbs-down" id="icons" id="disliked" onclick="getTheOpinion('dislike')" ></i>
-                        <i class="fa-solid fa-plus" id="icons" id="added-to-list" onclick="getTheOpinion('added')"></i> 
+                        <i class="fa-regular fa-thumbs-up" id="icons" ></i>
+                        <i class="fa-regular fa-thumbs-down" id="icons" ></i>
+                        <i class="fa-solid fa-plus" id="icons"></i> 
                         <h5 style="color:#fff; margin-left:-20px;"> Watchlist </h5>
                     </div>
                     
-                    <p class="movie-description" id="sportsDescription"> •William Cage (Tom Cruise), an officer who has never seen combat, is assigned to a suicide mission. Killed within moments, Cage finds himself thrown into a time loop, in which he relives the same brutal fight -- and his death -- over and over again.</p>
+                    <p class="movie-description" id="sportsDescription"> •The Indian Premier League is a men's Twenty20 cricket league that is annually held in India and contested by ten city-based franchise teams. The BCCI founded the league in 2007. The competition is usually held in summer between March and May every year.</p>
                     
                 </div>  
         </div>
@@ -226,20 +289,20 @@
 
                 <div class="movie-description-container">
                     <div class="title">
-                        <h1 id="cartoonTitle">Edge Of Tomorrow</h1>
+                        <h1 id="cartoonTitle">The Croods 2: A New Age</h1>
                         <div id="cartoonRatings">
-                            •98% match •2014 •Action/Sci-fi •1h53min
+                            •69% match •2020 •Adventure/Comedy •1h35min
                         </div>
                     </div>
                     
                     <div class="icons-container">
-                        <i class="fa-regular fa-thumbs-up" id="icons" id="liked" onclick="getTheOpinion('like')"></i>
-                        <i class="fa-regular fa-thumbs-down" id="icons" id="disliked" onclick="getTheOpinion('dislike')" ></i>
-                        <i class="fa-solid fa-plus" id="icons" id="added-to-list" onclick="getTheOpinion('added')"></i> 
+                        <i class="fa-regular fa-thumbs-up" id="icons"></i>
+                        <i class="fa-regular fa-thumbs-down" id="icons"></i>
+                        <i class="fa-solid fa-plus" id="icons"></i> 
                         <h5 style="color:#fff; margin-left:-20px;"> Watchlist </h5>
                     </div>
                     
-                    <p class="movie-description" id="cartoonDescription"> •William Cage (Tom Cruise), an officer who has never seen combat, is assigned to a suicide mission. Killed within moments, Cage finds himself thrown into a time loop, in which he relives the same brutal fight -- and his death -- over and over again.</p>
+                    <p class="movie-description" id="cartoonDescription"> •The Croods is a 2013 American animated adventure comedy film produced by DreamWorks Animation and distributed by 20th Century Fox. The film was written and directed by Kirk DeMicco and Chris Sanders, and stars the voices of Nicolas Cage, Emma Stone, Ryan Reynolds, Catherine Keener, Clark Duke, and Cloris Leachman.</p>
                     
                 </div>  
         </div>
@@ -262,33 +325,52 @@
     </div><hr/>
 
     <div class="footer">
-        <div class="links-container">
-            <a href="home.html"><span class="links">Home</span></a>
-            <a href="movies.html" ><span class="links">Movies</span></a>
-            <a href="series.html"><span class="links">TV Series</span></a>
-            <a href="sports.html"><span class="links">Sports</span></a>
-            <a href="children.html"><span class="links">Children</span></a>
-            <a href="guide.html"><span class="links">Guide</span></a>
-        </div>
 
         <div class="footer-logo-container">
             <img src="../images/index-images/logo1.png " class="footer-logo"/>
         </div>
 
+        <div class="links-container">
+            <h3> Links </h3>
+            <a href="home.html"><h5 class="links">Home</h5></a>
+            <a href="movies.html" ><h5 class="links">Movies</h5></a>
+            <a href="series.html"><h5 class="links">TV Series</h5></a>
+            <a href="sports.html"><h5 class="links">Sports</h5></a>
+            <a href="children.html"><h5 class="links">Children</h5></a>
+            <a href="guide.html"><h5 class="links">Guide</h5></a>
+        </div>
+
+        <div class="links2-container">
+            <h3> Legal </h3>
+            <h5 class="links">Copyright notice</h5>
+            <h5 class="links">Privacy Policy</h5>
+            <h5 class="links">Legal information</h5>
+            <a href="index.html"><h5 class="links">Landing page</h5></a>
+            <h5 class="links">Copyright notice</h5>
+            <h5 class="links">Copyright notice</h5>
+        </div>
+
+        <div class="email-container">
+            <span>Enter email to get notifications for latest release</span>
+            <input type="email" placeholder="Enter E-mail" class="email"/>
+            <button type="button" class="submit-email-btn"><b>Submit</b></button>
+        </div>
+
         <div class="media-img-container">
-            <img src="../images/home-images/facebook.png" class="social-media-img"/>
-            <img src="../images/home-images/instagram.png" class="social-media-img"/>
-            <img src="../images/home-images/twitter.png" class="social-media-img"/>
+            <div style="display:flex; justify-content: flex-end;">
+                <img src="../images/home-images/facebook.png" class="social-media-img"/>
+                <img src="../images/home-images/instagram.png" class="social-media-img"/>
+               <img src="../images/home-images/twitter.png" class="social-media-img"/>
+            </div>
+            <div>
+                <p style="color:#fff">Movie Sparker 2023 © All Right reserved</p>
+            </div>
         </div>
-        <div>
-            <p style="color:#fff">Movie Sparker 2023 © All Right reserved</p>
-        </div>
-    </div>
+
       
     </div>
-    
-    <script src="../javascript/home.js"></script>
 
+    <script src="../javascript/home.js"></script>
     <script src="https://kit.fontawesome.com/6ead3ba372.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -32,6 +32,9 @@ body{
     justify-content: space-between;
     position: relative;
 }
+#navbar-btn{
+    color:#ea0a51;
+}
 .menu-sec{
     position: absolute;
     left:150px;
@@ -138,9 +141,9 @@ body{
     
 }
 .small-movie-poster{
-    height: 200px;
-    width: 430px;
-    margin: 15px;
+    height: 220px;
+    width: 450px;
+    margin: 20px;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid #880360;
@@ -148,8 +151,8 @@ body{
     cursor: pointer;
 }
 .small-movie-poster:hover{
-    height: 220px;
-    width: 450px;
+    height: 240px;
+    width: 470px;
     margin: 10px;
     transition: 0.4s;
 }
@@ -162,6 +165,7 @@ body{
 .view-more-button{
     background-color:#ea0a51;
     color: white;
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     border: 2px solid white;
     border-radius: 20px;
@@ -174,5 +178,121 @@ body{
 .view-more-button:hover{
     color: #000;
     border: 3px solid #ea0a51;
+    background-color: #fff;
     transition: 0.5s;
 }
+/*footer css starts*/
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right,#e60a52,#780061);
+    height: 200px;
+    padding: 10px;
+}
+.links-container{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    width: 100px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: -15px;
+}
+.links2-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    width: 150px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: -15px;
+}
+.links{
+    padding: 2px;
+    margin: 2px;
+}
+.footer-logo-container{
+    margin-left: 20px;
+    margin-right: 170px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.footer-logo{
+    height: 100px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.email-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 50px;
+    margin-left: 70px;
+}
+.email{
+    height: 20px;
+    width: 250px;
+    margin: 10px;
+    margin-left: 0;
+    padding:5px;
+    border: 2px solid white;
+    color:white;
+    border-radius: 5px;
+    background-color: black;
+}
+.email:hover{
+    border:2px solid #880360;
+}
+.submit-email-btn{
+    height: 25px;
+    width: 150px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color:#ea0a51;
+    color: white;
+}
+.submit-email-btn:hover{
+    color: #000;
+    border: 3px solid #ea0a51;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.media-img-container{
+    display: block;
+    justify-content: flex-end;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.social-media-img{
+    height: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+.rights-section{
+    margin-top: 70px;
+    height: 50px;
+}
+.inpage-nav-btn-container{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: 2px solid grey;
+    border-radius: 30px;
+    opacity: 0.6;
+}
+.inpage-nav-btn-container:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+.inpage-nav-btn{
+    height: 30px;
+    padding: 10px;
+    opacity: 0.7;
+}
+.inpage-nav-btn:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+/*footer css ends*/

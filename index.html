@@ -8,12 +8,25 @@
     <style>
         .poster{
     position: relative;
-    height:600px;
+    height:700px;
     width:1350;
     background-image:url('./images/index-images/poster2.jpg'),linear-gradient(rgba(1,1,1,1.4),rgba(1,1,1,1.4));
-    opacity:25%;
+    opacity:35%;
     box-shadow: 10 10 10 white;
+    background-size: cover;
+    background-repeat: none;
     
+}
+@media only screen and (min-width:300px) and (max-width:430px){
+    .poster{
+    position: relative;
+    height:400px;
+    width:450;
+    background-image:url('./images/index-images/poster2.jpg'),linear-gradient(rgba(1,1,1,1.4),rgba(1,1,1,1.4));
+    opacity:35%;
+    box-shadow: 10 10 10 white;
+    background-size: cover;
+}
 }
 
     </style>
@@ -25,11 +38,13 @@
     <div class="navbar">
         <img src="./images/index-images/logo1.png" class="logo">
        <div class="menu-sec">
-            <button class="nav-btn">Home</button>
-            <button class="nav-btn">Movies</button>
-            <button class="nav-btn">TV shows</button>
+            <a href="./pages/home.html"><button class="nav-btn">Home</button></a>
+            <a href="./pages/movies.html"><button class="nav-btn">Movies</button></a>
+            <a href="./pages/series.html"><button class="nav-btn">TV shows</button></a>
             <a href="./pages/sports.html"><button class="nav-btn"> Sports</button></a>
-            <button class="nav-btn">Guide</button>
+            <a href="./pages/children.html"><button class="nav-btn">Children</button></a>
+            <a href="./pages/guid.html"> <button class="nav-btn">Guide</button></a>
+           
             
         </div>
         <input type="text" placeholder="Search movies,Tv shows" class="search">
@@ -48,7 +63,7 @@
         <img  src="./images/index-images/logorbg.png" class="poster-logo">
         <h1 class="welcome">Welcome To The World of Entertainment</h1>
         <h3 class="tagline welcome2"><i> Immerse yourself in the magic of movies, where each click unveils a world of cinematic wonders.</i></h3>
-        <h3 class="welcome3"><i>Lights, camera, action – let the show begin!"</i></h3>
+        <h3 class="welcome3"><i>"Lights, camera, action – let the show begin!"</i></h3>
         <a href="./pages/home.html"><button class="explore">Explore Now</button></a>
     </div>
     <div class="cards-container">
@@ -62,8 +77,74 @@
         </div>
         <div class=" cards">
             <img src="./images/index-images/tv.jpg" class="front-card-img">
-            <h6 class="text">Your favourite tv shows anytime & anywheregit pull</h6>
+            <h6 class="text">Your favourite tv shows anytime & anywhere</h6>
         </div>
+    </div>
+    <div class="cards-container">
+        <div class=" cards">
+            <img src="./images/index-images/sports.jpg" class="front-card-img">
+            <h6 class="text">Stay updated about the Sports World</h6>
+        </div>
+        <div class=" cards">
+            <img src="./images/index-images/bolly.jpg" class="front-card-img">
+            <h6 class="text">All Your favourite Boolywood Movies</h6>
+        </div>
+        <div class=" cards">
+            <img src="./images/index-images/best.jpg" class="front-card-img">
+            <h6 class="text">Best content for Children</h6>
+        </div>
+    </div>
+    <div class="footer">
+
+        <div class="footer-logo-container">
+            <img src="./images/index-images/logo1.png " class="footer-logo"/>
+        </div>
+
+        <div class="links-container">
+            <h3> Links </h3>
+            <a href="home.html"><h5 class="links">Home</h5></a>
+            <a href="movies.html" ><h5 class="links">Movies</h5></a>
+            <a href="series.html"><h5 class="links">TV Series</h5></a>
+            <a href="sports.html"><h5 class="links">Sports</h5></a>
+            <a href="children.html"><h5 class="links">Children</h5></a>
+            <a href="guide.html"><h5 class="links">Guide</h5></a>
+        </div>
+
+        <div class="links2-container">
+            <h3> Legal </h3>
+            <h5 class="links">Copyright notice</h5>
+            <h5 class="links">Privacy Policy</h5>
+            <h5 class="links">Legal information</h5>
+            <a href="../index.html"><h5 class="links"><b>Landing page</b></h5></a>
+        </div>
+
+        <div class="links2-container">
+            <h3> Support </h3>
+            <h5 class="links">FAQ</h5>
+            <h5 class="links">Contact us</h5>
+            <h5 class="links">Help desk</h5>
+        </div>
+
+        <div class="email-container">
+            <span class="enter-email">Enter email to get notifications for latest release</span>
+            <input type="email" placeholder="Enter E-mail" class="email"/>
+            <button type="button" class="submit-email-btn"><b>Submit</b></button>
+        </div>
+
+        <div class="media-img-container">
+            <div style="padding-left:150px;">
+                <p class="contact"> Connect with us </p>
+            </div>
+            <div style="display:flex; justify-content: flex-end;">
+                <img src="./images/home-images/facebook.png" class="social-media-img"/>
+                <img src="./images/home-images/instagram.png" class="social-media-img"/>
+               <img src="./images/home-images/twitter.png" class="social-media-img"/>
+            </div>
+            <div class="rights-section">
+                <p class="para"> Movie Sparker 2023 © All Right reserved </p>
+            </div>
+        </div>
+
     </div>
     
     
