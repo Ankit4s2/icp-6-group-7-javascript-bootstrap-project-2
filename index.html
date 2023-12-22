@@ -11,8 +11,22 @@
     height:600px;
     width:1350;
     background-image:url('./images/index-images/poster2.jpg'),linear-gradient(rgba(1,1,1,1.4),rgba(1,1,1,1.4));
-    opacity:25%;
+    opacity:35%;
     box-shadow: 10 10 10 white;
+    background-size: cover;
+    background-repeat: none;
+    
+}
+@media only screen and (min-width:300px) and (max-width:430px){
+    .poster{
+    position: relative;
+    height:400px;
+    width:450;
+    background-image:url('./images/index-images/poster2.jpg'),linear-gradient(rgba(1,1,1,1.4),rgba(1,1,1,1.4));
+    opacity:35%;
+    box-shadow: 10 10 10 white;
+    background-size: cover;
+}
 }
 
     </style>
@@ -24,11 +38,13 @@
     <div class="navbar">
         <img src="./images/index-images/logo1.png" class="logo">
        <div class="menu-sec">
-            <button class="nav-btn">Home</button>
-            <button class="nav-btn">Movies</button>
-            <button class="nav-btn">TV shows</button>
+            <a href="./pages/home.html"><button class="nav-btn">Home</button></a>
+            <a href="./pages/movies.html"><button class="nav-btn">Movies</button></a>
+            <a href="./pages/series.html"><button class="nav-btn">TV shows</button></a>
             <a href="./pages/sports.html"><button class="nav-btn"> Sports</button></a>
-            <button class="nav-btn">Guide</button>
+            <a href="./pages/children.html"><button class="nav-btn">Children</button></a>
+            <a href="./pages/guid.html"> <button class="nav-btn">Guide</button></a>
+           
             
         </div>
         <input type="text" placeholder="Search movies,Tv shows" class="search">
@@ -47,7 +63,7 @@
         <img  src="./images/index-images/logorbg.png" class="poster-logo">
         <h1 class="welcome">Welcome To The World of Entertainment</h1>
         <h3 class="tagline welcome2"><i> Immerse yourself in the magic of movies, where each click unveils a world of cinematic wonders.</i></h3>
-        <h3 class="welcome3"><i>Lights, camera, action – let the show begin!"</i></h3>
+        <h3 class="welcome3"><i>"Lights, camera, action – let the show begin!"</i></h3>
         <a href="./pages/home.html"><button class="explore">Explore Now</button></a>
     </div>
     <div class="cards-container">
@@ -61,7 +77,21 @@
         </div>
         <div class=" cards">
             <img src="./images/index-images/tv.jpg" class="front-card-img">
-            <h6 class="text">Your favourite tv shows anytime & anywheregit pull</h6>
+            <h6 class="text">Your favourite tv shows anytime & anywhere</h6>
+        </div>
+    </div>
+    <div class="cards-container">
+        <div class=" cards">
+            <img src="./images/index-images/sports.jpg" class="front-card-img">
+            <h6 class="text">Stay updated about the Sports World</h6>
+        </div>
+        <div class=" cards">
+            <img src="./images/index-images/bolly.jpg" class="front-card-img">
+            <h6 class="text">All Your favourite Boolywood Movies</h6>
+        </div>
+        <div class=" cards">
+            <img src="./images/index-images/best.jpg" class="front-card-img">
+            <h6 class="text">Best content for Children</h6>
         </div>
     </div>
     
