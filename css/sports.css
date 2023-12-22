@@ -5,6 +5,9 @@ body{
     margin:0;
     padding:0;
 }
+a{
+    text-decoration: none;
+}
 .heading{
     text-align: center;
 }
@@ -27,9 +30,6 @@ body{
 }
 .search:hover{
     border:2px solid #880360;
-}
-.navbar-container{;
-
 }
 .navbar{
     margin:5px 10px;
@@ -78,7 +78,7 @@ body{
 .poster-container{
     border:2px solid  #85035e;
     height:550px;
-    width:1400px;
+    width:95%;
     display:flex;
     margin:5px auto;
     position:relative;
@@ -87,7 +87,7 @@ body{
 
 .sports-poster{
     height:520px;
-    width:1340px;
+    width:1330px;
     display:block;
     margin:5px auto;
     box-shadow: 4px 8px 20px 0px gray ;
@@ -137,10 +137,10 @@ body{
 .posters-container{
     border:2px solid  #85035e;
     height:320px;
-    width:1370px;
+    width:95%;
     display:block;
-    margin:5px auto;
-    padding:20px;
+    margin:25px auto;
+    padding:25px 5px;
     display:flex;
     justify-content:space-between;
     
@@ -227,6 +227,114 @@ fieldset{
 .cartoon{
     margin-top: 95px;
 }
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right,#e60a52,#780061);
+    height: 300px;
+    padding: 10px;
+}
+.links-container{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    width: 100px;
+    padding: 5px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.links2-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    width: 150px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.links{
+    padding: 2px;
+    margin: 2px;
+    color:#000
+}
+.links:hover{
+    color: #eee;
+}
+.footer-logo-container{
+    margin-left: 20px;
+    margin-right: 170px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.footer-logo{
+    height: 100px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.enter-email{
+    font-weight: bold;
+}
+.email-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 50px;
+    margin-left: 55px;
+}
+.email{
+    height: 20px;
+    width: 250px;
+    margin: 10px;
+    margin-left: 0;
+    padding:5px;
+    border: 2px solid white;
+    color:white;
+    border-radius: 5px;
+    background-color: black;
+}
+.email:hover{
+    border:2px solid #880360;
+}
+.submit-email-btn{
+    height: 25px;
+    width: 150px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color:#ea0a51;
+    color: white;
+}
+.submit-email-btn:hover{
+    color: #000;
+    border: 3px solid #ea0a51;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.contact{
+   color:#ffffff; 
+}
+.media-img-container{
+    display: block;
+    justify-content: flex-end;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.social-media-img{
+    height: 25px;
+    padding: 5px;
+    margin: 5px;
+}
+.rights-section{
+    margin-top: 70px;
+    height: 50px;
+}
+
+.para{
+    position: relative;
+    right: -45px;
+}
+
 @media only screen and (min-width:300px) and (max-width:430px){
     .logo{
         height:50px;
@@ -415,7 +523,97 @@ fieldset{
        margin-left: 1000px;
        height: 10px;
     }
+    .footer{
+        background-image: linear-gradient(to bottom,#e60a52,#780061);
+        height: 1000px;
+        padding: 10px;
+    }
+    .links-container{
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        height: 190px;
+        width: 100px;
+        padding: 5px;
+        margin-left: 8px;
+        margin-top: 15px;
+    }
+    .links2-container{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        height: 190px;
+        width: 100px;
+        padding: 10px;
+        margin-left: 8px;
+        margin-top: 15px;
+    }
+    .links{
+        padding: 2px;
+        margin: 2px;
+        color: #000;
+       
+    }
+    .links:hover{
+        color:#eee;
+    }
+    .footer-logo-container{
+        margin-left:110px;
+        
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .email-container{
+        justify-content: start;
+        padding-top: 20px;
+        margin-left: 30px;
+    }
+    .email{
+        margin-left: 0;
+        padding:5px;
+        border: 2px solid white;
+    }
+    .email:hover{
+        border:2px solid #880360;
+    }
+    .submit-email-btn{
+        height: 25px;
+        width: 150px;
+        border-radius: 5px;
+        border: 2px solid white;
+        background-color:#ea0a51;
+        color: white;
+    }
+    .submit-email-btn:hover{
+        color: #000;
+        border: 3px solid #ea0a51;
+        background-color: #fff;
+        transition: 0.5s;
+    }
+    .media-img-container{
+        display: block;
+        justify-content: flex-end;
+        margin-top:-20px;
+        margin-left:-30px;
+        margin-bottom: auto;
+    }
+    .social-media-img{
+        height: 25px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .rights-section{
+        margin-top: 70px;
+        height: 50px;
+        margin-left: 10px;
+    }
+   
+    .para{
+        position: relative;
+        left:55px;
+    }
 }
+
 @media screen and (min-width:440px) and (max-width:690px){
     .logo{
         height:70px;
@@ -603,6 +801,96 @@ fieldset{
     height: 60px;
 
 }
+.footer{
+    background-image: linear-gradient(to bottom,#e60a52,#780061);
+    height: 1000px;
+    padding: 10px;
+}
+.links-container{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    width: 130px;
+    padding: 5px;
+    margin-left: 100px;
+    margin-top: -60px;
+}
+.links2-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    width: 150px;
+    padding: 10px;
+    margin-left: 8px;
+    margin-top: -60px;
+}
+.links{
+    padding: 2px;
+    margin: 2px;
+    color: #000;
+   
+}
+.links:hover{
+    color:#eee;
+}
+.footer-logo-container{
+    margin-left:245px;
+    
+    margin-top:20px;
+    margin-bottom: auto;
+}
+.email-container{
+    justify-content: start;
+    padding-top: 20px;
+    margin-left: 160px;
+}
+.email{
+    margin-left: 0;
+    padding:5px;
+    border: 2px solid white;
+}
+.email:hover{
+    border:2px solid #880360;
+}
+.submit-email-btn{
+    height: 25px;
+    width: 150px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color:#ea0a51;
+    color: white;
+}
+.submit-email-btn:hover{
+    color: #000;
+    border: 3px solid #ea0a51;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.contact{
+    margin-left: 60px;
+}
+.media-img-container{
+    display: block;
+    justify-content: flex-end;
+    margin-top:-20px;
+    margin-left:60px;
+    margin-bottom: auto;
+}
+.social-media-img{
+    height: 25px;
+    padding: 5px;
+    margin: 5px;
+}
+.rights-section{
+    margin-top: 70px;
+    height: 50px;
+    margin-left: 60px;
+}
 
-
+.para{
+    position: relative;
+    left:55px;
+}
 }
