@@ -215,276 +215,376 @@ fieldset{
 .footer{
     display: flex;
     flex-wrap: wrap;
-    height: 160px;
+    background-image: linear-gradient(to right,#e60a52,#780061);
+    height: 200px;
+    padding: 10px;
 }
 .links-container{
-    background-color: aliceblue;
-    color: black;
+    color: #fff;
     display: flex;
     flex-direction: column;
-    height: 130px;
+    height: 190px;
     width: 100px;
     padding: 5px;
-    margin: 5px;
+    margin-left: 20px;
+    margin-top: -15px;
+}
+.links2-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    width: 150px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: -15px;
 }
 .links{
     padding: 2px;
+    margin: 2px;
 }
 .footer-logo-container{
-    background-color: aliceblue;
-    margin: auto;
+    margin-left: 20px;
+    margin-right: 170px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .footer-logo{
     height: 100px;
     padding: 10px;
+    border-radius: 20px;
+}
+.email-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 50px;
+    margin-left: 70px;
+}
+.email{
+    height: 20px;
+    width: 250px;
+    margin: 10px;
+    margin-left: 0;
+    padding:5px;
+    border: 2px solid white;
+    color:white;
+    border-radius: 5px;
+    background-color: black;
+}
+.email:hover{
+    border:2px solid #880360;
+}
+.submit-email-btn{
+    height: 25px;
+    width: 150px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color:#ea0a51;
+    color: white;
+}
+.submit-email-btn:hover{
+    color: #000;
+    border: 3px solid #ea0a51;
+    background-color: #fff;
+    transition: 0.5s;
 }
 .media-img-container{
-    position: relative;
-    background-color: aliceblue;
+    display: block;
+    justify-content: flex-end;
     margin-top: auto;
     margin-bottom: auto;
-    right: 50px;
-    
 }
 .social-media-img{
     height: 20px;
     padding: 5px;
     margin: 5px;
-   
 }
-@media only screen and (min-width:300px) and (max-width:430px){
-    .logo{
-        height:50px;
+.rights-section{
+    margin-top: 70px;
+    height: 50px;
+}
+.inpage-nav-btn-container{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: 2px solid grey;
+    border-radius: 30px;
+    opacity: 0.6;
+}
+.inpage-nav-btn-container:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+.inpage-nav-btn{
+    height: 30px;
+    padding: 10px;
+    opacity: 0.7;
+}
+.inpage-nav-btn:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+@media only screen and (min-width:300px) and (max-width:430px) {
+    .logo {
+        height: 50px;
         margin-left: -10px;
         margin-top: 1px;
+        width: 90px;
     }
-    .search{
+
+    .search {
         border: 1px solid white;
-        color:white;
+        color: white;
         border-radius: 5px;
-        height: 15px;
-        width:160px;
+        height: 20px;
+        width: 180px;
         background-color: black;
         position: absolute;
-        right:125px;
-        top:13px;
-    
+        left: 80px;
+        top: 13px;
     }
-    
-    .navbar{
-        margin:5px 10px;
-        display:flex;
+
+    .navbar {
+        margin: 5px 5px;
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         position: relative;
         flex-wrap: wrap;
     }
-    .menu-sec{
+
+    .menu-sec {
         position: absolute;
-        left:20px;
-        top:40px;
+        left: 27px;
+        top: 60px;
     }
-    .nav-btn{
-        background-color: black;
+
+    .nav-btn {
+        background: none;
         color: white;
-        border: none;
-        padding:10px;
-        font-size: 13px;
-        cursor:pointer;
-    
+        background-color: none;
+        font-size: 20px;
+        padding: 2px 5px;
+        position: relative;
+        left: 40px;
     }
-    
-    .login{
+
+    .login {
         font-weight: bold;
-        height: 20px;
-        width:55px;
-        font-size: 10px;
-        cursor:pointer;    
-    }
-    .login-btn{
-        position: absolute;
-        right:4px;
-        top:12px;
-    }
-    .heading{
-        text-align: center;
+        height: 24px;
+        width: 65px;
         font-size: 15px;
-        margin-top: 50px;
-
-}
-   .poster-container{
-    border:1px solid  #85035e;
-    height:200px;
-    width:390px;
-
-}
-
-   .sports-poster{
-    height:190px;
-    width:390px;
-    box-shadow: 2px 4px 12px 0px gray ;
-}
-   .switch-img{
-    font-size: 12px;
-    border-radius:7px;
-    height:25px;
-    width:80px;
-    margin-left:160px;
-    margin-top: 2px;
-    margin-bottom: 5px;
-    padding:3px;
-    position: relative;
-   }
-   .arrow{
-    position: absolute;
-    top:12px;
-    left:1300px;
-   }
-
-   .display-block{
-        border:2px solid  #85035e;
-        height:400px;
-        width:1100px;
-        display:block;
-        margin:5px auto;
-        padding:20px;
-    
+        cursor: pointer;
     }
-    .posters-container{
-        border:2px solid  #85035e;
-        height:auto;
-        width:370px;
-        margin:5px auto;
-        padding:20px;
-        display:flex;
-        justify-content:space-between;
-        flex-wrap: wrap;
-        
-    
+
+    .login-btn {
+        position: absolute;
+        top: 12px;
+        right: -110px;
     }
-    
-    .cards{
-        border:2px solid black;
-        border-radius:20px;
-        height:150px;
-        width:160px;
-        box-shadow: 3px 4px 10px 0px gray ;
-        margin: 10px;
+
+    .header {
+        border: 1px solid #85035e;
+        height: 200px;
+        width: 380px;
+        margin-top: 80px;
+        margin-right: 100px;
     }
-        
-    
-    .card-img{
-        height:150px;
-        width:160px;
-        border-radius:20px;
-    
-    
+
+    .p2 {
+        display: none;
     }
-    .screen{
-        width:390;
+
+    .header img {
+        height: 190px;
+        width: 380px;
+        box-shadow: 2px 4px 12px 0px gray;
+    }
+
+    .explore {
+        font-size: 12px;
+        border-radius: 7px;
+        height: 40px;
+        width: 100px;
+        padding: 3px;
+        position: absolute;
+        left: 168px;
+        top: 355px;
+    }
+
+    .banner {
+        border: 2px solid #85035e;
+        height: 400px;
+        width: 380px;
+        display: block;
+        margin: 5px;
+        padding: 10px;
+
+    }
+
+    .container {
+        border: 2px solid #85035e;
+        height: 640px;
+        width: 350px;
+        padding: 10px;
+        display: flex;
+        margin-right: 5px;
+    }
+
+    .crd {
+        border-radius: 20px;
+        height: 140px;
+        width: 140px;
+        box-shadow: 0px 0px px 10px gray;
+        margin: 5px 10px 5px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .crd img {
+        height: 140px;
+        width: 140px;
+        border-radius: 20px;
+        margin: 10px 10px 10px 10px;
+    }
+
+    .screen {
+        width: 390;
         display: flex;
         justify-content: space-evenly;
     }
+
     .banner {
-        height: 300px;
+        height: 200px;
         display: none;
     }
+
     .prt1 img {
-        height: 200px;
-        width: 50%;
+        height: 170px;
+        width: 20%;
         align-items: left;
         margin-left: 9px;
         box-shadow: 0 0 10px rgba(248, 246, 246, 0.964);
     }
-    .prt1 {
-        display: flex;
-    }
+
     .prt2 {
         margin-top: 20px;
-        padding: 20px;
-        margin-left: 20px;
-        border-radius: 5px;
-        border: 3px solid #880360;
-        width: 390px;
+        padding: 10px;
+        margin-left: 10px;
+        width: 50%;
         height: 200px;
+        border: 0;
     }
+
     .prt2 img {
-        height: 190px;
-        width: 110px;
-        box-shadow: 0 0 0 0;
-        display: flex;
-        position: absolute;
-        left: 40%;
-        top: 105%;
+        display: none;
     }
-    fieldset{
-        margin-top: 20px;
-        padding: 15px;
-        margin-left: 20px;
-        border-radius: 5px;
-        width:180px;
-        height:190px;
+
+    fieldset {
+        padding: 1px;
+        margin-left: 2px;
+        border-radius: 1px;
+        width: 270px;
+        height: 20px;
     }
-    .details{
-        font-size:10px;
-        text-decoration:underline;
+
+    legend {
+        font-size: xx-small;
     }
-    .dis{
-        font-size:4px;
+
+    fieldset h4 {
+        display: none;
+    }
+
+    fieldset p {
+        display: none;
     }
 }
-@media screen and (min-width:440px) and (max-width:690px){
-  .logo{
-        height:70px;
-    }
-    .search{
-        border: 1px solid white;
-        height: 28px;
-        width:260px;
-        position: absolute;
-        right:270px;
-        top:13px;
-    
-    }
-   
-    .navbar{
-        margin:5px 10px;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        position: relative;
-        flex-wrap: wrap;
-    }
-    .menu-sec{
-        position: absolute;
-        left:100px;
-        top:50px;
-    }
-    .nav-btn{
-        border: none;
-        padding:20px;
-        font-size: 16px;
 
-    
+@media screen and (min-width:440px) and (max-width:690px) {
+    .logo {
+        height: 190px;
     }
-    
-    .login{
+
+    .search {
+        border: 2px solid white;
+        height:70px;
+        width: 500px;
+        position: absolute;
+        left: 270px;
+        top:35px;
+    }
+
+    .navbar {
+        margin: 5px 10px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .menu-sec {
+        position: absolute;
+        left:50px;
+        top: 130px;
+        display:flex;
+        direction: row;
+    }
+
+    .nav-btn {
+        border: none;
+        padding:20px 50px;
+        font-size:40px;
+    }
+    .login {
+        position:relative;
+        left:1100px;
+        top: 12px;
+        font-size:40px;
         font-weight: bold;
-        height: 30px;
-        width:80px;
-        font-size: 13px;
-        cursor:pointer;    
+        height:80px;
+        width:200px;
+        cursor: pointer;
+        margin-right: 12px;
+
     }
     .login-btn{
-        position: absolute;
-        right:4px;
-        top:12px;
+        display: flex;
+        flex-direction: row;
     }
-    .heading{
-        text-align: center;
-        font-size: 15px;
-        margin-top: 50px;
+    .header {
+        border: 1px solid #85035e;
+        height: 600px;
+        width: 730px;
+        margin-top:120px;
+        margin-right: 100px;
+    }
+    .explore {
+        font-size:30px;
+        border-radius: 7px;
+        height:80px;
+        width: 200px;
+        padding: 3px;
+        position: absolute;
+        left:640px;
+        top:920px;
+    }
+    .container{
+        margin-top:40px;
+        height:750px;
+    }
+    .banner{
+        margin-top:40px;
+    }
+    .prt2 img{
+        position:absolute;
+        left:1150px;
+        top:1100px;
+    }
+    fieldset p{
+        font-size:40px;
+    }
 
+    
 }
-}
-
