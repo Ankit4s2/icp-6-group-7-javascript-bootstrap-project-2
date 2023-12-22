@@ -5,8 +5,9 @@ body{
     margin:0;
     padding:0;
 }
-.heading{
-    text-align: center;
+.navbar-container{
+    position:fix;
+
 }
 .logo{
     height:100px;
@@ -21,14 +22,13 @@ body{
     width:300px;
     background-color: black;
     position: absolute;
-    right:600px;
+    right:500px;
     top:20px;
 
 }
 .search:hover{
     border:2px solid #880360;
 }
-
 .navbar{
     margin:5px 10px;
     display:flex;
@@ -73,13 +73,16 @@ body{
     color:#ea0a51;
 
 }
-.poster-container{
+.posters-container{
     border:2px solid  #85035e;
-    height:550px;
-    width:1400px;
+    height:auto;
+    width:370px;
+    margin:5px auto;
+    padding:20px;
     display:flex;
-    margin:5px ;
-    position:relative;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    
 
 }
 
@@ -95,8 +98,7 @@ body{
 .sports-poster:hover{
     transform: scale(1.01);
     transition: 0.2s ease;
-    box-shadow: 4px 4px 4px 4px gray ;
-}
+    box-shadow: 4px 4px 4px 4px gray ;}
 .switch-img{
     color:white;
     font-size: 20px;
@@ -122,7 +124,7 @@ body{
 .arrow{
     position: absolute;
     top:12px;
-    left:160px;
+    left:160px
 }
 .display-block{
     border:2px solid  #85035e;
@@ -325,7 +327,7 @@ fieldset{
     opacity: 1;
     transition: 0.5s;
 }
-
+   
 @media only screen and (min-width:300px) and (max-width:430px) {
     .logo {
         height: 50px;
@@ -587,4 +589,4 @@ fieldset{
     }
 
     
-}
+} 
