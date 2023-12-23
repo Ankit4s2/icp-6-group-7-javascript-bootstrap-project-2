@@ -1,5 +1,5 @@
 body{
- background-color: #000;
+  
  text-decoration: none;
  color:white;
  margin:0;
@@ -7,11 +7,12 @@ body{
 }
 
  form {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
+  background-color: black;
+    border-radius: 15px;
+    padding: 30px;
     width: 300px;
     margin: 0 auto;
+    margin-top: 70px;
   }
   .heading{
     text-align: center;
@@ -79,4 +80,9 @@ body{
 
 .forget-a:hover {
     text-decoration: underline;
+}
+@media screen and (min-width: 350px) and (max-width:660px){
+  .form{
+    width: 250px;
+  }
 }
