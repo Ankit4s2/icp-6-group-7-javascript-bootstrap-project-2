@@ -14,4 +14,4 @@ It will help you discover,explore and enjoy wide world of Entertainment.
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/kiran-jaswant/icp-6-group-7-javascript-bootstrap-project-2/blob/main/ss1.png?raw=true)
