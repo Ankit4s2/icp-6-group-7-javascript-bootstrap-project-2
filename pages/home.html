@@ -5,122 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 <link rel="stylesheet" href="../css/home-page.css"/>
-<style>
-    /*footer css*/
-    .footer{
-        display: flex;
-        flex-wrap: wrap;
-        background-image: linear-gradient(to right,#e60a52,#780061);
-        height: 200px;
-        padding: 10px;
-    }
-    .links-container{
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        height: 190px;
-        width: 100px;
-        padding: 5px;
-        margin-left: 20px;
-        margin-top: -15px;
-    }
-    .links2-container{
-        color: white;
-        display: flex;
-        flex-direction: column;
-        height: 190px;
-        width: 150px;
-        padding: 5px;
-        margin-left: 20px;
-        margin-top: -15px;
-    }
-    .links{
-        padding: 2px;
-        margin: 2px;
-    }
-    .footer-logo-container{
-        margin-left: 20px;
-        margin-right: 170px;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    .footer-logo{
-        height: 100px;
-        padding: 10px;
-        border-radius: 20px;
-    }
-    .email-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        padding-top: 50px;
-        margin-left: 70px;
-    }
-    .email{
-        height: 20px;
-        width: 250px;
-        margin: 10px;
-        margin-left: 0;
-        padding:5px;
-        border: 2px solid white;
-        color:white;
-        border-radius: 5px;
-        background-color: black;
-    }
-    .email:hover{
-        border:2px solid #880360;
-    }
-    .submit-email-btn{
-        height: 25px;
-        width: 150px;
-        border-radius: 5px;
-        border: 2px solid white;
-        background-color:#ea0a51;
-        color: white;
-    }
-    .submit-email-btn:hover{
-        color: #000;
-        border: 3px solid #ea0a51;
-        background-color: #fff;
-        transition: 0.5s;
-    }
-    .media-img-container{
-        display: block;
-        justify-content: flex-end;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    .social-media-img{
-        height: 20px;
-        padding: 5px;
-        margin: 5px;
-    }
-    .rights-section{
-        margin-top: 70px;
-        height: 50px;
-    }
-    .inpage-nav-btn-container{
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        border: 2px solid grey;
-        border-radius: 30px;
-        opacity: 0.6;
-    }
-    .inpage-nav-btn-container:hover{
-        opacity: 1;
-        transition: 0.5s;
-    }
-    .inpage-nav-btn{
-        height: 30px;
-        padding: 10px;
-        opacity: 0.7;
-    }
-    .inpage-nav-btn:hover{
-        opacity: 1;
-        transition: 0.5s;
-    }
-</style>
 </head>
 <body>
    <div class="navbar" id="top-nav">
@@ -130,7 +14,8 @@
             <a href="movies.html"><button class="nav-btn" >Movies</button></a>
             <a href="series.html"><button class="nav-btn" >TV shows</button></a>
             <a href="sports.html"><button class="nav-btn">Sports</button></a>
-            <a href="guide.html"><button class="nav-btn">Guide</button></a>
+            <a href="../pages/children.html"><button class="nav-btn">Children</button></a>
+            <a href="guid.html"><button class="nav-btn">Guide</button></a>
             
         </div>
         <input type="text" placeholder="Search movies,Tv shows" class="search">
@@ -150,20 +35,23 @@
                 <img src="../images/home-images/edge-of-tomorrow.jpeg" class="movie-poster" id="movieBigPoster"/>
 
                 <div class="movie-description-container">
-                    <div class="title">
-                        <h1 id="movieTitle">Edge Of Tomorrow</h1>
-                        <div id="movieRatings">
-                            •98% match •2014 •Action/Sci-fi •1h53min
+                    <div class="title-container">
+                        <div class="title">
+                            <h1 id="movieTitle">Edge Of Tomorrow</h1>
+                            <div id="movieRatings">
+                                •98% match •2014 •Action/Sci-fi •1h53min
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="icons-container">
+                            <i class="fa-regular fa-thumbs-up" id="icons"></i>
+                            <i class="fa-regular fa-thumbs-down" id="icons"></i>
+                            <i class="fa-solid fa-plus" id="icons"></i> 
+                            <h5 style="color:#fff; margin-left:-20px;"> Watchlist </h5>
                         </div>
                     </div>
-                    
-                    <div class="icons-container">
-                        <i class="fa-regular fa-thumbs-up" id="icons"></i>
-                        <i class="fa-regular fa-thumbs-down" id="icons"></i>
-                        <i class="fa-solid fa-plus" id="icons"></i> 
-                        <h5 style="color:#fff; margin-left:-20px;"> Watchlist </h5>
-                    </div>
-                    
+
                     <p class="movie-description" id="movieDescription"> •William Cage (Tom Cruise), an officer who has never seen combat, is assigned to a suicide mission. Killed within moments, Cage finds himself thrown into a time loop, in which he relives the same brutal fight -- and his death -- over and over again.</p>
                     
                 </div>  
@@ -197,13 +85,15 @@
                 <img src="../images/home-images/savdhan-india.jpeg" class="movie-poster" id="showBigPoster"/>
 
                 <div class="movie-description-container">
-                    <div class="title">
-                        <h1 id="showTitle">Savdhan India</h1>
-                        <div id="showRatings">
-                            •66% liked •2012 •Crime •7 seasons
+                    <div class="title-container">
+                        <div class="title">
+                            <h1 id="showTitle">Savdhan India</h1>
+                            <div id="showRatings">
+                                •66% liked •2012 •Crime •7 seasons
+                            </div>
                         </div>
                     </div>
-                    
+
                     <div class="icons-container">
                         <i class="fa-regular fa-thumbs-up" id="icons"></i>
                         <i class="fa-regular fa-thumbs-down" id="icons"></i>
@@ -243,13 +133,15 @@
                 <img src="../images/home-images/ipl.jpeg" class="movie-poster" id="sportsBigPoster"/>
 
                 <div class="movie-description-container">
-                    <div class="title">
-                        <h1 id="sportsTitle">IPL</h1>
-                        <div id="sportsRatings">
-                            •2008
+                    <div class="title-container">    
+                        <div class="title">
+                            <h1 id="sportsTitle">IPL</h1>
+                            <div id="sportsRatings">
+                                •2008
+                            </div>
                         </div>
                     </div>
-                    
+
                     <div class="icons-container">
                         <i class="fa-regular fa-thumbs-up" id="icons" ></i>
                         <i class="fa-regular fa-thumbs-down" id="icons" ></i>
@@ -288,13 +180,15 @@
                 <img src="../images/home-images/croods.jpeg" class="movie-poster" id="cartoonBigPoster"/>
 
                 <div class="movie-description-container">
-                    <div class="title">
-                        <h1 id="cartoonTitle">The Croods 2: A New Age</h1>
-                        <div id="cartoonRatings">
-                            •69% match •2020 •Adventure/Comedy •1h35min
+                    <div class="title-container">
+                        <div class="title">
+                            <h1 id="cartoonTitle">The Croods 2: A New Age</h1>
+                            <div id="cartoonRatings">
+                                •69% match •2020 •Adventure/Comedy •1h35min
+                            </div>
                         </div>
                     </div>
-                    
+
                     <div class="icons-container">
                         <i class="fa-regular fa-thumbs-up" id="icons"></i>
                         <i class="fa-regular fa-thumbs-down" id="icons"></i>
@@ -330,24 +224,31 @@
             <img src="../images/index-images/logo1.png " class="footer-logo"/>
         </div>
 
-        <div class="links-container">
-            <h3> Links </h3>
-            <a href="home.html"><h5 class="links">Home</h5></a>
-            <a href="movies.html" ><h5 class="links">Movies</h5></a>
-            <a href="series.html"><h5 class="links">TV Series</h5></a>
-            <a href="sports.html"><h5 class="links">Sports</h5></a>
-            <a href="children.html"><h5 class="links">Children</h5></a>
-            <a href="guide.html"><h5 class="links">Guide</h5></a>
-        </div>
+        <div class="all-links-container">
+            <div class="links-container">
+                <h3> Links </h3>
+                <a href="home.html"><h5 class="links">Home</h5></a>
+                <a href="movies.html" ><h5 class="links">Movies</h5></a>
+                <a href="series.html"><h5 class="links">TV Series</h5></a>
+                <a href="sports.html"><h5 class="links">Sports</h5></a>
+                <a href="children.html"><h5 class="links">Children</h5></a>
+                <a href="guid.html"><h5 class="links">Guide</h5></a>
+            </div>
 
-        <div class="links2-container">
-            <h3> Legal </h3>
-            <h5 class="links">Copyright notice</h5>
-            <h5 class="links">Privacy Policy</h5>
-            <h5 class="links">Legal information</h5>
-            <a href="index.html"><h5 class="links">Landing page</h5></a>
-            <h5 class="links">Copyright notice</h5>
-            <h5 class="links">Copyright notice</h5>
+            <div class="links2-container">
+                <h3> Legal </h3>
+                <h5 class="links">Copyright notice</h5>
+                <h5 class="links">Privacy Policy</h5>
+                <h5 class="links">Legal information</h5>
+                <a href="../index.html"><h5 class="links"><b>Landing page</b></h5></a>
+            </div>
+
+            <div class="links2-container">
+                <h3> Support </h3>
+                <h5 class="links">FAQ</h5>
+                <h5 class="links">Contact us</h5>
+                <h5 class="links">Help desk</h5>
+            </div>
         </div>
 
         <div class="email-container">
@@ -357,17 +258,23 @@
         </div>
 
         <div class="media-img-container">
+            <div style="padding-left:150px;">
+                <p style="color:#ffffff"> Connect with us </p>
+            </div>
             <div style="display:flex; justify-content: flex-end;">
                 <img src="../images/home-images/facebook.png" class="social-media-img"/>
                 <img src="../images/home-images/instagram.png" class="social-media-img"/>
                <img src="../images/home-images/twitter.png" class="social-media-img"/>
             </div>
-            <div>
-                <p style="color:#fff">Movie Sparker 2023 © All Right reserved</p>
+            <div class="rights-section">
+                <p > Movie Sparker 2023 © All Right reserved </p>
             </div>
         </div>
 
-      
+    </div>
+
+    <div class="inpage-nav-btn-container">
+        <a href="#top-nav"><img src="../images/home-images/up-arrow (1).png" class="inpage-nav-btn"/></a>
     </div>
 
     <script src="../javascript/home.js"></script>

@@ -1,9 +1,11 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>movies-page</title>
+    <title>sports-page</title>
     <link rel="stylesheet" href="../css/movies.css">
 </head>
 <body>
@@ -12,26 +14,27 @@
     <div class="navbar">
         <img src="../images/index-images/logo1.png" class="logo">
        <div class="menu-sec">
-        <a href="Home.html"><button class="nav-btn" >Home</button></a>
-        <a href="movies.html"><button class="nav-btn" >Movies</button></a>
-        <a href="series.html"><button class="nav-btn" >TV shows</button></a>
-        <a href="sports.html"><button class="nav-btn">Sports</button></a>
-        <a href="guide.html"><button class="nav-btn">Guide</button></a>
+        <a href="../pages/home.html"><button class="nav-btn">Home</button></a>
+        <a href="../pages/movies.html"><button class="nav-btn">Movies</button></a>
+        <a href="../pages/series.html"><button class="nav-btn">TV shows</button></a>
+        <a href="../pages/sports.html"><button class="nav-btn"> Sports</button></a>
+        <a href="../pages/children.html"><button class="nav-btn">Children</button></a>
+        <a href="../pages/guide.html"> <button class="nav-btn">Guide</button></a>
             
         </div>
         <input type="text" placeholder="Search movies,Tv shows" class="search">
         <div class="login-btn">
-            <a href="login.html"><button class="login">Login</button></a>
-            <a href="signup.html"><button class="login">Sign Up</button></a>
+            <button class="login">Login</button>
+            <button class="login">Sign Up</button>
         </div>
     
 
     </div>
 </div>
-<h2 class="heading">Recent Released Movies </h2>
+<h2 class="heading">Recent Updates in Sports</h2>
 <div class="poster-container">
         <img src="../images/movies-images/animalposter.jpg" class="sports-poster" id="switch">
-       
+        <img src="../images/movies-images/sam-bahadur-img.jpg" class="sports-poster" id="switch">
     </div>
     <button type="botton" class="switch-img" onclick="switchimg()">View more<img src="../images/sports-images/arrow.png" class="arrow"></button>
 
@@ -42,13 +45,13 @@
                 <div>
                     <fieldset>
                         <legend>
-                            <h1 id="hd" style="font-size:40px;"></h1>
+                            <h1 id="hd" class="h1"></h1>
                         </legend>
-                        <h4 style="font-size:30px;text-decoration:underline;">Details</h4>
-                        <p id="dis" style="font-size:20px;"></p>
+                        <h4  class="details">Details</h4>
+                        <p id="dis" class="dis"></p>
                     </fieldset>
                 </div>
-                <img src="../images/sports-images/cartoon.png" style="margin-top: 95px;">
+                <img src="../images/sports-images/cartoon.png" class="cartoon">
             </div>
         </div>
     </div>
@@ -79,6 +82,58 @@
    <div class="cards">
     <img src="../images/movies-images/img-8.jpg" class="card-img" onclick="show(8)">
 </div>
+    </div>
+    <div class="footer">
+
+        <div class="footer-logo-container">
+            <img src="../images/index-images/logo1.png " class="footer-logo"/>
+        </div>
+
+        <div class="links-container">
+            <h3> Links </h3>
+            <a href="home.html"><h5 class="links">Home</h5></a>
+            <a href="movies.html" ><h5 class="links">Movies</h5></a>
+            <a href="series.html"><h5 class="links">TV Series</h5></a>
+            <a href="sports.html"><h5 class="links">Sports</h5></a>
+            <a href="children.html"><h5 class="links">Children</h5></a>
+            <a href="guide.html"><h5 class="links">Guide</h5></a>
+        </div>
+
+        <div class="links2-container">
+            <h3> Legal </h3>
+            <h5 class="links">Copyright notice</h5>
+            <h5 class="links">Privacy Policy</h5>
+            <h5 class="links">Legal information</h5>
+            <a href="../index.html"><h5 class="links"><b>Landing page</b></h5></a>
+        </div>
+
+        <div class="links2-container">
+            <h3> Support </h3>
+            <h5 class="links">FAQ</h5>
+            <h5 class="links">Contact us</h5>
+            <h5 class="links">Help desk</h5>
+        </div>
+
+        <div class="email-container">
+            <span class="enter-email">Enter email to get notifications for latest release</span>
+            <input type="email" placeholder="Enter E-mail" class="email"/>
+            <button type="button" class="submit-email-btn"><b>Submit</b></button>
+        </div>
+
+        <div class="media-img-container">
+            <div style="padding-left:150px;">
+                <p class="contact"> Connect with us </p>
+            </div>
+            <div style="display:flex; justify-content: flex-end;">
+                <img src="../images/home-images/facebook.png" class="social-media-img"/>
+                <img src="../images/home-images/instagram.png" class="social-media-img"/>
+               <img src="../images/home-images/twitter.png" class="social-media-img"/>
+            </div>
+            <div class="rights-section">
+                <p class="para"> Movie Sparker 2023 © All Right reserved </p>
+            </div>
+        </div>
+
     </div>
     
 <script src="../javascript/movies.js">
