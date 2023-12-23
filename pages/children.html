@@ -408,7 +408,7 @@
             height: 600px;
             width: 730px;
             margin-top: 120px;
-            margin-right: 100px;
+            margin-left:80px;
         }
 
         .explore {
@@ -418,17 +418,17 @@
             width: 200px;
             padding: 3px;
             position: absolute;
-            left: 640px;
-            top: 920px;
+            left: 700px;
+            top: 955px;
         }
 
         .container {
-            margin-top: 40px;
+            margin-top:80px;
             height: 750px;
         }
 
         .banner {
-            margin-top: 40px;
+            margin-top:70px;
         }
 
         .prt2 img {
@@ -440,8 +440,67 @@
         fieldset p {
             font-size: 40px;
         }
+        .footer {
+            width:1600px;
+        }
+        .footer-logo{
+            width:150px;
+           position: absolute;
+           left:500px;
+           top:1900px;
+        }
+        .email-container {
+            position: absolute;
+            top:1850px;
+            left:760px;
+        }
+        .ft{
+            position:absolute;
+            top:-70px;
+            left:-500px;
+        }
+        .ft1{ 
+            position:absolute;
+            top:-40px;
+            left:-350px;
+        }
+        .rights-section{
+            position:absolute;
+            top:-40px;
+            left:-500px;
+        }
     }
-
+    @media screen and (min-width:690px) and (max-width:1028px){
+        .login-btn{
+            position:relative;
+            left:530px;
+        }
+        .header{
+            width:1430px;
+        }
+        .footer{
+            width:1450px;
+        }
+        .container{
+            width:1400px;
+        }
+    }
+    @media screen and (min-width:1029px) and (max-width:1300px){
+        .login-btn{
+            position:relative;
+            left:200px;
+        }
+        .header{
+            width:1450px;
+        }
+        .footer{
+            width:1470px;
+        }
+        .container{
+            width:1410px;
+        }
+    }
+   
     .footer {
         display: flex;
         flex-wrap: wrap;
@@ -579,7 +638,6 @@
         transition: 0.5s;
     }
 </style>
-
 <body>
     <div class="navbar">
         <img src="../images/index-images/logo1.png" class="logo">
@@ -589,7 +647,7 @@
             <a href="series.html"><button class="nav-btn">TVshows</button></a>
             <a href="sports.html"><button class="nav-btn">Sports</button></a>
             <a href="children.html"><button class="nav-btn">Childrens</button></a>
-            <a href="guide.html"><button class="nav-btn">Guide</button></a>
+            <a href="guid.html"><button class="nav-btn">Guide</button></a>
         </div>
         <input type="text" placeholder="Search movies,Tv shows" class="search">
         <div class="login-btn">
