@@ -9,6 +9,12 @@ body{
     position:fix;
 
 }
+a{
+    text-decoration: none;
+}
+.heading{
+    text-align: center;
+}
 .logo{
     height:100px;
     margin-left: -10px;
@@ -218,7 +224,7 @@ fieldset{
     display: flex;
     flex-wrap: wrap;
     background-image: linear-gradient(to right,#e60a52,#780061);
-    height: 200px;
+    height: 300px;
     padding: 10px;
 }
 .links-container{
@@ -228,8 +234,8 @@ fieldset{
     height: 190px;
     width: 100px;
     padding: 5px;
-    margin-left: 20px;
-    margin-top: -15px;
+    margin-left: 15px;
+    margin-top: 15px;
 }
 .links2-container{
     color: white;
@@ -239,11 +245,15 @@ fieldset{
     width: 150px;
     padding: 5px;
     margin-left: 20px;
-    margin-top: -15px;
+    margin-top: 15px;
 }
 .links{
     padding: 2px;
     margin: 2px;
+    color:#000
+}
+.links:hover{
+    color: #eee;
 }
 .footer-logo-container{
     margin-left: 20px;
@@ -256,12 +266,15 @@ fieldset{
     padding: 10px;
     border-radius: 20px;
 }
+.enter-email{
+    font-weight: bold;
+}
 .email-container{
     display: flex;
     flex-direction: column;
     justify-content: start;
     padding-top: 50px;
-    margin-left: 70px;
+    margin-left: 55px;
 }
 .email{
     height: 20px;
@@ -291,6 +304,9 @@ fieldset{
     background-color: #fff;
     transition: 0.5s;
 }
+.contact{
+   color:#ffffff; 
+}
 .media-img-container{
     display: block;
     justify-content: flex-end;
@@ -298,7 +314,7 @@ fieldset{
     margin-bottom: auto;
 }
 .social-media-img{
-    height: 20px;
+    height: 25px;
     padding: 5px;
     margin: 5px;
 }
@@ -306,287 +322,574 @@ fieldset{
     margin-top: 70px;
     height: 50px;
 }
-.inpage-nav-btn-container{
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    border: 2px solid grey;
-    border-radius: 30px;
-    opacity: 0.6;
+
+.para{
+    position: relative;
+    right: -45px;
 }
-.inpage-nav-btn-container:hover{
-    opacity: 1;
-    transition: 0.5s;
-}
-.inpage-nav-btn{
-    height: 30px;
-    padding: 10px;
-    opacity: 0.7;
-}
-.inpage-nav-btn:hover{
-    opacity: 1;
-    transition: 0.5s;
-}
-   
-@media only screen and (min-width:300px) and (max-width:430px) {
-    .logo {
-        height: 50px;
+
+@media only screen and (min-width:300px) and (max-width:430px){
+    .logo{
+        height:50px;
         margin-left: -10px;
         margin-top: 1px;
-        width: 90px;
     }
-
-    .search {
+    .search{
         border: 1px solid white;
-        color: white;
+        color:white;
         border-radius: 5px;
-        height: 20px;
-        width: 180px;
+        height: 15px;
+        width:160px;
         background-color: black;
         position: absolute;
-        left: 80px;
-        top: 13px;
+        right:125px;
+        top:13px;
+    
     }
-
-    .navbar {
-        margin: 5px 5px;
-        display: flex;
+    .navbar{
+        margin:5px 10px;
+        display:flex;
         flex-direction: row;
         justify-content: space-between;
         position: relative;
         flex-wrap: wrap;
     }
-
-    .menu-sec {
+    .menu-sec{
         position: absolute;
-        left: 27px;
-        top: 60px;
+        left:20px;
+        top:50px;
     }
-
-    .nav-btn {
-        background: none;
+    .nav-btn{
+        background-color: black;
         color: white;
-        background-color: none;
-        font-size: 20px;
-        padding: 2px 5px;
-        position: relative;
-        left: 40px;
+        border: none;
+        padding:5px;
+        font-size: 13px;
+        cursor:pointer;
+    
     }
-
-    .login {
+    
+    .login{
         font-weight: bold;
-        height: 24px;
-        width: 65px;
+        height: 20px;
+        width:55px;
+        font-size: 10px;
+        cursor:pointer;    
+    }
+    .login-btn{
+        position: absolute;
+        right:4px;
+        top:12px;
+    }
+    .heading{
+        text-align: center;
         font-size: 15px;
-        cursor: pointer;
+        margin-top: 50px;
+
+}
+   .poster-container{
+    border:1px solid  #85035e;
+    height:550px;
+    width:1400px;
+    display:flex;
+    margin: 5px;
+    position: relative;
+
+}
+
+   .sports-poster{
+    height:540;
+    width:1400px;
+    box-shadow: 2px 4px 12px 0px gray ;
+    display: block;
+    margin: 5px;
+    border-radius: 20px;
+}
+   .switch-img{
+    font-size: 12px;
+    border-radius:7px;
+    height:25px;
+    width:80px;
+    margin-left:160px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    padding:3px;
+    position: relative;
+   }
+   .arrow{
+    position: absolute;
+    top:12px;
+    left:1300px}
+
+   .display-block{
+        border:2px solid  #85035e;
+        height:400px;
+        width:1100px;
+        display:block;
+        margin:5px auto;
+        padding:20px;
+    
     }
-
-    .login-btn {
-        position: absolute;
-        top: 12px;
-        right: -110px;
+    .posters-container{
+        border:2px solid  #85035e;
+        height:auto;
+        width:370px;
+        margin:5px auto;
+        padding:20px;
+        display:flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        
+    
     }
-
-    .header {
-        border: 1px solid #85035e;
-        height: 200px;
-        width: 380px;
-        margin-top: 80px;
-        margin-right: 100px;
+    
+    .cards{
+        border:2px solid black;
+        border-radius:20px;
+        height:150px;
+        width:160px;
+        box-shadow: 3px 4px 10px 0px gray ;
+        margin: 10px;
     }
-
-    .p2 {
-        display: none;
+        
+    
+    .card-img{
+        height:150px;
+        width:160px;
+        border-radius:20px;
+    
+    
     }
-
-    .header img {
-        height: 190px;
-        width: 380px;
-        box-shadow: 2px 4px 12px 0px gray;
-    }
-
-    .explore {
-        font-size: 12px;
-        border-radius: 7px;
-        height: 40px;
-        width: 100px;
-        padding: 3px;
-        position: absolute;
-        left: 168px;
-        top: 355px;
-    }
-
-    .banner {
-        border: 2px solid #85035e;
-        height: 400px;
-        width: 380px;
-        display: block;
-        margin: 5px;
-        padding: 10px;
-
-    }
-
-    .container {
-        border: 2px solid #85035e;
-        height: 640px;
-        width: 350px;
-        padding: 10px;
-        display: flex;
-        margin-right: 5px;
-    }
-
-    .crd {
-        border-radius: 20px;
-        height: 140px;
-        width: 140px;
-        box-shadow: 0px 0px px 10px gray;
-        margin: 5px 10px 5px 10px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .crd img {
-        height: 140px;
-        width: 140px;
-        border-radius: 20px;
-        margin: 10px 10px 10px 10px;
-    }
-
-    .screen {
-        width: 390;
+    .screen{
+        width:390;
         display: flex;
         justify-content: space-evenly;
     }
-
     .banner {
-        height: 200px;
+        margin-top: 30px;
+        height: 300px;
         display: none;
+        margin-right: 10px;
     }
-
     .prt1 img {
-        height: 170px;
-        width: 20%;
-        align-items: left;
-        margin-left: 9px;
-        box-shadow: 0 0 10px rgba(248, 246, 246, 0.964);
-    }
-
-    .prt2 {
-        margin-top: 20px;
-        padding: 10px;
-        margin-left: 10px;
+        height: 240px;
         width: 50%;
+        align-items: left;
+        margin-left: 7px;
+    }
+    .prt1 {
+        display: flex;
+    }
+    .prt2 {
+        margin-top: 0px;
+        padding: 20px;
+        margin-left: 20px;
+        border-radius: 5px;
+        border: 3px solid #880360;
+        width: 390px;
         height: 200px;
-        border: 0;
     }
-
     .prt2 img {
-        display: none;
+        height: 240px;
+        width: 110px;
+        display: flex;
+        position: absolute;
+        left: 40%;
+        top: 105%;
     }
-
-    fieldset {
-        padding: 1px;
-        margin-left: 2px;
-        border-radius: 1px;
-        width: 270px;
-        height: 20px;
+    fieldset{
+        margin-top: 2px;
+        padding: 20px;
+        margin-left: 3px;
+        margin-right: 2px;
+        border-radius: 5px;
+        width:100px;
+        height:160px;
     }
-
-    legend {
-        font-size: xx-small;
+    .h1{
+        font-size:11px;  
     }
-
-    fieldset h4 {
-        display: none;
+    
+    .details{
+        margin-top: -10px;
+        font-size:9px;
+        text-decoration:underline;
     }
-
-    fieldset p {
-        display: none;
+    .dis{
+        font-size:8px;
+    }
+    .cartoon{
+       margin-left: 1000px;
+       height: 10px;
+    }
+    .footer{
+        background-image: linear-gradient(to bottom,#e60a52,#780061);
+        height: 1000px;
+        padding: 10px;
+    }
+    .links-container{
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        height: 190px;
+        width: 100px;
+        padding: 5px;
+        margin-left: 8px;
+        margin-top: 15px;
+    }
+    .links2-container{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        height: 190px;
+        width: 100px;
+        padding: 10px;
+        margin-left: 8px;
+        margin-top: 15px;
+    }
+    .links{
+        padding: 2px;
+        margin: 2px;
+        color: #000;
+       
+    }
+    .links:hover{
+        color:#eee;
+    }
+    .footer-logo-container{
+        margin-left:110px;
+        
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .email-container{
+        justify-content: start;
+        padding-top: 20px;
+        margin-left: 30px;
+    }
+    .email{
+        margin-left: 0;
+        padding:5px;
+        border: 2px solid white;
+    }
+    .email:hover{
+        border:2px solid #880360;
+    }
+    .submit-email-btn{
+        height: 25px;
+        width: 150px;
+        border-radius: 5px;
+        border: 2px solid white;
+        background-color:#ea0a51;
+        color: white;
+    }
+    .submit-email-btn:hover{
+        color: #000;
+        border: 3px solid #ea0a51;
+        background-color: #fff;
+        transition: 0.5s;
+    }
+    .media-img-container{
+        display: block;
+        justify-content: flex-end;
+        margin-top:-20px;
+        margin-left:-30px;
+        margin-bottom: auto;
+    }
+    .social-media-img{
+        height: 25px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .rights-section{
+        margin-top: 70px;
+        height: 50px;
+        margin-left: 10px;
+    }
+   
+    .para{
+        position: relative;
+        left:55px;
     }
 }
 
-@media screen and (min-width:440px) and (max-width:690px) {
-    .logo {
-        height: 190px;
-    }
-
-    .search {
-        border: 2px solid white;
+@media screen and (min-width:440px) and (max-width:690px){
+    .logo{
         height:70px;
-        width: 500px;
+    }
+    .search{
+        border: 1px solid white;
+        height: 28px;
+        width:260px;
         position: absolute;
-        left: 270px;
-        top:35px;
+        right:270px;
+        top:13px;
+        right:260px;
+        top:11px;
+    
     }
-
-    .navbar {
-        margin: 5px 10px;
-        display: flex;
+    .navbar{
+        margin:5px 10px;
+        display:flex;
         flex-direction: row;
+        justify-content: space-between;
         position: relative;
+        flex-wrap: wrap;
     }
-
-    .menu-sec {
+    .menu-sec{
         position: absolute;
         left:50px;
-        top: 130px;
-        display:flex;
-        direction: row;
+        top:50px;
     }
-
-    .nav-btn {
+    .nav-btn{
         border: none;
-        padding:20px 50px;
-        font-size:40px;
-    }
-    .login {
-        position:relative;
-        left:1100px;
-        top: 12px;
-        font-size:40px;
-        font-weight: bold;
-        height:80px;
-        width:200px;
-        cursor: pointer;
-        margin-right: 12px;
-
-    }
-    .login-btn{
-        display: flex;
-        flex-direction: row;
-    }
-    .header {
-        border: 1px solid #85035e;
-        height: 600px;
-        width: 730px;
-        margin-top:120px;
-        margin-right: 100px;
-    }
-    .explore {
-        font-size:30px;
-        border-radius: 7px;
-        height:80px;
-        width: 200px;
-        padding: 3px;
-        position: absolute;
-        left:640px;
-        top:920px;
-    }
-    .container{
-        margin-top:40px;
-        height:750px;
-    }
-    .banner{
-        margin-top:40px;
-    }
-    .prt2 img{
-        position:absolute;
-        left:1150px;
-        top:1100px;
-    }
-    fieldset p{
-        font-size:40px;
-    }
+        padding:20px;
+        font-size: 15px;
 
     
-} 
+    }
+    
+    .login{
+        height: 30px;
+        width:80px;
+        font-size: 13px;
+    }
+    .login-btn{
+        position: absolute;
+        right:4px;
+        top:12px;
+    }
+    .heading{
+        text-align: center;
+        font-size: 19px;
+        margin-top: 60px;
+
+}
+.poster-container{
+    height:350px;
+    width:650px;
+    display:flex;
+    margin:5px auto;
+    position:relative;
+}
+
+.sports-poster{
+    height:345px;
+    width:630px;
+    margin:2px auto;
+    box-shadow: 2px 4px 10px 0px gray ;
+    border-radius: 10px;
+}
+.switch-img{
+    font-size: 15px;
+    height:40px;
+    width:160px;
+    margin-left:240px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding:11px;
+    position: relative;
+    
+
+}
+.switch-img:hover{
+    box-shadow: 0 0 7px #eee;
+}
+.arrow{
+    position: absolute;
+    top:13px;
+    left:120px;
+    height: 15px;
+}
+.display-block{
+    border:2px solid  #85035e;
+    height:400px;
+    width:1100px;
+    display:block;
+    margin:5px auto;
+    padding:20px;
+
+}
+.posters-container{
+    border:2px solid  #85035e;
+    height:590px;
+    width:630px;
+    display:block;
+    margin:4px auto;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    
+
+}
+
+.cards{
+    height:280px;
+    width:290px;
+    box-shadow: 3px 4px 10px 0px gray ;
+}
+.cards:hover{
+    box-shadow: 2px 4px 10px 0px gray ;
+}
+    
+
+.card-img{
+    height:280px;
+    width:290px;
+    border-radius:20px;
+
+
+}
+.screen{
+    width:650;
+    display: flex;
+    justify-content: space-evenly;
+}
+.banner {
+    margin-top: 18px;
+    height: 400px;
+    width: 600;
+    display: none;
+}
+.prt1 img {
+    height: 350px;
+    width: 50%;
+    align-items: left;
+    margin-left: 10px;
+    box-shadow: 0 0 10px rgba(248, 246, 246, 0.964);
+}
+.prt2 {
+    margin-top: -1px;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 3px solid #880360;
+    width: 250px;
+    height: 310px;
+}
+.prt2 img {
+    height: 350px;
+    width: 300px;
+    box-shadow: 0 0 0 0;
+    display: flex;
+    position: absolute;
+    left: 66%;
+    top: 105%;
+}
+fieldset{
+    margin-top: 10px;
+    padding: 13px;
+    margin-left: -1px;
+    border-radius: 5px;
+    width: 130px;
+    height:250px;
+}
+.h1{
+    font-size:15px;  
+}
+.details{
+    font-size:12px;
+    text-decoration:underline;
+}
+.dis{
+    font-size:10px;
+}
+.cartoon{
+    margin-top: -140px;
+    height: 60px;
+
+}
+.footer{
+    background-image: linear-gradient(to bottom,#e60a52,#780061);
+    height: 1000px;
+    padding: 10px;
+}
+.links-container{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    width: 130px;
+    padding: 5px;
+    margin-left: 100px;
+    margin-top: -60px;
+}
+.links2-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    width: 150px;
+    padding: 10px;
+    margin-left: 8px;
+    margin-top: -60px;
+}
+.links{
+    padding: 2px;
+    margin: 2px;
+    color: #000;
+   
+}
+.links:hover{
+    color:#eee;
+}
+.footer-logo-container{
+    margin-left:245px;
+    
+    margin-top:20px;
+    margin-bottom: auto;
+}
+.email-container{
+    justify-content: start;
+    padding-top: 20px;
+    margin-left: 160px;
+}
+.email{
+    margin-left: 0;
+    padding:5px;
+    border: 2px solid white;
+}
+.email:hover{
+    border:2px solid #880360;
+}
+.submit-email-btn{
+    height: 25px;
+    width: 150px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color:#ea0a51;
+    color: white;
+}
+.submit-email-btn:hover{
+    color: #000;
+    border: 3px solid #ea0a51;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.contact{
+    margin-left: 60px;
+}
+.media-img-container{
+    display: block;
+    justify-content: flex-end;
+    margin-top:-20px;
+    margin-left:60px;
+    margin-bottom: auto;
+}
+.social-media-img{
+    height: 25px;
+    padding: 5px;
+    margin: 5px;
+}
+.rights-section{
+    margin-top: 70px;
+    height: 50px;
+    margin-left: 60px;
+}
+
+.para{
+    position: relative;
+    left:55px;
+}
+}
