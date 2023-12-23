@@ -86,10 +86,10 @@ a{
 
 .category{
     margin: 10px;
-    color:#880360;
 }
 .category-title{
     text-align: center;
+    color:#ea0a51;
 }
 .movie-poster-container{
     display: flex;
@@ -328,6 +328,95 @@ a{
     transition: 0.5s;
 }
 /*footer css ends*/
+@media screen and (min-width: 300px) and (max-width:500px){
+    .logo{
+        height:50px;
+        margin-left: -10px;
+        margin-top: 1px;
+    }
+    .search{
+        border: 1px solid white;
+        color:white;
+        border-radius: 5px;
+        height: 15px;
+        width:160px;
+        background-color: black;
+        position: absolute;
+        right:125px;
+        top:13px;
+    
+    }
+    .navbar{
+        margin:5px 10px;
+        height: 80px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        flex-wrap: wrap;
+    }
+    .menu-sec{
+        position: absolute;
+        left:20px;
+        top:50px;
+    }
+    .nav-btn{
+        background-color: black;
+        color: white;
+        border: none;
+        padding:5px;
+        font-size: 13px;
+        cursor:pointer;
+    
+    }
+    
+    .login{
+        font-weight: bold;
+        height: 20px;
+        width:55px;
+        font-size: 10px;
+        cursor:pointer;    
+    }
+    .login-btn{
+        position: absolute;
+        right: -4px;
+        top: 3px;
+    } 
+    .movie-description-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .title-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .movie-details-container{
+        height: 200px;
+        width: 390px;
+        margin: 0 auto;
+    }
+    .small-poster{
+        height: 500px;
+    }
+    .small-movie-poster-container{
+        margin: 0 auto;
+    }
+    .small-movie-poster{
+        height: 100px;
+        width: 200px;
+    }
+    .footer{
+        height: 800px;
+    }
+    .footer-logo-container{
+        margin: 0 auto;
+        height: 50px;
+    }
+    .media-img-container{
+        margin-left: 90px;
+    }
+}
 
 @media screen and (min-width: 500px) and (max-width:768px){
     .body{
