@@ -4,13 +4,21 @@ function switchimg(){
 const cng= Math.floor(Math.random()*(max-min))+min;
 const element=document.getElementById("switch");
 if(cng==1){
-    element.src="../images/movies-images/L1.avif";
+    element.src="../images/movies-images/L6.jpeg";
 }
 else if(cng==2){
-    element.src="../images/movies-images/L2.avif";
+    element.src="../images/movies-images/L4.jpg";
 }
 else if(cng==3){
     element.src="../images/movies-images/sam-bahadur-img.jpg";
+
+}
+else if(cng==4){
+    element.src="../images/movies-images/L3.jpg";
+
+}
+else if(cng==5){
+    element.src="../images/movies-images/L7.jpg";
 
 }
 }

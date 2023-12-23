@@ -77,7 +77,7 @@ a{
 }
 .poster-container{
     border:2px solid  #85035e;
-    height:550px;
+    height:580px;
     width:95%;
     display:flex;
     margin:5px auto;
@@ -86,8 +86,8 @@ a{
 }
 
 .sports-poster{
-    height:520px;
-    width:1330px;
+    height:570px;
+    width:1540px;
     display:block;
     margin:5px auto;
     box-shadow: 4px 8px 20px 0px gray ;
@@ -107,7 +107,7 @@ a{
     height:50px;
     width:200px;
     display:bolck;
-    margin-left:650px;
+    margin-left:700px;
     margin-top: 10px;
     margin-bottom: 15px;
     padding:10px;
